@@ -1,9 +1,20 @@
-
-{{#if (media 'isSmall')}}
-  <Dynamic::Ui::MobileMenu />
-{{/if}}
-{{#if (or (media 'isMedium') (media 'isLarge') (media 'isWide'))}}
-  <Dynamic::Ui::DesktopMenu />
-{{/if}}
-
-
+<div local-class="header_container">
+  <div local-class="left_container">
+    <div local-class="content">
+      Roderick Developers
+    </div>
+  </div>
+  {{#if (or (media 'isLarge') (media 'isWide'))}}
+    <nav local-class="navigation_container">
+      <div local-class="link_container">
+        <LinkTo @route="projects">Projects</LinkTo>
+      </div>
+      <div local-class="link_container">
+        <LinkTo @route="certificates">Certificates</LinkTo>
+      </div>
+      <div local-class="link_container">
+        <LinkTo @route="blog">Blog</LinkTo>
+      </div>
+    </nav>
+  {{/if}}
+</div>

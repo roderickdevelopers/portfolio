@@ -16,6 +16,11 @@ $color_royal_purple: #25274d;
 $color_purple: lighten($color_royal_purple, 10%);
 $color_stone_blue: #336b87;
 $color_pebble_blue: lighten($color_stone_blue, 50%);
+$color_background: #E0E5EC;
+$color_footer: #8695AC;
+//Links
+$color_link: #4072bd;
+$color_link_hover: #8695ac;
 
 //Borders
 $border_base_color: $color_black;
@@ -29,3 +34,22 @@ $border_radius_base: 3px;
 $button_height_base: 2.75;
 $button_height_base_mini: 2;
 $button_padding_base: 0;
+
+//Margins
+$margin_small: 1.5625rem;
+$margin_medium: 1.875rem;
+$margin_large: 3.125rem;
+$margin_extra_large: 6.25rem;
+
+//Font 
+$font_size_small: 0.75em;
+$font_size_large: 1.25em;
+$font_size_extra_large: 2em;
+$font_weight_medium: 600;
+
+//Padding
+$padding_small: 1.25rem;
+
+
+
+

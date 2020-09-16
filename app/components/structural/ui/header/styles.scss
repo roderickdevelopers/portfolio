@@ -1,4 +1,53 @@
 @import 'global/variables';
 @import 'global/breakpoints';
 
-//css goes here
+.header_container {
+  display: flex;
+  height: 100px;
+
+  .left_container {
+    flex: 1;
+
+    .content {
+      margin: $margin_small 0 0 $margin_large;
+      font-size: 18px;
+      font-weight: $font_weight_medium;
+
+      @include breakpoint (large) {
+        font-size: $font_size_extra_large;
+      }
+
+      @include breakpoint (wide) {
+        font-size: $font_size_extra_large;
+      }
+    }
+  }
+
+  .navigation_container {
+    display: flex;
+    margin: $margin_small 0 0;
+    font-size: $font_size_extra_large;
+    font-weight: $font_weight_medium;
+
+    a {
+      text-decoration: none;
+
+      &:link {
+        color: $color_black;
+      }
+
+      &:visited {
+        color: $color_black;
+      }
+
+      &:hover {
+        text-decoration: underline;
+      }
+    }
+
+    .link_container {
+      padding: 0 $padding_small;
+    }
+  }
+}
+

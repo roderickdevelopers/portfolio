@@ -2,7 +2,7 @@
 
 module.exports = function(environment) {
   let ENV = {
-    modulePrefix: 'ember-octane-boilerplate',
+    modulePrefix: 'portfolio',
     environment,
     rootURL: '/',
     locationType: 'auto',

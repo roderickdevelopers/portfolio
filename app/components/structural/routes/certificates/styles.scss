@@ -1,0 +1,51 @@
+@import 'global/variables';
+@import 'global/breakpoints';
+
+.content_container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  .content {
+    margin: 0 $margin_small;
+    font-size: larger;
+
+    a {
+      color: $color_link;
+
+      &:visited {
+        color: $color_link;
+      }
+
+      &:hover {
+        color: $color_link_hover;
+      }
+    }
+
+    @include breakpoint(wide) {
+      max-width: 75vw;
+      margin-bottom: $margin_large;
+      font-size: $font_size_extra_large;
+    }
+  }
+}
+
+.images_container {
+  display: flex;
+  flex: 1;
+  font-size: $font_size_extra_large;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+
+  .image {
+    flex: 1;
+    font-weight: $font_weight_medium;
+
+    img {
+      width: 100%;
+      max-width: 100%;
+      height: auto;
+    }
+  }
+}
