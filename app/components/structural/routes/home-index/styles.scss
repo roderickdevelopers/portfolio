@@ -291,5 +291,9 @@
     .skills_content {
       margin: 20px;   
       margin-bottom: $margin_large;   
+
+      // &:hover {
+      //   transform: scale(1.2);
+      // }
     }
   }
