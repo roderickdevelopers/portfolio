@@ -5,6 +5,10 @@
   display: flex;
   height: 100px;
 
+  @include breakpoint(wide) {
+    font-size: $font_size_large;
+  }
+
   .left_container {
     flex: 1;
 
@@ -19,6 +23,14 @@
 
       @include breakpoint (wide) {
         font-size: $font_size_extra_large;
+      }
+
+      a {
+        text-decoration: none;
+
+        &:visited {
+          color: $color_black;
+        }
       }
     }
   }

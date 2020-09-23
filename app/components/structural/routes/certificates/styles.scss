@@ -1,5 +1,9 @@
 @import 'global/variables';
 @import 'global/breakpoints';
+@import 'global/text_style';
+
+.projects_component_container {
+  background-color: $color_background;
 
 .content_container {
   display: flex;
@@ -7,26 +11,7 @@
   align-items: center;
 
   .content {
-    margin: 0 $margin_small;
-    font-size: larger;
-
-    a {
-      color: $color_link;
-
-      &:visited {
-        color: $color_link;
-      }
-
-      &:hover {
-        color: $color_link_hover;
-      }
-    }
-
-    @include breakpoint(wide) {
-      max-width: 75vw;
-      margin-bottom: $margin_large;
-      font-size: $font_size_extra_large;
-    }
+    @include text_style();
   }
 }
 
@@ -48,4 +33,5 @@
       height: auto;
     }
   }
+}
 }
