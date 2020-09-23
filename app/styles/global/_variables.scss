@@ -16,8 +16,9 @@ $color_royal_purple: #25274d;
 $color_purple: lighten($color_royal_purple, 10%);
 $color_stone_blue: #336b87;
 $color_pebble_blue: lighten($color_stone_blue, 50%);
-$color_background: #E0E5EC;
-$color_footer: #8695AC;
+$color_background: #e0e5ec;
+$color_footer: #8695ac;
+$color_box_shadow: #a3b1c6;
 //Links
 $color_link: #4072bd;
 $color_link_hover: #8695ac;
@@ -43,6 +44,7 @@ $margin_extra_large: 6.25rem;
 
 //Font 
 $font_size_small: 0.75em;
+$font_size_medium: 0.875rem;
 $font_size_large: 1.25em;
 $font_size_extra_large: 2em;
 $font_weight_medium: 600;

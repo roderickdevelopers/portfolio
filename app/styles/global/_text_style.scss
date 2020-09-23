@@ -1,0 +1,22 @@
+@mixin text_style {
+  margin: 0 $margin_small;
+    font-size: $font_size_large;
+
+    a {
+      color: $color_link;
+
+      &:visited {
+        color: $color_link;
+      }
+
+      &:hover {
+        color: $color_link_hover;
+      }
+    }
+
+    @include breakpoint(wide) {
+      max-width: 75vw;
+      margin-bottom: $margin_large;
+      font-size: $font_size_extra_large;
+    }
+}
