@@ -288,12 +288,8 @@
       align-items: center;
       flex-wrap: wrap;
 
-    .skills_content {
-      margin: 20px;   
-      margin-bottom: $margin_large;   
-
-      // &:hover {
-      //   transform: scale(1.2);
-      // }
-    }
+      img {
+        border-radius: 50%;
+        box-shadow: -9px -9px 16px $color_white, 9px 9px 16px $color_box_shadow;
+      }
   }
