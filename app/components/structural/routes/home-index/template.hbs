@@ -38,12 +38,15 @@
         I make fast, responsive websites and have used ember.js and react. </p>
         <p>Enough about me! Go ahead and check out my site and my projects! </p>
   </div>
-   <div local-class="skills_header" id="about_me">
+   {{!-- <div local-class="skills_header" id="about_me">
     <h1>Skills</h1>
     <hr />
-  </div>
+  </div> --}}
   <div local-class="skills_content_container_row">
-    <div local-class="skills_content">
+    <div local-class="profile_pic">
+      <img src="assets/images/profilepic.png" alt="profile pic">
+    </div>
+    {{!-- <div local-class="skills_content">
       <Dynamic::Ui::SmallCard @imageFront={{this.imageFrontCardThree}} />
     </div>
     <div local-class="skills_content">
@@ -66,7 +69,7 @@
     </div>
     <div local-class="skills_content">
       <Dynamic::Ui::SmallCard @imageFront={{this.imageFrontCardTen}} />
-    </div>
+    </div> --}}
   </div>
   <Structural::Ui::Footer />
 

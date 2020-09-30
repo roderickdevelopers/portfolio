@@ -2,7 +2,11 @@
 @import 'global/breakpoints';
 @import 'global/text_style';
 
-.projects_component_container {
+.certificates_component_container {
+  display: flex;
+  min-height: 100vh;
+  flex: 1;
+  flex-direction: column;
   background-color: $color_background;
 
 .content_container {
