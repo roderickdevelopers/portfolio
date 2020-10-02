@@ -1,0 +1,52 @@
+@import 'global/variables';
+@import 'global/breakpoints';
+@import 'global/text_style';
+
+.mobile_menu_wrapper {
+  
+  
+  
+.mobile_menu {
+
+  ul li {
+    text-align: center;
+    text-decoration: none;
+    list-style: none;
+    background: $color_footer;
+    margin: 20px;
+    min-width: 100%;
+    margin-left: -30px;
+    line-height: 50px;
+    font-size: $font_size_large;
+    
+    
+    
+    
+    a {
+      color: $color_black;
+      text-decoration: none;
+
+      &:visited {
+        color: $color_black;
+      }
+
+      &:hover {
+        color: $color_black;
+      }
+    }
+  }
+  .mobile_menu_header {
+    min-height: 125px;
+    background: $color_background;
+    color: #000000;
+    margin-bottom: 8px;
+    
+    }
+  }
+
+  .other_content {
+    text-align: center;
+    font-size: $font_size_medium;
+    font-weight: $font_weight_medium;
+  }
+}

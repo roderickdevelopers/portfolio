@@ -3,3 +3,8 @@
   <FaIcon type="button" @icon="angle-double-up" @prefix="fa" @size=3x {{on "click" this.scrollToTop}} />
 </div>
 {{/if}}
+{{#if (or (media 'isMedium') (media 'isSmall') (media 'isMedium'))}}
+<div local-class="button">
+  <FaIcon type="button" @icon="angle-double-up" @prefix="fa" @size=2x {{on "click" this.scrollToTop}} />
+</div>
+{{/if}}

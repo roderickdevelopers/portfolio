@@ -1,0 +1,38 @@
+    <div local-class="mobile_menu_wrapper">
+      <div local-class="mobile_menu">
+      <MobileMenuWrapper as |mmw|>
+          <mmw.MobileMenu as |mm|>
+            <ul>
+              <h2>Roderick Developers</h2>
+              <li><mm.LinkTo @route="index">Home</mm.LinkTo></li>
+              <li><mm.LinkTo @route="projects">Projects</mm.LinkTo></li>
+              <li><mm.LinkTo @route="certificates">Certificates</mm.LinkTo></li>
+              <li><mm.LinkTo @route="blog">Blog</mm.LinkTo></li>
+            </ul>
+          </mmw.MobileMenu>
+          <mmw.Content>
+            <mmw.Toggle>
+              <FaIcon @icon="bars" @prefix="fas" @size=2x />
+            </mmw.Toggle>
+          </mmw.Content>
+      </MobileMenuWrapper>
+      </div>
+      <div local-class="other_content">
+        
+      </div>
+    </div>
+    
+
+
+    {{!-- <MobileMenuWrapper as |mmw|>
+  <mmw.MobileMenu as |mm|>
+    <mm.LinkTo @route="index">Home</mm.LinkTo>
+    <mm.LinkTo @route="projects">Projects</mm.LinkTo>
+    <mm.LinkTo @route="certificates">Certificates</mm.LinkTo>
+    <mm.LinkTo @route="blog">Blog</mm.LinkTo>
+  </mmw.MobileMenu>
+  <mmw.Content>
+    <mmw.Toggle><FaIcon @icon="bars" @prefix="fas" @size=2x /></mmw.Toggle>
+     Roderick Developers
+  </mmw.Content>
+  </MobileMenuWrapper> --}}

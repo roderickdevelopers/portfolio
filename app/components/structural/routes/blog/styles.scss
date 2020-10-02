@@ -1,4 +1,46 @@
 @import 'global/variables';
 @import 'global/breakpoints';
+@import 'global/text_style';
 
-//css goes here
+.blog_component_container {
+  display: flex;
+  min-height: 100vh;
+  flex: 1;
+  flex-direction: column;
+  background-color: $color_background;
+
+  .blog_header_container {
+    
+
+  }
+
+.content_container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  .content {
+    @include text_style();
+  }
+}
+
+.images_container {
+  display: flex;
+  flex: 1;
+  font-size: $font_size_extra_large;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+
+  .image {
+    flex: 1;
+    font-weight: $font_weight_medium;
+
+    img {
+      width: 100%;
+      max-width: 100%;
+      height: auto;
+    }
+  }
+}
+}

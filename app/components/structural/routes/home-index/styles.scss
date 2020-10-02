@@ -2,11 +2,17 @@
 @import 'global/breakpoints';
 
 // sass-lint:disable no-vendor-prefixes
+
     .home_index_container {
       display: flex;
       height: 100vh;
       flex-direction: column;
       background-color: $color_background;
+
+      .home_index_header_container {
+    
+
+      }
 
       .hero_image {
         display: flex;
@@ -177,7 +183,7 @@
       .down_arrow_container {
         display: flex;
         margin-top: auto;
-        margin-bottom: $margin_large;
+        margin-bottom: $margin_extra_large;
         justify-content: center;
         align-items: center;
 
