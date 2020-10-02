@@ -1,9 +1,14 @@
 <div local-class="header_container">
+  {{!-- {{#if (or (media 'isSmall') (media 'isMedium'))}}
+  <Structural::Ui::Navigation::Mobile />
+  {{/if}} --}}
+  {{#if (or (media 'isLarge') (media 'isWide'))}}
   <div local-class="left_container">
     <div local-class="content">
       <LinkTo @route="index">Roderick Developers </LinkTo>
     </div>
   </div>
+  {{/if}}
   {{#if (or (media 'isLarge') (media 'isWide'))}}
     <nav local-class="navigation_container">
       <div local-class="link_container">

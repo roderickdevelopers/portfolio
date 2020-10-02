@@ -1,0 +1,24 @@
+
+.mobile-menu-wrapper {
+  width: unset;
+  min-height: unset;
+  overflow: unset;
+
+  .mobile-menu-wrapper__content {
+    min-height: unset;
+    background-color: $color_background;
+  }
+
+  .mobile-menu__tray {
+    background-color: $color_background;;
+
+  }
+
+  .mobile-menu__toggle {
+    margin-top: 10px;
+    background-color: $color_background;
+    border: 0;
+    outline: none; 
+  }
+}
+
