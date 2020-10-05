@@ -5,35 +5,9 @@
 
 .footer_container {
     display: flex;
-    height: 100px;
-    background-color: $color_footer;
-    justify-content: flex-end;
+    height: 70px;
+    background-color: $color_background;
+    justify-content: center;
     align-items: center;
-
-    .left_footer {
-      flex: 1;
-      margin: 0 0 0 $margin_extra_small;
-      font-size: $font_size_medium;
-      font-weight: $font_weight_medium;
-      justify-content: flex-start;
-    }
-
-    .button_container {
-      margin: 0 10px;
-      
-
-      &.right {
-        margin: 0 20px 0 10px;
-      }
-
-      &:hover {
-        transform: scale(1.2);
-      }
-
-      a {
-        color: $color_black;
-        
-      }
-    }
   }
   
