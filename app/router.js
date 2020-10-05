@@ -7,7 +7,9 @@ export default class Router extends EmberRouterScroll {
 }
 
 Router.map(function() {
-  this.route('blog');
+  this.route('blog', function() {
+    this.route('one_blog');
+  });
   this.route('certificates');
   this.route('projects', function() {
     this.route('markdown-previewer');
