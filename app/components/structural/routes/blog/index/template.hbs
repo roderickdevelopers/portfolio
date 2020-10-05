@@ -1,0 +1,29 @@
+<div local-class="blog_component_container">
+  <div local-class="blog_header_container">
+  </div>
+  <div local-class="blog_content_container">
+    <div local-class="blog_content_container_row top">
+     <p>Blog post's this is a placeholder</p>
+    </div>
+    <div local-class="blog_content_container_row">
+      <div local-class="blog_flipcard_container">
+        <Dynamic::Ui::Card
+          @imageFront={{this.imageFrontCardOne}} />
+          <div local-class="button_container">
+            <button type="button" onclick=@route="one_blog">Blog Post</button>
+          </div>
+      </div>
+       <div local-class="blog_flipcard_container">
+        <Dynamic::Ui::Card
+          @imageFront={{this.imageFrontCardTwo}} 
+          @imageBack={{this.imageBackCardTwo}} />
+          <div local-class="button_container">
+            <button type="button" onclick="location.href='http://www.google.com'">Blog Post</button>
+          </div>
+      </div>
+    </div>
+  </div>
+  <div local-class="blog_footer_container">
+    <Structural::Ui::Footer />
+  </div>
+</div>
