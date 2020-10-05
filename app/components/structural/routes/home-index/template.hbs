@@ -1,6 +1,5 @@
     <div local-class="home_index_container">
       <div local-class="home_index_header_container">
-    <Structural::Ui::Header />
   </div>
       <div local-class="hero_image">
         <div local-class="content">
@@ -17,10 +16,16 @@
       </div>
       <div local-class="down_arrow_container">
         <ScrollTo @target='#about_me' @duration="1000">
+          {{#if (or (media 'isMedium') (media 'isLarge') (media 'isWide'))}}
           <div local-class="down_arrow_main">
-            <img alt="down"
-              src="data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/PjwhRE9DVFlQRSBzdmcgIFBVQkxJQyAnLS8vVzNDLy9EVEQgU1ZHIDEuMS8vRU4nICAnaHR0cDovL3d3dy53My5vcmcvR3JhcGhpY3MvU1ZHLzEuMS9EVEQvc3ZnMTEuZHRkJz48c3ZnIGVuYWJsZS1iYWNrZ3JvdW5kPSJuZXcgMCAwIDMyIDMyIiBoZWlnaHQ9IjMycHgiIGlkPSLQodC70L7QuV8xIiB2ZXJzaW9uPSIxLjEiIHZpZXdCb3g9IjAgMCAzMiAzMiIgd2lkdGg9IjMycHgiIHhtbDpzcGFjZT0icHJlc2VydmUiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiPjxwYXRoIGQ9Ik0yNC4yODUsMTEuMjg0TDE2LDE5LjU3MWwtOC4yODUtOC4yODhjLTAuMzk1LTAuMzk1LTEuMDM0LTAuMzk1LTEuNDI5LDAgIGMtMC4zOTQsMC4zOTUtMC4zOTQsMS4wMzUsMCwxLjQzbDguOTk5LDkuMDAybDAsMGwwLDBjMC4zOTQsMC4zOTUsMS4wMzQsMC4zOTUsMS40MjgsMGw4Ljk5OS05LjAwMiAgYzAuMzk0LTAuMzk1LDAuMzk0LTEuMDM2LDAtMS40MzFDMjUuMzE5LDEwLjg4OSwyNC42NzksMTAuODg5LDI0LjI4NSwxMS4yODR6IiBmaWxsPSIjMTIxMzEzIiBpZD0iRXhwYW5kX01vcmUiLz48Zy8+PGcvPjxnLz48Zy8+PGcvPjxnLz48L3N2Zz4=" />
+            <FaIcon type="button" @icon="chevron-down" @prefix="fa" @size=3x />
           </div>
+          {{/if}}
+          {{#if (or (media 'isMedium') (media 'isSmall') (media 'isMedium'))}}
+          <div local-class="down_arrow_main">
+            <FaIcon type="button" @icon="chevron-down" @prefix="fa" @size=2x />
+          </div>
+          {{/if}}
           </ScrollTo>
       </div>
     </div>
@@ -38,40 +43,12 @@
         boilerplate is updated to the latest ember version with all the necessary add ons.</p>
       <p>I am currently looking for work.
         I make fast, responsive websites and have used ember.js and react. </p>
-        <p>Enough about me! Go ahead and check out my site and my projects! </p>
+        <p>Enough about me! Go ahead and check out my site and my <LinkTo @route="projects">projects</LinkTo>! </p>
   </div>
-   {{!-- <div local-class="skills_header" id="about_me">
-    <h1>Skills</h1>
-    <hr />
-  </div> --}}
   <div local-class="skills_content_container_row">
     <div local-class="profile_pic">
       <img src="assets/images/profilepic.png" alt="profile pic">
     </div>
-    {{!-- <div local-class="skills_content">
-      <Dynamic::Ui::SmallCard @imageFront={{this.imageFrontCardThree}} />
-    </div>
-    <div local-class="skills_content">
-      <Dynamic::Ui::SmallCard @imageFront={{this.imageFrontCardFour}} />
-    </div>
-    <div local-class="skills_content">
-      <Dynamic::Ui::SmallCard @imageFront={{this.imageFrontCardFive}} />
-    </div>
-    <div local-class="skills_content">
-      <Dynamic::Ui::SmallCard @imageFront={{this.imageFrontCardSix}} />
-    </div>
-    <div local-class="skills_content">
-      <Dynamic::Ui::SmallCard @imageFront={{this.imageFrontCardSeven}} />
-    </div>
-    <div local-class="skills_content">
-      <Dynamic::Ui::SmallCard @imageFront={{this.imageFrontCardEight}} />
-    </div>
-    <div local-class="skills_content">
-      <Dynamic::Ui::SmallCard @imageFront={{this.imageFrontCardNine}} />
-    </div>
-    <div local-class="skills_content">
-      <Dynamic::Ui::SmallCard @imageFront={{this.imageFrontCardTen}} />
-    </div> --}}
   </div>
   <Structural::Ui::Footer />
   

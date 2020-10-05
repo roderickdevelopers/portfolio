@@ -1,38 +1,53 @@
-    <div local-class="mobile_menu_wrapper">
-      <div local-class="mobile_menu">
-      <MobileMenuWrapper as |mmw|>
-          <mmw.MobileMenu as |mm|>
-            <ul>
-              <h2>Roderick Developers</h2>
-              <li><mm.LinkTo @route="index">Home</mm.LinkTo></li>
-              <li><mm.LinkTo @route="projects">Projects</mm.LinkTo></li>
-              <li><mm.LinkTo @route="certificates">Certificates</mm.LinkTo></li>
-              <li><mm.LinkTo @route="blog">Blog</mm.LinkTo></li>
-            </ul>
-          </mmw.MobileMenu>
-          <mmw.Content>
+        <nav>
+    <MobileMenuWrapper as |mmw|>
+      <mmw.MobileMenu as |mm|>
+        <div local-class="menu_container">
+          <div local-class="title">
+            <h1>Roderick Developers</h1>
+          </div>
+          <div local-class="navigation">
+            <div local-class="nav_item_container">
+              <mm.LinkTo @route="index">Home</mm.LinkTo>
+            </div>
+            <div local-class="nav_item_container">
+              <mm.LinkTo @route="projects">Projects</mm.LinkTo>
+            </div>
+            <div local-class="nav_item_container">
+              <mm.LinkTo @route="certificates">Certificates</mm.LinkTo>
+            </div>
+            <div local-class="nav_item_container">
+              <mm.LinkTo @route="blog">Blog</mm.LinkTo>
+            </div>
+          </div>
+         
+          <div local-class="profile_pic_section">
+             <img src="assets/images/profilepicsmall.png" alt="profile pic">
+          </div>
+           <div local-class="some_other_section">
+            <a href="https://www.linkedin.com/in/roderickdevelopers/">
+        <FaIcon @icon="linkedin" @prefix="fab" @size=2x /></a>
+        <a href="https://github.com/roderickdevelopers/">
+        <FaIcon @icon="github-square" @prefix="fab" @size=2x /></a>
+        <a href="https://twitter.com/Roderickdev">
+        <FaIcon @icon="twitter-square" @prefix="fab" @size=2x /></a>
+          </div>
+        </div>
+      </mmw.MobileMenu>
+      <mmw.Content>
+        <div local-class="header">
+          <div local-class="toggle_container">
             <mmw.Toggle>
-              <FaIcon @icon="bars" @prefix="fas" @size=2x />
+              <FaIcon @icon="bars" @prefix="fas" @size='2x' />
             </mmw.Toggle>
-          </mmw.Content>
-      </MobileMenuWrapper>
-      </div>
-      <div local-class="other_content">
-        
-      </div>
-    </div>
+          </div>
+          <div local-class="some_other_container">
+            <LinkTo @route="index">Roderick Developers</LinkTo>
+          </div>
+        </div>
+        {{yield}}
+      </mmw.Content>
+    </MobileMenuWrapper>
+  </nav>
+    
     
 
-
-    {{!-- <MobileMenuWrapper as |mmw|>
-  <mmw.MobileMenu as |mm|>
-    <mm.LinkTo @route="index">Home</mm.LinkTo>
-    <mm.LinkTo @route="projects">Projects</mm.LinkTo>
-    <mm.LinkTo @route="certificates">Certificates</mm.LinkTo>
-    <mm.LinkTo @route="blog">Blog</mm.LinkTo>
-  </mmw.MobileMenu>
-  <mmw.Content>
-    <mmw.Toggle><FaIcon @icon="bars" @prefix="fas" @size=2x /></mmw.Toggle>
-     Roderick Developers
-  </mmw.Content>
-  </MobileMenuWrapper> --}}

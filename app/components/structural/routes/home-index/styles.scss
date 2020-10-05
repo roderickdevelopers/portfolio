@@ -183,7 +183,7 @@
       .down_arrow_container {
         display: flex;
         margin-top: auto;
-        margin-bottom: $margin_extra_large;
+        margin-bottom: 8rem;
         justify-content: center;
         align-items: center;
 
@@ -271,6 +271,21 @@
       font-family: 'Roboto Mono', monospace;
       font-size: $font_size_large;
       text-align: left;
+
+      a:link {
+        text-decoration: underline;
+      }
+        a:link {
+          color: $color_black;
+        }
+
+        a:visited {
+          color: $color_black;
+        }
+
+        a:hover {
+          text-decoration: underline;
+        }
       
       @include  breakpoint(wide) {
         margin: 0 $margin_large $margin_large 100px;
