@@ -1,5 +1,5 @@
 import Component from '@glimmer/component';
 
-export default class StructuralRoutesBlogIndexOneBlogComponent extends Component {
+export default class StructuralRoutesBlogOneBlogComponent extends Component {
   
 }

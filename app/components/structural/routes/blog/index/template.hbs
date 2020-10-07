@@ -10,18 +10,18 @@
         <Dynamic::Ui::Card
           @imageFront={{this.imageFrontCardOne}} />
           <div local-class="button_container">
-            <a href="blog/one_blog">
+            <LinkTo @route="blog.one_blog">
             <button type="button" aria-label="Blog Post">Blog Post</button>
-            </a>
+            </LinkTo>
           </div>
       </div>
        <div local-class="blog_flipcard_container">
         <Dynamic::Ui::Card
           @imageFront={{this.imageFrontCardTwo}} />
           <div local-class="button_container">
-            <a href="blog/two_blog">
+            <LinkTo @route="blog.one_blog">
             <button type="button" aria-label="Blog Post">Blog Post</button>
-            </a>
+            </LinkTo>
           </div>
       </div>
     </div>
