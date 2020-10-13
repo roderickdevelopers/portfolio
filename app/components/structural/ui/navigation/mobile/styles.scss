@@ -7,35 +7,34 @@
   min-height: 100%;
   flex: 1;
   flex-direction: column;
-  background-color: $color_background;
+  color: $color_background;
+  background-color: $color_menu;
 
   .title {
     height: 3.125rem;
     min-height: 1.5625rem;
-    text-align: center;
     margin-bottom: 20px;
+    text-align: center;
   }
 
   .navigation {
     display: flex;
     flex-direction: column;
-    
+
     .nav_item_container {
       display: flex;
       min-height: 3.125rem;
       flex: 1;
-      justify-content: center;
       font-size: $font_size_large;
-      
+      justify-content: center;
+
         a:link {
+          color: $color_background;
           text-decoration: none;
-        }
-          a:link {
-            color: $color_black;
-          }
+        } 
 
           a:visited {
-            color: $color_black;
+            color: $color_background;
           }
 
           a:hover {
@@ -49,26 +48,24 @@
     min-height: 50px;
     margin: 8.2rem 0 0;
     justify-content: center;
-    
-      a {
-        color: black;
-        margin: $margin_extra_small;
-      }
 
-      a:hover {
-        transform: scale(1.2);
+      a {
+        margin: $margin_extra_small;
+        color: $color_background;
+
+        &:hover {
+          transform: scale(1.2);
       }
+    }   
   }
 
   .profile_pic_section {
-    margin-top: $margin_extra_large;
     display: flex;
+    margin-top: $margin_extra_large;
     justify-content: center;
-    
 
     img {
       border-radius: 50%;
-      box-shadow: -9px -9px 16px $color_white, 9px 9px 16px $color_box_shadow;
     }
   }
 }
@@ -85,19 +82,19 @@
   margin: 0 0 0 $margin_extra_small;
 
     button {
+      background-color: $color_background;
       border: 0;
       outline: none;
-      background-color: $color_background;
     }
   }
 
   .some_other_container {
     flex: 1;
+    margin: 0 $margin_extra_small 0 0;
+    font-size: $font_size_medium;
+    font-weight: $font_weight_medium;
     color: $color_black;
     text-align: right;
-    font-weight: $font_weight_medium;
-    margin: 0 $margin_extra_small 0 0;
-    font-size: $font_size_large;
 
     a:link {
       text-decoration: none;
@@ -116,20 +113,33 @@
 
     @include breakpoint(large) {
       flex: 1;
-      color: $color_black;
-      text-align: right;
-      font-weight: $font_weight_medium;
       margin: 0 $margin_extra_small 0 0;
       font-size: $font_size_extra_large;
+      font-weight: $font_weight_medium;
+      color: $color_black;
+      text-align: right; 
     }
 
     @include breakpoint(wide) {
       flex: 1;
-      color: $color_black;
-      text-align: right;
-      font-weight: $font_weight_medium;
       margin: 0 $margin_extra_small 0 0;
       font-size: $font_size_extra_large;
+      font-weight: $font_weight_medium;
+      color: $color_black;
+      text-align: right;  
+    }
+
+      button {
+        padding: 7px 15px;
+          margin-left: 20px;
+          font-size: $font_size_medium;
+          color: $color_white;
+          white-space: nowrap;
+          cursor: pointer;
+          background-color: $color_menu;
+          border: 0;
+          border-radius: 2em;
+          outline: 0; 
     }
   }
 }
