@@ -1,6 +1,6 @@
 <div local-class="contact_form">
-  <form name="contact" method="POST" data-netlify-recaptcha="true" data-netlify="true">
-    <input type='hidden' name='contact' value='contact' />
+  <form name="contact" method="POST"  data-netlify-recaptcha="true" data-netlify="true">
+    <input type='hidden' name='form-name' value='contact' />
     <div local-class="contact_content">
       <div local-class="contact_header">
       <h1>Get in touch with me!</h1> 
@@ -9,10 +9,10 @@
         <p>👋 Hello and welcome. I am looking for freelance work and am excited to start on a new project for you!</p>
       </div>
       <div local-class="contact_name">
-         <input type="text" name="name" placeholder="Full Name" />
+         <input type="text" name="Full Name" placeholder="Full Name" />
       </div>
       <div local-class="contact_email">
-        <input type="text" name="name" placeholder="Email" />
+        <input type="email" name="email" placeholder="Email" />
       </div>
       <div local-class="text_area">
          <textarea name="message" placeholder="Your Message"></textarea>
