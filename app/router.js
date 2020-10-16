@@ -11,6 +11,7 @@ Router.map(function() {
     this.route('one-blog');
   });
   this.route('certificates');
+  this.route('contact');
   this.route('projects', function() {
     this.route('markdown-previewer');
   });
