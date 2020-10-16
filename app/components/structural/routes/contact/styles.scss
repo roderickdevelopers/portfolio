@@ -28,13 +28,13 @@
 
     @include breakpoint(large) {
       display: flex;
+      width: 700px;
       flex: 1;
       flex-direction: column;
       justify-content: center;
       align-items: center;
       background-color: $color_menu;
       height: 700px;
-      width: 700px;
       border-radius: 2em;
     }
 
