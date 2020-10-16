@@ -1,0 +1,27 @@
+<div local-class="contact_form">
+  <form name="contact" method="POST" data-netlify-recaptcha="true" data-netlify="true">
+    <div local-class="contact_content">
+      <div local-class="contact_header">
+      <h1>Get in touch with me!</h1> 
+      </div>
+      <div local-class="contact_p">
+        <p>👋 Hello and welcome. I am looking for freelance work and am excited to start on a new project for you!</p>
+      </div>
+      <div local-class="contact_name">
+         <input type="text" name="name" placeholder="Full Name" />
+      </div>
+      <div local-class="contact_email">
+        <input type="text" name="name" placeholder="Email" />
+      </div>
+      <div local-class="text_area">
+         <textarea name="message" placeholder="Your Message"></textarea>
+      </div>
+      <div data-netlify-recaptcha="true"></div>
+      <div local-class="contact_send">
+        <button type="submit"> Send
+          <FaIcon @icon="paper-plane" @prefix="fas" />
+        </button>
+      </div>
+    </div>
+  </form>
+</div>
