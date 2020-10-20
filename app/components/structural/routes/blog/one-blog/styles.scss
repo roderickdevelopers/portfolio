@@ -9,40 +9,35 @@
   flex-direction: column;
   background-color: $color_background;
 
-  .certificates_header_container {
-    
+  .certificates_header_container {}
 
+  .content_container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    .content {
+      @include text_style();
+    }
   }
 
-.content_container {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-
-  .content {
-    @include text_style();
-  }
-}
-
-.images_container {
-  display: flex;
-  flex: 1;
-  font-size: $font_size_extra_large;
-  text-align: center;
-  justify-content: center;
-  align-items: center;
-
-  .image {
+  .images_container {
+    display: flex;
     flex: 1;
-    font-weight: $font_weight_medium;
+    font-size: $font_size_extra_large;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
 
-    img {
-      width: 100%;
-      max-width: 100%;
-      height: auto;
+    .image {
+      flex: 1;
+      font-weight: $font_weight_medium;
+
+      img {
+        width: 100%;
+        max-width: 100%;
+        height: auto;
+      }
     }
   }
 }
-}
-
-

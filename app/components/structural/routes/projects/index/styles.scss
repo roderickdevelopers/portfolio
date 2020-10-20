@@ -8,10 +8,7 @@
   flex-direction: column;
   background-color: $color_background;
 
-  .projects_header_container {
-    
-
-  }
+  .projects_header_container {}
 
   .projects_content_container {
     display: flex;
@@ -20,7 +17,7 @@
     background-color: $color_background;
     justify-content: center;
     align-items: center;
-    
+
 
     .projects_content_container_row {
       display: flex;
@@ -28,7 +25,7 @@
       justify-content: center;
       align-items: center;
       flex-wrap: wrap;
-      
+
 
       &.top {
         display: flex;
@@ -61,13 +58,11 @@
           border: 0;
           border-radius: 2em;
           outline: 0;
-          box-shadow: -9px -9px 16px $color_white, 9px 9px 16px $color_box_shadow;  
+          box-shadow: -9px -9px 16px $color_white, 9px 9px 16px $color_box_shadow;
         }
       }
     }
   }
 
-  .projects_footer_container {
-
-  }
+  .projects_footer_container {}
 }

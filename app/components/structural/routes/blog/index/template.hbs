@@ -3,26 +3,24 @@
   </div>
   <div local-class="blog_content_container">
     <div local-class="blog_content_container_row top">
-     <p>Blog post's this is a placeholder</p>
+      <p>Blog post's this is a placeholder</p>
     </div>
     <div local-class="blog_content_container_row">
       <div local-class="blog_flipcard_container">
-        <Dynamic::Ui::Card
-          @imageFront={{this.imageFrontCardOne}} />
-          <div local-class="button_container">
-            <LinkTo @route="blog.one-blog">
+        <Dynamic::Ui::Card @imageFront={{this.imageFrontCardOne}} />
+        <div local-class="button_container">
+          <LinkTo @route="blog.one-blog">
             <button type="button" aria-label="Blog Post">Blog Post</button>
-            </LinkTo>
-          </div>
+          </LinkTo>
+        </div>
       </div>
-       <div local-class="blog_flipcard_container">
-        <Dynamic::Ui::Card
-          @imageFront={{this.imageFrontCardTwo}} />
-          <div local-class="button_container">
-            <LinkTo @route="blog.one-blog">
+      <div local-class="blog_flipcard_container">
+        <Dynamic::Ui::Card @imageFront={{this.imageFrontCardTwo}} />
+        <div local-class="button_container">
+          <LinkTo @route="blog.one-blog">
             <button type="button" aria-label="Blog Post">Blog Post</button>
-            </LinkTo>
-          </div>
+          </LinkTo>
+        </div>
       </div>
     </div>
   </div>
@@ -30,4 +28,3 @@
     <Structural::Ui::Footer />
   </div>
 </div>
-
