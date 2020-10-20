@@ -28,19 +28,19 @@
       font-size: $font_size_large;
       justify-content: center;
 
-        a:link {
-          color: $color_background;
-          text-decoration: none;
-        } 
+      a:link {
+        color: $color_background;
+        text-decoration: none;
+      }
 
-          a:visited {
-            color: $color_background;
-          }
+      a:visited {
+        color: $color_background;
+      }
 
-          a:hover {
-            text-decoration: underline;
-          }    
-    } 
+      a:hover {
+        text-decoration: underline;
+      }
+    }
   }
 
   .some_other_section {
@@ -49,14 +49,14 @@
     margin: 8.2rem 0 0;
     justify-content: center;
 
-      a {
-        margin: $margin_extra_small;
-        color: $color_background;
+    a {
+      margin: $margin_extra_small;
+      color: $color_background;
 
-        &:hover {
-          transform: scale(1.2);
+      &:hover {
+        transform: scale(1.2);
       }
-    }   
+    }
   }
 
   .profile_pic_section {
@@ -74,12 +74,11 @@
   display: flex;
   height: 3.125rem;
   min-height: 1.5625rem;
-  flex: 1;
   background-color: $color_background;
   align-items: center;
 
-.toggle_container {
-  margin: 0 0 0 $margin_extra_small;
+  .toggle_container {
+    margin: 0 0 0 $margin_extra_small;
 
     button {
       color: $color_menu;
@@ -100,17 +99,18 @@
     a:link {
       text-decoration: none;
     }
-      a:link {
-        color: $color_black;
-      }
 
-      a:visited {
-        color: $color_black;
-      }
+    a:link {
+      color: $color_black;
+    }
 
-      a:hover {
-        text-decoration: underline;
-      } 
+    a:visited {
+      color: $color_black;
+    }
+
+    a:hover {
+      text-decoration: underline;
+    }
 
     @include breakpoint(large) {
       flex: 1;
@@ -118,7 +118,7 @@
       font-size: $font_size_extra_large;
       font-weight: $font_weight_medium;
       color: $color_black;
-      text-align: right; 
+      text-align: right;
     }
 
     @include breakpoint(wide) {
@@ -127,20 +127,20 @@
       font-size: $font_size_extra_large;
       font-weight: $font_weight_medium;
       color: $color_black;
-      text-align: right;  
+      text-align: right;
     }
 
-      button {
-        padding: 7px 15px;
-          margin-left: 20px;
-          font-size: $font_size_medium;
-          color: $color_white;
-          white-space: nowrap;
-          cursor: pointer;
-          background-color: $color_menu;
-          border: 0;
-          border-radius: 2em;
-          outline: 0; 
+    button {
+      padding: 7px 15px;
+      margin-left: 20px;
+      font-size: $font_size_medium;
+      color: $color_white;
+      white-space: nowrap;
+      cursor: pointer;
+      background-color: $color_menu;
+      border: 0;
+      border-radius: 2em;
+      outline: 0;
     }
   }
 }

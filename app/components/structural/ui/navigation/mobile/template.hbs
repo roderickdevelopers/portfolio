@@ -1,56 +1,55 @@
-        <nav>
-    <MobileMenuWrapper as |mmw|>
-      <mmw.MobileMenu as |mm|>
-        <div local-class="menu_container">
-          <div local-class="title">
-            <h1>Roderick Developers</h1>
+<nav>
+  <MobileMenuWrapper as |mmw|>
+    <mmw.MobileMenu as |mm|>
+      <div local-class="menu_container">
+        <div local-class="title">
+          <h1>Roderick Developers</h1>
+        </div>
+        <div local-class="navigation">
+          <div local-class="nav_item_container">
+            <mm.LinkTo @route="index">Home</mm.LinkTo>
           </div>
-          <div local-class="navigation">
-            <div local-class="nav_item_container">
-              <mm.LinkTo @route="index">Home</mm.LinkTo>
-            </div>
-            <div local-class="nav_item_container">
-              <mm.LinkTo @route="projects">Projects</mm.LinkTo>
-            </div>
-            <div local-class="nav_item_container">
-              <mm.LinkTo @route="certificates">Certificates</mm.LinkTo>
-            </div>
-            <div local-class="nav_item_container">
-              <mm.LinkTo @route="blog">Blog</mm.LinkTo>
-            </div>
+          <div local-class="nav_item_container">
+            <mm.LinkTo @route="projects">Projects</mm.LinkTo>
           </div>
-         
-          <div local-class="profile_pic_section">
-             <img src="/assets/images/profilepicsmall.png" alt="profile pic">
+          <div local-class="nav_item_container">
+            <mm.LinkTo @route="certificates">Certificates</mm.LinkTo>
           </div>
-           <div local-class="some_other_section">
-            <a href="https://www.linkedin.com/in/roderickdevelopers/">
-        <FaIcon @icon="linkedin" @prefix="fab" @size=2x /></a>
-        <a href="https://github.com/roderickdevelopers/">
-        <FaIcon @icon="github-square" @prefix="fab" @size=2x /></a>
-        <a href="https://twitter.com/Roderickdev">
-        <FaIcon @icon="twitter-square" @prefix="fab" @size=2x /></a>
+          <div local-class="nav_item_container">
+            <mm.LinkTo @route="blog">Blog</mm.LinkTo>
           </div>
         </div>
-      </mmw.MobileMenu>
-      <mmw.Content>
-        <div local-class="header">
-          <div local-class="toggle_container">
-            <mmw.Toggle>
-              <FaIcon @icon="bars" @prefix="fas" @size='2x' />
-            </mmw.Toggle>
-          </div>
-          <div local-class="some_other_container">
-            <LinkTo @route="index">Roderick Developers</LinkTo>
-            <LinkTo @route="contact">
-              <button id="contact_me" class="button">Contact Me</button>
-            </LinkTo>
-          </div>
-        </div>
-        {{yield}}
-      </mmw.Content>
-    </MobileMenuWrapper>
-  </nav>
-    
-    
 
+        <div local-class="profile_pic_section">
+          <img src="/assets/images/profilepicsmall.png" alt="profile pic">
+        </div>
+        <div local-class="some_other_section">
+          <a href="https://www.linkedin.com/in/roderickdevelopers/">
+            <FaIcon @icon="linkedin" @prefix="fab" @size=2x /></a>
+          <a href="https://github.com/roderickdevelopers/">
+            <FaIcon @icon="github-square" @prefix="fab" @size=2x /></a>
+          <a href="https://twitter.com/Roderickdev">
+            <FaIcon @icon="twitter-square" @prefix="fab" @size=2x /></a>
+        </div>
+      </div>
+    </mmw.MobileMenu>
+    <mmw.Content>
+      <div local-class="header">
+        <div local-class="toggle_container">
+          <mmw.Toggle>
+            <FaIcon @icon="bars" @prefix="fas" @size='2x' />
+          </mmw.Toggle>
+        </div>
+        <div local-class="some_other_container">
+          <LinkTo @route="contact">
+            <button id="contact_me" class="button">Contact Me
+              <FaIcon @icon="envelope" @prefix="fa" />
+            </button>
+
+          </LinkTo>
+        </div>
+      </div>
+      {{yield}}
+    </mmw.Content>
+  </MobileMenuWrapper>
+</nav>
