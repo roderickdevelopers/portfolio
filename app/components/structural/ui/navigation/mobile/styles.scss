@@ -15,6 +15,22 @@
     min-height: 1.5625rem;
     margin-bottom: 20px;
     text-align: center;
+
+    a:link {
+      text-decoration: none;
+    }
+
+    a:link {
+      color: $color_background;
+    }
+
+    a:visited {
+      color: $color_background;
+    }
+
+    a:hover {
+      text-decoration: underline;
+    }
   }
 
   .navigation {
@@ -88,7 +104,7 @@
     }
   }
 
-  .some_other_container {
+  .contact_container {
     flex: 1;
     margin: 0 $margin_extra_small 0 0;
     font-size: $font_size_medium;
@@ -132,7 +148,7 @@
 
     button {
       padding: 7px 15px;
-      margin-left: 20px;
+      margin:  0.625rem 0 0;
       font-size: $font_size_medium;
       color: $color_white;
       white-space: nowrap;

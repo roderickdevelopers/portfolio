@@ -3,12 +3,12 @@
     <mmw.MobileMenu as |mm|>
       <div local-class="menu_container">
         <div local-class="title">
-          <h1>Roderick Developers</h1>
+          <mm.LinkTo @route="index"><h1>Roderick Developers</h1></mm.LinkTo>
         </div>
         <div local-class="navigation">
-          <div local-class="nav_item_container">
+          {{!-- <div local-class="nav_item_container">
             <mm.LinkTo @route="index">Home</mm.LinkTo>
-          </div>
+          </div> --}}
           <div local-class="nav_item_container">
             <mm.LinkTo @route="projects">Projects</mm.LinkTo>
           </div>
@@ -40,7 +40,7 @@
             <FaIcon @icon="bars" @prefix="fas" @size='2x' />
           </mmw.Toggle>
         </div>
-        <div local-class="some_other_container">
+        <div local-class="contact_container">
           <LinkTo @route="contact">
             <button id="contact_me" class="button">Contact Me
               <FaIcon @icon="envelope" @prefix="far" />
