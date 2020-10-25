@@ -1,6 +1,4 @@
 <div local-class="blog_component_container">
-  <div local-class="blog_header_container">
-  </div>
   <div local-class="blog_content_container">
     <div local-class="blog_content_container_row top">
       <p>Blog post's this is a placeholder</p>
@@ -9,7 +7,7 @@
       <div local-class="blog_flipcard_container">
         <Dynamic::Ui::Card @imageFront={{this.imageFrontCardOne}} />
         <div local-class="button_container">
-          <LinkTo @route="blog.one-blog">
+          <LinkTo @route="blog.show">
             <button type="button" aria-label="Blog Post">Blog Post</button>
           </LinkTo>
         </div>
@@ -17,14 +15,14 @@
       <div local-class="blog_flipcard_container">
         <Dynamic::Ui::Card @imageFront={{this.imageFrontCardTwo}} />
         <div local-class="button_container">
-          <LinkTo @route="blog.one-blog">
+          <LinkTo @route="blog.show">
             <button type="button" aria-label="Blog Post">Blog Post</button>
           </LinkTo>
         </div>
       </div>
     </div>
   </div>
-  <div local-class="blog_footer_container">
-    <Structural::Ui::Footer />
-  </div>
+  {{!-- <Structural::Ui::Footer>
+    <Structural::Ui::ScrollToTop />
+  </Structural::Ui::Footer> --}}
 </div>
