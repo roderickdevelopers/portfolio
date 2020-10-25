@@ -9,8 +9,6 @@
   flex-direction: column;
   background-color: $color_background;
 
-  .blog_header_container {}
-
   .blog_content_container {
     display: flex;
     flex: 1;
@@ -46,13 +44,12 @@
         align-items: center;
 
         :hover {
-          transform: scale(1.1);
-          // box-shadow: inset 9px 9px 16px $color_box_shadow, inset -9px -9px 16px $color_white;
+          box-shadow: inset 9px 9px 16px $color_box_shadow, inset -9px -9px 16px $color_white;
         }
+        
 
         button {
           padding: 10px 20px;
-          margin-left: 20px;
           font-size: $font_size_medium;
           white-space: nowrap;
           cursor: pointer;
@@ -61,11 +58,8 @@
           border-radius: 2em;
           outline: 0;
           box-shadow: -9px -9px 16px $color_white, 9px 9px 16px $color_box_shadow;
-
         }
       }
     }
   }
-
-  .blog_footer_container {}
 }

@@ -1,9 +1,9 @@
-{{#if (or (media 'isMedium') (media 'isLarge') (media 'isWide'))}}
+{{#if (or (media 'isLarge') (media 'isWide'))}}
 <div local-class="button">
   <FaIcon type="button" @icon="chevron-up" @prefix="fa" @size=3x {{on "click" this.scrollToTop}} />
 </div>
 {{/if}}
-{{#if (or (media 'isMedium') (media 'isSmall') (media 'isMedium'))}}
+{{#if (or (media 'isSmall') (media 'isMedium'))}}
 <div local-class="button">
   <FaIcon type="button" @icon="chevron-up" @prefix="fa" @size=2x {{on "click" this.scrollToTop}} />
 </div>

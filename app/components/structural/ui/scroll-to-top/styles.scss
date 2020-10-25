@@ -2,11 +2,13 @@
 @import 'global/breakpoints';
 
 .button {
-  margin-right: 20px;
+  display: flex;
   cursor: pointer;
   -webkit-animation: bounce 2s infinite;
   -moz-animation: bounce 2s infinite;
   animation: bounce 2s infinite;
+  justify-content: center;
+  align-items: center;
 }
 
 @keyframes bounce {
