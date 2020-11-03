@@ -1,0 +1,14 @@
+@import 'global/variables';
+
+button {
+  padding: 10px 20px;
+  margin-left: 20px;
+  font-size: $font_size_medium;
+  white-space: nowrap;
+  cursor: pointer;
+  background-color: $color_background;
+  border: 0;
+  border-radius: 2em;
+  outline: 0;
+  box-shadow: -9px -9px 16px $color_white, 9px 9px 16px $color_box_shadow;
+}

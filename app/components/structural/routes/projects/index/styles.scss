@@ -46,6 +46,11 @@
 
         :hover {
           box-shadow: inset 9px 9px 16px $color_box_shadow, inset -9px -9px 16px $color_white;
+          outline: 0;
+        }
+
+        :focus {
+          outline: 0;
         }
 
         button {
