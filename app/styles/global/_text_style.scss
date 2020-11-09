@@ -1,6 +1,7 @@
 @mixin text_style {
   margin: 0 $margin_small;
-    font-size: $font_size_large;
+  font-size: $font_size_large;
+  
 
     a {
       color: $color_link;

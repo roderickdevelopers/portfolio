@@ -1,24 +1,19 @@
 @import 'global/variables';
 @import 'global/breakpoints';
-@import 'global/text_style';
 
-.blog_index_component_container {
+.git_for_beginners_component_container {
   display: flex;
   min-height: 100vh;
   flex: 1;
   flex-direction: column;
   background-color: $color_background;
+  justify-content: center;
+  align-items: center;
 
-  .blog_index_content_container {
+  .git_for_beginners_article_container {
     display: flex;
     flex: 1;
-    flex-direction: column;
-    background-color: $color_background;
     justify-content: center;
     align-items: center;
-
-    .blog_index_content {
-      @include text_style();
-    }
   }
 }

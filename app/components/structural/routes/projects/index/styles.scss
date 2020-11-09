@@ -4,11 +4,10 @@
 
 .projects_component_container {
   display: flex;
+  min-height: 100vh;
   flex: 1;
   flex-direction: column;
   background-color: $color_background;
-
-  .projects_header_container {}
 
   .projects_content_container {
     display: flex;
@@ -45,8 +44,8 @@
         align-items: center;
 
         :hover {
-          box-shadow: inset 9px 9px 16px $color_box_shadow, inset -9px -9px 16px $color_white;
           outline: 0;
+          box-shadow: inset 9px 9px 16px $color_box_shadow, inset -9px -9px 16px $color_white;
         }
 
         :focus {
@@ -68,6 +67,4 @@
       }
     }
   }
-
-  .projects_footer_container {}
 }

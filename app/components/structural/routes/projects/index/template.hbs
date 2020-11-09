@@ -1,19 +1,7 @@
 <div local-class="projects_component_container">
-  <div local-class="projects_header_container">
-  </div>
   <div local-class="projects_content_container">
     <div local-class="projects_content_container_row top">
-      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec condimentum finibus sapien, at vulputate justo
-      gravida nec. Sed convallis sapien orci, pulvinar blandit sem pretium eu. Duis porttitor, arcu nec feugiat
-      scelerisque, arcu ex fermentum libero, vel posuere sem arcu quis lectus. Fusce arcu nisl, malesuada sit amet
-      ligula id, ornare tempus dui. Vivamus ac molestie mauris. Suspendisse potenti. Duis eget lacinia libero.
-      Vestibulum facilisis nunc vel lectus ornare varius. Proin metus massa, venenatis ac quam vel, facilisis
-      pellentesque velit.
-
-      Vivamus lectus velit, rhoncus sed sem sit amet, vehicula euismod mauris. Duis ullamcorper nulla et nunc ultricies
-      fringilla. Aliquam ut neque condimentum, fringilla mi vel, eleifend dolor. Donec a dolor eget justo congue
-      lobortis. Praesent sed lobortis orci. Maecenas suscipit arcu eget aliquam commodo. Etiam facilisis congue ligula
-      ut rhoncus.
+      <p>{{this.paragraphOne}}</p>
     </div>
     <div local-class="projects_content_container_row">
       <div local-class="projects_flipcard_container">
@@ -23,7 +11,6 @@
           <Dynamic::Ui::Button::CardButton
             @labelText={{this.siteLabel}} />
         </a>
-          
           <button type="button"
             onclick="location.href='https://github.com/roderickdevelopers/React_Markdown_Previewer'">Code</button>
         </div>
@@ -55,8 +42,5 @@
         </div>
       </div>
     </div>
-  </div>
-  <div local-class="projects_footer_container">
-    <Structural::Ui::Footer />
   </div>
 </div>
