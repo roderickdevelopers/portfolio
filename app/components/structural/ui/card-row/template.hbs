@@ -1,0 +1,28 @@
+<div local-class="blog_content_container_row">
+  <div local-class="blog_flipcard_container">
+    <Dynamic::Ui::Card @imageFront={{@imageFrontCardOne}} />
+    <div local-class="button_container">
+      {{#if @blogPost}}
+      <LinkTo @route="blog.ember-mobile-menu">
+        <button type="button" aria-label="Blog Post">{{@blogPost}}</button>
+      </LinkTo>
+      {{/if}}
+      {{#if @liveCode}}
+      <LinkTo @route="blog.ember-mobile-menu">
+        <button type="button" aria-label="Blog Post">{{@liveCode}}</button>
+      </LinkTo>
+      {{/if}}
+    </div>
+  </div>
+  <div local-class="blog_flipcard_container">
+    <Dynamic::Ui::Card @imageFront={{@imageFrontCardTwo}} />
+    <div local-class="button_container">
+      {{#if @blogPost}}
+      <LinkTo @route="blog.git-for-beginners">
+        <button type="button" aria-label="Blog Post">{{@blogPost}}</button>
+      </LinkTo>
+      {{/if}}
+    </div>
+  </div>
+</div>
+  

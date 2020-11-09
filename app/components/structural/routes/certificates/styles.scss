@@ -9,14 +9,12 @@
   flex-direction: column;
   background-color: $color_background;
 
-  .certificates_header_container {}
-
-  .content_container {
+  .certificates_content_container {
     display: flex;
     justify-content: center;
     align-items: center;
 
-    .content {
+    .certificates_content {
       @include text_style();
     }
   }
