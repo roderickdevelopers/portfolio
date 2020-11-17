@@ -30,8 +30,10 @@
         display: flex;
         flex: 1;
         justify-content: center;
-        @include text_style();
       }
+
+      @include text_style();
+      
     }
 
     .projects_flipcard_container {

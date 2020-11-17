@@ -2,35 +2,165 @@
   <div local-class="article_header_container">
     <div local-class="article_header">
       <h1>{{@articleTitle}}</h1>
-      <p>By <a href="https://www.roderickdevelopers.com/">Roderick Developers</a> & <a href="https://github.com/orgs/Design-Monster/projects/2">Design Monster</a></p>
+      <p>Written by <a href="https://www.roderickdevelopers.com/">Roderick Developers</a> & <a
+          href="https://github.com/orgs/Design-Monster/projects/2">Design Monster</a></p>
       <p>{{@creator}}</p>
+      {{#if @blogSubjectLink}}
       <p>Find it HERE: <a href="{{@blogSubjectLink}}">{{@articleTitle}}</a></p>
+      {{/if}}
     </div>
   </div>
   <div local-class="article_content_container">
+    {{#if @codePathThree}}
     <div local-class="code_content">
-        <p>{{@codePathOne}}<span local-class="code_output">{{@codeOne}}</span></p>
-      </div>
-      <div local-class="article_content">
-        <p>{{@paragraphOne}}</p>
-      </div>
-      <div local-class="article_content">
-        <p>{{@paragraphTwo}}</p>
-      </div>
-      <div local-class="article_content">
-        <p>{{@paragraphThree}}</p>
-      </div>
-       <div local-class="code_content">
-        <p>{{@codePathTwo}}<span local-class="code_output">{{@codeTwo}}</span></p>
-      </div>
-      <div local-class="article_content">
-        <p>{{@paragraphFour}}</p>
-      </div>
-      <div local-class="article_content">
-        <p>{{@paragraphFive}}</p>
-      </div>
-      <div local-class="article_content">
-        <p>{{@paragraphSix}}</p>
-      </div>
+      <p>{{@codePathThree}}<span local-class="code_output">{{@codeThree}}</span></p>
+    </div>
+    {{/if}}
+    <div local-class="article_content">
+      <p>{{@paragraphOne}}</p>
+    </div>
+    <div local-class="article_content">
+      <p>{{@paragraphTwo}}</p>
+    </div>
+    <div local-class="article_content">
+      <p>{{@paragraphThree}}</p>
+    </div>
+    <div local-class="article_content">
+      <h1>{{@headerOne}}</h1>
+      <p>{{@paragraphFour}}</p>
+    </div>
+    {{#if @codePathOne}}
+    <div local-class="code_content">
+      <p>{{@codePathOne}}<span local-class="code_output">{{@codeOne}}</span></p>
+    </div>
+    {{/if}}
+    {{#if @headerOne}}
+    <div local-class="article_content">
+      <p>{{@paragraphFive}}</p>
+    </div>
+    {{/if}}
+    <div local-class="article_content">
+      <p>{{@paragraphSix}}</p>
+    </div>
+    <div local-class="article_content">
+      <p>{{@paragraphSeven}}</p>
+    </div>
+     {{#if @codePathTwo}}
+    <div local-class="code_content">
+      <p>{{@codePathTwo}}<span local-class="code_output">{{@codeTwo}}</span></p>
+    </div>
+    {{/if}}
+    <div local-class="article_content">
+      <h1>{{@headerTwo}}</h1>
+      <p>{{@paragraphEight}}</p>
+    </div>
+    <div local-class="article_content">
+      <p>{{@paragraphNine}}</p>
+    </div>
+    {{#if @gitCodePathTwo}}
+    <div local-class="code_content">
+      <p>{{@codePathTwo}}<span local-class="code_output">{{@codeTwo}}</span></p>
+    </div>
+    {{/if}}
+    <div local-class="article_content">
+      <p>{{@paragraphTen}}</p>
+    </div>
+    <div local-class="code_content">
+      <p>{{@codePathTwo}}<span local-class="code_output">{{@codeTwo}}</span></p>
+    </div>
+    <div local-class="article_content">
+      <p>{{@paragraphEleven}}</p>
+    </div>
+    <div local-class="article_content">
+      <h1>{{@headerThree}}</h1>
+      <p>{{@paragraphTwelve}}</p>
+    </div>
+    {{#if @gitCodePathTwo}}
+    <div local-class="code_content">
+      <p>{{@codePathTwo}}<span local-class="code_output">{{@codeTwo}}</span></p>
+    </div>
+    {{/if}}
+    <div local-class="article_content">
+      <h1>{{@headerFour}}</h1>
+      <p>{{@paragraphThirteen}}</p>
+    </div>
+    <div local-class="code_content">
+      <p>{{@codePathOne}}<span local-class="code_output">{{@codeOne}}</span></p>
+    </div>
+    <div local-class="article_content">
+      <p>{{@paragraphFourteen}}</p>
+    </div>
+     <div local-class="code_content">
+      <p>{{@codePathTwo}}<span local-class="code_output">{{@codeTwo}}</span></p>
+    </div>
+    <div local-class="article_image_container">
+      <img src="{{@imageOne}}" alt={{@imageAltOne}}>
+    </div>
+    <div local-class="article_content">
+      <p>{{@paragraphFifteen}}</p>
+    </div>
+    {{#if @gitCodePathTwo}}
+    <div local-class="code_content">
+      <p>{{@codePathTwo}}<span local-class="code_output">{{@codeTwo}}</span></p>
+    </div>
+    {{/if}}
+    <div local-class="article_content">
+      <p>{{@paragraphSixteen}}</p>
+    </div>
+    {{#if @gitCodePathTwo}}
+    <div local-class="code_content">
+      <p>{{@codePathTwo}}<span local-class="code_output">{{@codeTwo}}</span></p>
+    </div>
+    {{/if}}
+    <div local-class="article_content">
+      <p>{{@paragraphSeventeen}}</p>
+    </div>
+     <div local-class="code_content">
+      <p>{{@codePathTwo}}<span local-class="code_output">{{@codeTwo}}</span></p>
+    </div>
+    <div local-class="article_content">
+      <p>{{@paragraphEighteen}}</p>
+    </div>
+     <div local-class="code_content">
+      <p>{{@codePathTwo}}<span local-class="code_output">{{@codeTwo}}</span></p>
+    </div>
+    <div local-class="article_content">
+      <p>{{@paragraphNineteen}}</p>
+    </div>
+     <div local-class="code_content">
+      <p>{{@codePathTwo}}<span local-class="code_output">{{@codeTwo}}</span></p>
+    </div>
+    <div local-class="article_content">
+      <p>{{@paragraphTwenty}}</p>
+    </div>
+    <div local-class="article_content">
+      <p>{{@paragraphTwentyOne}}</p>
+    </div>
+    <div local-class="article_content">
+      <p>{{@paragraphTwentyTwo}}</p>
+    </div>
+    {{#if @gitCodePathTwo}}
+    <div local-class="code_content">
+      <p>{{@codePathTwo}}<span local-class="code_output">{{@codeTwo}}</span></p>
+    </div>
+    {{/if}}
+    <div local-class="article_content">
+      <p>{{@paragraphTwentyThree}}</p>
+    </div>
+    <div local-class="code_content">
+      <p>{{@codePathTwo}}<span local-class="code_output">{{@codeTwo}}</span></p>
+    </div>
+    <div local-class="article_content">
+      <p>{{@paragraphTwentyFour}}</p>
+    </div>
+    <div local-class="code_content">
+      <p>{{@codePathOne}}<span local-class="code_output">{{@codeOne}}</span></p>
+    </div>
+    <div local-class="article_content">
+      <p>{{@paragraphTwentyFive}}</p>
+    </div>
+    <div local-class="article_content">
+      <p>{{@paragraphTwentySix}}</p>
+    </div>
   </div>
-</div>    
+</div>
