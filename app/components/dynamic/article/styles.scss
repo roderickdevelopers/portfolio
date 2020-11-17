@@ -1,5 +1,6 @@
 @import 'global/variables';
 @import 'global/breakpoints';
+@import 'global/text_style';
 
 .article_component_container {
   display: flex;
@@ -7,6 +8,16 @@
   flex: 1;
   flex-direction: column;
   background-color: $color_background;
+
+  .article_image_container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    img {
+      max-width: 100%;
+    }
+  }
 
   .article_header_container {
     display: flex;
@@ -18,6 +29,8 @@
       flex-direction: column;
       align-items: center;
     }
+
+    @include text_style();
   } 
 
   .article_content_container {
@@ -30,9 +43,9 @@
    .article_content {
       max-width: 75vw;
       flex: 1;
-      margin-bottom: $margin_medium;
-      line-height: 1.25;
     }
+
+    @include text_style();
 
     .code_content {
       display: flex;

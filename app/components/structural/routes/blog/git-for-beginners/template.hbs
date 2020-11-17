@@ -1,21 +1,268 @@
-  <div local-class="git_for_beginners_component_container">
-      <div local-class="git_for_beginners_article_container">
-        <Dynamic::Article
-          @articleTitle={{this.articleTitle}}
-          @blogSubjectLink={{this.blogSubjectLink}}
-          @codePathOne={{this.codePathOne}}
-          @codeOne={{this.codeOne}}
-          @paragraphOne={{this.paragraphOne}}
-          @paragraphTwo={{this.paragraphTwo}}
-          @paragraphThree={{this.paragraphThree}}
-          @codePathTwo={{this.codePathTwo}}
-          @codeTwo={{this.codeTwo}}
-          @paragraphFour={{this.paragraphFour}}
-          @imageOne={{this.imageOne}}
-          @paragraphFive={{this.paragraphFive}}
-          @paragraphSix={{this.paragraphSix}}
-        />
-      </div>
+<div local-class="git_article_component_container">
+  <div local-class="git_article_header_container">
+    <div local-class="git_article_header">
+      <h1>Git For Beginners</h1>
+      <p>Written by <a href="https://www.roderickdevelopers.com/">Roderick Developers</a> & <a
+          href="https://github.com/orgs/Design-Monster/projects/2">Design Monster</a></p>
+    </div>
   </div>
-  
-
+  <div local-class="git_article_content_container">
+    <div local-class="git_article_content">
+      <p>Git commands take a while to get used to. When you first begin you’ll make many mistakes. It’s normal. It’s
+        expected. It would be weird if you didn’t and frankly, after making these mistakes ourselves as new developers,
+        we’d find it kind of annoying if you just magically understood git! Struggle is good. It makes you a better
+        developer.</p>
+      <p> We all stumble with git. Even experienced developers find themselves on the terminal command line staring at
+        it blankly. What was that command again? What am I even doing right now? Git is hard. Or it can be when it wants
+        to be. How do you push your local changes correctly to your GitHub site? How do you commit them and write commit
+        messages? What is the difference between your local stuff and GitHub? What do you mean, there are two things
+        called master(main now) and they are the same but not the same? Git is intimidating. You’ve managed to get your
+        code through this difficult, long, tiring and uplifting incubation period but now that you have to push it
+        (whatever that means), it feels like all that hard work and solid code is made of glass. Things are written!
+        Look! You can see it on the browser and it works! And you want me to do WHAT with it? It feels like typing the
+        wrong command will DESTROY that delicate and sometimes frustrating process and it will be all for naught. And it
+        might. Just kidding. Kind of.</p>
+      <h1>3 Rules for Beginners:</h1>
+      <p>Our hope is that this will help any new developers when working on their portfolio or projects. Think of Git as
+        a bike messenger. It simply brings things that you want to you, and delivers things that other people want from
+        you. You wouldn’t be afraid of a bike messenger would you? Bringing you pizza and cookies and paychecks and
+        packages and other….fun, recreational things? Don’t be afraid of Git. Use it.</p>
+      <p>#1 is: DO NOT WORK DIRECTLY ON MASTER! Checkout a separate branch for every new feature, then merge that branch
+        back into master, then create a new feature branch from the updated master. Every time.</p>
+      <p>#2 is: DO NOT WORK DIRECTLY ON MASTER! Checkout a separate branch for every new feature, then merge that branch
+        back into master, then create a new feature branch from the updated master. Every time.</p>
+      <p>#3 is: DO NOT WORK DIRECTLY ON MASTER! Checkout a separate branch for every new feature, then merge that branch
+        back into master, then create a new feature branch from the updated master. Every time.</p>
+      <p>Just because we do it all the time, doesn’t mean that you should.</p>
+      <h1>COMMON DEFINITIONS:</h1>
+      <h2>'Feature' branch:</h2>
+      <p>This means any branch other than master. You create these branches from master. They can be named anything, but
+        are usually named for the ‘feature’ that you are trying to implement. I.E. ‘add_header’. This would show that
+        you are now in a branch called [add_header], and most likely, you would be doing the work of adding a header to
+        your app. If you complete the ‘feature’ branch that you’re on (as in, you’ve completed coding the header), you
+        merge it into master (described below) and then make a new 'feature' branch from the updated master, perhaps
+        called ‘add_footer’, in which you'd be adding a footer. Get it?</p>
+      <h2>Local branch vs Non-local branch:</h2>
+      <p>Local branch means the branch on your computer. It is a general term for ANY branch whose files are located on
+        your computer. Non-local branch means a branch not located on your computer. There are (or can be) TWO copies of
+        the same branch. One is local (on your computer) and one is NON-local (on GitHub). They are not always synced
+        though, in fact, 99% of the time they are out of sync. That’s because you are working on the code in your local
+        branch, thus making it different from the one on Github.</p>
+      <p>Imagine that you have some crayons and two pictures to color, laid out side by side, maybe a landscape for this
+        example. The pictures are exactly the same, right down to the page number in the bottom corner. One is your
+        local, one is your non-local. You do work on your local picture (branch). To do this, you begin coloring the sky
+        in blue. You do a pretty good job, you’re proud of it. In fact, that’s the best damned sky you’ve ever seen, and
+        you did it! But you start to think, ‘What if someone spills a drink on it? Or my dog chews it up?’ So you want
+        to save that blue sky in a copy somewhere in case this one gets ruined. But look! You have an extra copy right
+        here. The sky isn’t blue, but you can fix that by pushing your work (coloring the sky) into that copy and you
+        can lock it away in a vault where no one can spill a drink on it and your dog doesn't have thumbs so he can't
+        get into the vault and chew it up. You’d have a safe copy of that picture, exactly as it is right now, with the
+        blue sky and the page number and everything else. So that’s what you do. You update that non-local copy (the
+        plain one) with the work that you did to your local copy (by committing the changes and pushing them) and you
+        lock it away in the vault (GitHub).</p>
+      <p>These two branches exist independently of each other. They are the same but different. Until you update the
+        non-local version with the changes you made on your local version, you have two branches that are out of sync.
+        Maybe you start coloring in the trees but don’t push those new changes to your non-local branch, or you
+        accidentally delete the blue sky and don’t remember which shade you used and you need it to match because it was
+        so perfect! Keep them in sync when possible. That way, when something goes wrong, which it will someday at some
+        point, it really will, you can just go onto your non-local copy (GitHub) and easily repair the local copy back
+        to its former glory.</p>
+      <h1>COMMANDS:</h1>
+      <h2>#1 - Your BEST FRIEND on the terminal line is git status</h2>
+      <p>This shows you where you are currently with respect to your files. It’s invaluable. When in doubt, type ‘git
+        status’. It does not affect your files in any way, it’s just a tool to look at them. It will never have an
+        adverse effect.</p>
+      <h1>Step 1:</h1>
+      <p>git status</p>
+        <div local-class="git_code_content">
+          <p>~/your/file/path/to/yourproject <span local-class="master_output">[master]</span>&nbsp;$ git status</p>
+        </div>
+      <p>This will spit out something that looks like this:</p>
+        <div local-class="article_image_container">
+            <img src="/assets/images/gitstatusoutput.png" alt="git status">
+          </div>
+          <div local-class="git_code_content">
+          <p>~/your/file/path/to/yourproject <span local-class="master_output">[master]</span>&nbsp;$ git status<br>On branch master<br>Your branch is up to date with 'origin/master'.<br>
+nothing to commit, working tree clean
+<br>~/your/file/path/to/yourproject <span local-class="master_output">[master]</span> $</p>
+        </div>
+      <h2>#2 - How to make a new branch. </h2>
+      <p>ALWAYS MAKE A NEW BRANCH OFF OF MASTER! Never off of a feature branch. Well ok, not never. There may be
+        circumstances when working with a complicated project or team that this isn’t the case, but 99% of the time, as
+        a beginner, you will always create a new feature branch off of master. So, when in the master branch in your
+        terminal:</p>
+        <div local-class="git_code_content">
+          <p>~/your/file/path/to/yourproject <span local-class="master_output">[master]</span>&nbsp;</p>
+        </div>
+      <h1>Step 1:</h1>
+      <p>git status</p>
+      <p>Which should show you something like this:</p>
+        <div local-class="git_code_content">
+          <p>~/your/file/path/to/yourproject <span local-class="master_output">[master]</span>&nbsp;$ git status</p>
+        </div>
+      <p>Just do it. Every time. See where you’re at. Remember, you should not work on your code, not even a little,
+        while in master. So your local master should have NO changes, as in, when you type git status, you should see
+        the ‘working tree clean’ message. Most of the time this is not needed, but until you get comfortable with git,
+        use this command first. It helps greatly. If you don’t see ‘working tree clean’ while in [master]([main] in new
+        repositories), refer to Rules #1, 2,& 3.</p>
+      <p>Hyphens seem to be the preferred method, but you may use any other types of labeling, just keep it consistent
+        (don’t switch between types).</p>
+        <div local-class="git_code_content">
+          <p>~/your/file/path/to/yourproject <span local-class="master_output">[master]</span>&nbsp;$ git checkout -b "name-of-your-feature-branch"</p>
+        </div>
+      <p>This is what the terminal should spit out:</p>
+        <div local-class="git_code_content">
+          <p>~/your/file/path/to/yourproject <span local-class="master_output">[master]</span>$ git checkout -b "name-of-your-feature-branch"<br>Switched to a new branch 'name-of-your-feature-branch'<br>~/your/file/path/to/yourproject <span local-class="master_output">[name-of-your-feature-branch]</span>&nbsp;$</p>
+        </div>
+      <h1>#3 - How to rename a branch you've already created. </h1>
+      <p>Oops. You spelled something wrong. Or oops, you named that branch after something that you're not even working
+        on. You could delete the branch and make a new one. OR, you could just rename the branch.</p>
+      <h1>Step 1:</h1>
+      <p>Make sure that you're in the branch that you want to rename.</p>
+      <p>git checkout "branch-name"</p>
+      <h1>Step 2:</h1>
+      <p>Yup, you guessed it, git status.  If your working tree isn't clean, commit these changes before renaming th branch.</p>
+      <p>If you have a remote branch (on Github) matching the old local branch name, you'll need to rename that remote
+        branch also.</p>
+        <h1>Step 3:</h1>
+        <p>git branch -m "new-branch-name"</p>
+        <p>which should spit out something like this:</p>
+          <div local-class="git_code_content">
+            <p>~/your/file/path/to/yourproject <span local-class="master_output">[old-branch-name]</span>&nbsp;$ git branch -m new-branch-name<br>/your/file/path/to/yourproject <span local-class="master_output">[new-branch-name]</span>&nbsp;$</p>
+          </div>
+        <p>If you have a remote branch (on Github) matching the old local branch name, you'll need to rename that remote branch also.</p>
+      <h1>Step 4: (if needed):</h1>
+      <p>git push origin -u "new-branch-name"</p>
+      <p>which should spit out something like this:</p>
+        <div local-class="git_code_content">
+          <p>~/your/file/path/to/yourproject <span local-class="master_output">[master]</span>&nbsp;$ git push origin -u new-branch-name<br>
+          Enumerating objects: 16, done.<br>
+          Counting objects: 100% (16/16), done.<br>
+          Delta compression using up to 8 threads<br>
+          Compressing objects: 100% (10/10), done.<br>
+          Writing objects: 100% (13/13), 3.19 KiB | 1.06 MiB/s, done.<br>
+          Total 13 (delta 9), reused 4 (delta 3)<br>
+          remote: Resolving deltas: 100% (9/9), completed with 3 local objects.<br>
+          remote:<br>
+          remote: Create a pull request for 'new-branch-name' on GitHub by visiting:<br>
+          remote:      https://github.com/your/file/path/to/yourproject /pull/new/new-branch-name<br>
+          remote:<br>
+          To https://github.com/your/file/path/to/yourproject.git<br>
+          * [new branch]        new-branch-name -> new-branch-name<br>
+          Branch 'new-branch-name' set up to track remote branch 'your-new-branch' from 'origin' by rebasing.&nbsp;$ git branch -m new-branch-name<br>/your/file/path/to/yourproject <span local-class="master_output">[new-branch-name]</span>&nbsp;$</p>
+        </div>
+      <h2>#4 - How to see which branches you've already created.</h2>
+      <p>Knowing which branches you have created is helpful. Branches will never go away unless you delete them, so they
+        are always available. Say you created a ‘feature’ branch because you wanted to try something crazy that you
+        maybe knew you would never use. Sometimes we just have ideas. So you coded on this branch, did a few days worth
+        of work, didn’t end up getting the feature that you wanted to work, BUT you did something else very cool that
+        you said to yourself, ‘Hey, I might use that later”. A few months go by and you have the perfect place to use
+        that old feature, which you’ve already built or started to build, tucked away in an otherwise unused ‘feature’
+        branch. But what the hell was the name of that feature branch that you worked on so long ago? Here’s how you
+        find out.</p>
+      <h1>Step 1:</h1>
+      <p>git status - seriously.</p>
+      <h1>Step 2:</h1>
+      <p>git branch</p>
+      <p>Which should spit out something like this:</p>
+         <div local-class="git_code_content">
+          <p>~/your/file/path/to/yourproject <span local-class="master_output">[master]</span>&nbsp;$ git branch<br>
+          some-branch<br>
+          another-branch<br>
+          some-other-branch<br>
+          one-more-branch<br>
+          <span local-class="master_output">*[master]</span><br>
+          and-another-branch<br>
+          ~/your/file/path/to/yourproject <span local-class="master_output">[master]</span>&nbsp;$</p>
+        </div>
+      <p>The asterisk shows you which branch you are currently on/in. The others listed are all the other ‘feature’
+        branches that have been created.</p>
+      <h2>#5 - How to switch between branches.</h2>
+      <p>Here’s how to switch back and forth between branches that you’ve already created. We've used this command up
+        above already. Make sure to commit any changes BEFORE you switch branches. And you check to see if there are any
+        uncommitted changes by...</p>
+      <h1>Step 1:</h1>
+      <p>git status</p>
+      <h1>Step 2:</h1>
+      <p>git checkout “name-of-your-feature-branch”</p>
+      <p>Which should spit out something like this:</p>
+        <div local-class="git_code_content">
+          <p>~/your/file/path/to/yourproject <span local-class="master_output">[master]</span>&nbsp;$ git checkout name-of-branch-switching-to<br>Switched to branch 'name-of-branch-switching-to'<br>Your branch is up to date with 'origin/master.<br>~/your/file/path/to/yourproject <span local-class="master_output">[name-of-branch-switching-to]</span>&nbsp;$</p>
+        </div>
+      <h2>#6 - Getting your code changes from your computer to your GitHub </h2>
+      <p>How to create a pull request from your local changes, then push your local ‘feature’ branch, with those local
+        changes, into your non-local matching feature branch (on GitHub). Then you will merge that non-local feature
+        branch into your non-local master branch - all on GitHub. This means that your non-local master branch will be
+        up to date with all of your new code (from your computer - or local 'feature' branch). Then you will pull the
+        non-local master into your local master so that your local master is updated with all of your code from GitHub.
+        Whew! That’s a lot. Basically, get your local changes (the code you wrote) to GitHub and then back down to your
+        master branch on your computer. The breakdown sounds complicated, but the steps are fairly easy. This is one of
+        the hardest concepts to understand as new developer. But, once you've done it a few dozen times, life gets
+        easier. It sounds more complicated than it is.</p>
+      <h1>Step 1:</h1>
+      <p>git status</p>
+      <p>Which should spit out something like this:</p>
+        <div local-class="git_code_content">
+          <p>~/your/file/path/to/yourproject <span local-class="master_output">[name-of-your-feature-branch]</span>&nbsp;$ git status<br>On branch name-of-your-feature-branch<br>Your branch is up to date with 'origin/name-of-your-feature-branch'.<br>Untracked files:<br>(use "git add file..." to include in what will be committed)<br><span local-class="red_output">.somefile/assets/images<br>.somefile/components<br>.somefile/styles</span><br>nothing added to commit but untracked files present (use "git add" to track)<br>~/your/file/path/to/yourproject <span local-class="master_output">[name-of-your-feature-branch]</span></p>
+        </div>
+      <h1>Step 2:</h1>
+      <p>git add .</p>
+      <p>OR</p>
+      <p>git add -a</p>
+      <p>OR</p>
+      <p>git add "fileName"</p>
+      <p>Each of these do different things, but all accomplish the same thing, which is to move your uncommitted changes
+        into the 'staging' area, and get them ready to 'push' to your remote (GitHub) branch. Generally, it is bad
+        practice to use 'git add .' or 'git add -a' and 'git add "fileName"' should be used to add each file
+        individually. If you'd like to know more about the differences, I encourage you to do so.</p>
+      <h1>Step 3:</h1>
+      <p>git status</p>
+      <p>Which should spit out something like this:</p>
+        <div local-class="git_code_content">
+          <p>~/your/file/path/to/yourproject <span local-class="master_output">[name-of-your-feature-branch]</span>&nbsp;$ git status<br>On branch name-of-your-feature-branch<br><br>Your branch is up to date with 'origin/name-of-your-feature-branch'.<br>Changes to be committed:<br>(use "git reset HEAD file..." to unstage)<br><span local-class="master_output">new file: .somefile/assets/images<br>.somefile/components<br>.somefile/styles</span><br>~/your/file/path/to/yourproject <span local-class="master_output">[name-of-your-feature-branch]</span>&nbsp;$ </p>
+        </div>
+      <h1>Step 4:</h1>
+      <p>git commit -m "message"</p>
+      <p>OR</p>
+      <p>git commit</p>
+      <p>Almost always use git commit. It ensures that you write a better commit message explaining what you've done.
+        You can always add a better message on GitHub when using the shorthand -m command, but as always, it's better to
+        do it correctly from the start.</p>
+      <p>When using git commit, your code editor should open up a commit tab, where you can write your title and
+        description of the commit. Simply close that tab when you are done and it will finish staging that commit for
+        you. At this point, everything is still on your local branch. It has not been pushed to GitHub yet!</p>
+      <h1>Step 5:</h1>
+      <p>git push origin "name-of-feature-branch"</p>
+      <p>Which should spit out something like this:</p>
+        <div local-class="git_code_content">
+          <p>~/your/file/path/to/yourproject <span local-class="master_output">[master]</span>&nbsp;$ git status</p>
+        </div>
+      <h1>Step 6:</h1>
+      <p>Create a pull request by visiting the URL that your git push created (shown in red in the image above) - note,
+        it will probably not be in red on your terminal, we just colored it here to highlight it for you.</p>
+      <p>Edit any of the title or description as needed, and finalize the pull request with the green button labeled
+        ‘Create Pull Request”.</p>
+      <h1>Step 7:</h1>
+      <p>This will pop up a new screen with a final step to “merge pull request”. If there are no conflicts the button
+        “merge pull request” will turn green. Click it. This will merge that NON-LOCAL branch (whatever it is) into the
+        NON-LOCAL master. If there are merge conflicts, that's a whole different article. Good luck.</p>
+      <h1>Step 8:</h1>
+      <p>Switch back to your master branch on your local machine with ‘git checkout master’ (it will be ‘git checkout
+        main’ on newer repos). Then, again on your local machine, pull in the changes from your NON-LOCAL master (the
+        GitHub master that you just merged into above) by using ‘git pull origin master’. You're pulling your NON-LOCAL
+        master into your LOCAL master. Now all of your changes from the feature branch have been merged into master on
+        GitHub and have been pulled in from GitHub to your local master branch. They are now in sync.</p>
+      <p>That is it, and you're done! Both the Github master branch and your ‘local’ master branch should contain the
+        EXACT same code and be up to date.</p>
+      <p>After merging into to master, please DO NOT code directly in it. It is VERY EASY to do this, as your code
+        editor will always switch to show the current open branch. That means that if you space out and just start
+        coding, thinking that you’re in a ‘feature’ branch, but haven’t switched into a new branch (git checkout -b
+        ‘new_branch_name’), YOU WILL BE CODING IN MASTER. Don’t do that. Make a new branch for every feature, even
+        something as small as changing one line. Make a new branch, follow the steps above, and merge that branch into
+        master. NEVER WORK IN MASTER!</p>
+      <p>That's it! Basic GIT COMMANDS and explanations from the viewpoint of new developers. We've hoped this has
+        helped!</p>
+        <p>Ryan Roderick of DesignMonster & Matthew Roderick of RoderickDevelopers</p>
+    </div>
+  </div>
+</div>
