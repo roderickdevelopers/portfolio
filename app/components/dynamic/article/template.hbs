@@ -11,11 +11,6 @@
     </div>
   </div>
   <div local-class="article_content_container">
-    {{#if @codePathThree}}
-    <div local-class="code_content">
-      <p>{{@codePathThree}}<span local-class="code_output">{{@codeThree}}</span></p>
-    </div>
-    {{/if}}
     <div local-class="article_content">
       <p>{{@paragraphOne}}</p>
     </div>
@@ -29,11 +24,6 @@
       <h1>{{@headerOne}}</h1>
       <p>{{@paragraphFour}}</p>
     </div>
-    {{#if @codePathOne}}
-    <div local-class="code_content">
-      <p>{{@codePathOne}}<span local-class="code_output">{{@codeOne}}</span></p>
-    </div>
-    {{/if}}
     {{#if @headerOne}}
     <div local-class="article_content">
       <p>{{@paragraphFive}}</p>
@@ -45,11 +35,6 @@
     <div local-class="article_content">
       <p>{{@paragraphSeven}}</p>
     </div>
-     {{#if @codePathTwo}}
-    <div local-class="code_content">
-      <p>{{@codePathTwo}}<span local-class="code_output">{{@codeTwo}}</span></p>
-    </div>
-    {{/if}}
     <div local-class="article_content">
       <h1>{{@headerTwo}}</h1>
       <p>{{@paragraphEight}}</p>
@@ -57,16 +42,12 @@
     <div local-class="article_content">
       <p>{{@paragraphNine}}</p>
     </div>
-    {{#if @gitCodePathTwo}}
-    <div local-class="code_content">
-      <p>{{@codePathTwo}}<span local-class="code_output">{{@codeTwo}}</span></p>
-    </div>
-    {{/if}}
     <div local-class="article_content">
       <p>{{@paragraphTen}}</p>
     </div>
     <div local-class="code_content">
-      <p>{{@codePathTwo}}<span local-class="code_output">{{@codeTwo}}</span></p>
+      <p>// This is our component of ember-mobile-menu in application.hbs<br>{{@codePathOne}}<span
+          local-class="code_output"><br>{{@codeOne}}</span></p>
     </div>
     <div local-class="article_content">
       <p>{{@paragraphEleven}}</p>
@@ -75,23 +56,18 @@
       <h1>{{@headerThree}}</h1>
       <p>{{@paragraphTwelve}}</p>
     </div>
-    {{#if @gitCodePathTwo}}
-    <div local-class="code_content">
-      <p>{{@codePathTwo}}<span local-class="code_output">{{@codeTwo}}</span></p>
-    </div>
-    {{/if}}
     <div local-class="article_content">
       <h1>{{@headerFour}}</h1>
       <p>{{@paragraphThirteen}}</p>
     </div>
-    <div local-class="code_content">
-      <p>{{@codePathOne}}<span local-class="code_output">{{@codeOne}}</span></p>
-    </div>
     <div local-class="article_content">
       <p>{{@paragraphFourteen}}</p>
     </div>
-     <div local-class="code_content">
-      <p>{{@codePathTwo}}<span local-class="code_output">{{@codeTwo}}</span></p>
+    <div local-class="code_content">
+      <p>
+        {{@codePathThree}}<br>&nbsp;&nbsp;&nbsp;{{@codePathFour}}<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{{@codePathFive}}<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;// This is where the Ui for the actual menu would go.<br>&nbsp;&nbsp;&nbsp;{{@codePathSix}}<br><br>&nbsp;&nbsp;&nbsp;&nbsp;{{@codePathSeven}}<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{{@codePathEight}}<span
+          local-class="code_output"><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{{@codeTwoOutlet}}</span><br>&nbsp;&nbsp;&nbsp;&nbsp;{{@codePathNine}}<br>{{@codePathTen}}
+      </p>
     </div>
     <div local-class="article_image_container">
       <img src="{{@imageOne}}" alt={{@imageAltOne}}>
@@ -107,37 +83,27 @@
     <div local-class="article_content">
       <p>{{@paragraphSixteen}}</p>
     </div>
-    {{#if @gitCodePathTwo}}
     <div local-class="code_content">
-      <p>{{@codePathTwo}}<span local-class="code_output">{{@codeTwo}}</span></p>
+      <p>// This is our ember-mobile-menu component called in block form with an \{{outlet}} rendering to the \{{yield}} that can be found in the ember-mobile-menu content section <br>{{@codePathTwo}}<br><span
+          local-class="code_output">{{@codeTwoOutlet}}</span><br>{{@codePathTwo}}</p>
     </div>
-    {{/if}}
     <div local-class="article_content">
       <p>{{@paragraphSeventeen}}</p>
     </div>
-     <div local-class="code_content">
-      <p>{{@codePathTwo}}<span local-class="code_output">{{@codeTwo}}</span></p>
+    <div local-class="code_content">
+       <p>
+        {{@codePathThree}}<br>&nbsp;&nbsp;&nbsp;{{@codePathFour}}<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{{@codePathFive}}<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;// This is where the Ui for the actual menu would go.<br>&nbsp;&nbsp;&nbsp;{{@codePathSix}}<br><br>&nbsp;&nbsp;&nbsp;&nbsp;{{@codePathSeven}}<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{{@codePathEight}}<span
+          local-class="code_output"><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{{@codeEightOutlet}}</span><br>&nbsp;&nbsp;&nbsp;&nbsp;{{@codePathNine}}<br>{{@codePathTen}}
+      </p>
     </div>
     <div local-class="article_content">
       <p>{{@paragraphEighteen}}</p>
     </div>
-     <div local-class="code_content">
-      <p>{{@codePathTwo}}<span local-class="code_output">{{@codeTwo}}</span></p>
-    </div>
     <div local-class="article_content">
       <p>{{@paragraphNineteen}}</p>
     </div>
-     <div local-class="code_content">
-      <p>{{@codePathTwo}}<span local-class="code_output">{{@codeTwo}}</span></p>
-    </div>
     <div local-class="article_content">
       <p>{{@paragraphTwenty}}</p>
-    </div>
-    <div local-class="article_content">
-      <p>{{@paragraphTwentyOne}}</p>
-    </div>
-    <div local-class="article_content">
-      <p>{{@paragraphTwentyTwo}}</p>
     </div>
     {{#if @gitCodePathTwo}}
     <div local-class="code_content">
@@ -145,22 +111,18 @@
     </div>
     {{/if}}
     <div local-class="article_content">
+      <p>{{@paragraphTwentyOne}}</p>
+    </div>
+    <div local-class="code_content">
+      <p>
+        &nbsp;&nbsp;&nbsp;&nbsp;{{@codePathEleven}}<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{{@codePathTwelve}}<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span local-class="code_output">{{@codeTwoOutlet}}</span><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{{@codePathThirteen}}<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{{@codePathFourteen}}<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span local-class="code_output">{{@codeTwoOutlet}}</span><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{{@codePathFifteen}}
+      </p>
+    </div>
+    <div local-class="article_content">
+      <p>{{@paragraphTwentyTwo}}</p>
+    </div>
+    <div local-class="article_content">
       <p>{{@paragraphTwentyThree}}</p>
-    </div>
-    <div local-class="code_content">
-      <p>{{@codePathTwo}}<span local-class="code_output">{{@codeTwo}}</span></p>
-    </div>
-    <div local-class="article_content">
-      <p>{{@paragraphTwentyFour}}</p>
-    </div>
-    <div local-class="code_content">
-      <p>{{@codePathOne}}<span local-class="code_output">{{@codeOne}}</span></p>
-    </div>
-    <div local-class="article_content">
-      <p>{{@paragraphTwentyFive}}</p>
-    </div>
-    <div local-class="article_content">
-      <p>{{@paragraphTwentySix}}</p>
     </div>
   </div>
 </div>

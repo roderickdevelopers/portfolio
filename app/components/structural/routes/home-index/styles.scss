@@ -262,20 +262,17 @@
         font-size: $font_size_large;
         text-align: left;
 
-        a:link {
-          text-decoration: underline;
-        }
-
-        a:link {
+        a {
           color: $color_background;
-        }
-
-        a:visited {
-          color: $color_background;
-        }
-
-        a:hover {
           text-decoration: underline;
+
+          &:visited {
+            color: $color_background;
+          }
+
+          &:hover {
+            text-decoration: underline;
+          }
         }
 
         @include breakpoint(wide) {

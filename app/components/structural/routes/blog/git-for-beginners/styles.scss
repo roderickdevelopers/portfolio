@@ -6,17 +6,17 @@
   min-height: 100vh;
   flex: 1;
   flex-direction: column;
+  background-color: $color_background;
   justify-content: center;
   align-items: center;
-  background-color: $color_background;
 
   .git_article_image_container {
     display: flex;
-    justify-content: center;
-    align-items: center;
     width: 100%;
     max-width: 100px;
     height: auto;
+    justify-content: center;
+    align-items: center;
 
     img {
       max-width: 100%;
@@ -57,9 +57,9 @@
       max-width: 310px;
       margin: 10px 0;
       color: $color_white;
+      word-break: break-all;
       background-color: $color_black; 
       align-self: center;
-      word-break: break-all;
 
       @include breakpoint(medium) {
         min-width: 500px;
@@ -85,13 +85,11 @@
         &.code_output {
           color: $color_yellow;
         }
-      }
-      span {
+
         &.master_output {
           color: $color_green;
         }
-      }
-      span {
+
         &.red_output {
           color: $color_red;
         }

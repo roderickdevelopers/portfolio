@@ -44,14 +44,15 @@
         margin-top: 25px;
         justify-content: center;
         align-items: center;
-        
+
         :hover {
+          border-radius: 2em;
           outline: 0;
           box-shadow: inset 9px 9px 16px $color_box_shadow, inset -9px -9px 16px $color_white;
-          border-radius: 2em;
         }
 
         button {
+          min-width: 115px;
           padding: 15px 30px;
           font-size: $font_size_medium;
           white-space: nowrap;
