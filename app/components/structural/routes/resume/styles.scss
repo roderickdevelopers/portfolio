@@ -1,0 +1,167 @@
+@import 'global/variables';
+@import 'global/breakpoints';
+@import 'global/text_style';
+
+@import 'global/variables';
+@import 'global/breakpoints';
+
+.resume_component_container {
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  background-color: $color_background;
+
+
+  .resume_header_container {
+    display: flex;
+    margin-bottom: 100px;
+
+    .resume_header {
+      flex: 1;
+
+
+      h1 {
+        margin: 10px 0;
+        text-align: center;
+      }
+
+      h6 {
+        margin: 0;
+        color: $color_menu;
+        text-align: center;
+      }
+
+      @include text_style();
+    }
+
+    .resume_header_row {
+      flex: 1;
+      flex-wrap: wrap;
+
+      h1 {
+        margin: 10px 0;
+        text-align: center;
+      }
+
+      h6 {
+        margin: 0;
+        color: $color_menu;
+        text-align: center;
+      }
+
+      @include text_style();
+    }
+  }
+
+  .download_button_container {
+    display: flex;
+    margin: 50px 0 0 $margin_large;
+
+
+    :hover {
+      border-radius: 2em;
+      outline: 0;
+      box-shadow: inset 9px 9px 16px $color_box_shadow, inset -9px -9px 16px $color_white;
+    }
+
+    button {
+      min-width: 145px;
+      padding: 15px 30px;
+      white-space: nowrap;
+      cursor: pointer;
+      background-color: $color_background;
+      border: 0;
+      border-radius: 2em;
+      outline: 0;
+      box-shadow: -9px -9px 16px $color_white, 9px 9px 16px $color_box_shadow;
+    }
+  }
+}
+
+.resume_content_container {
+  display: flex;
+  flex: 1;
+  padding: 3.125rem;
+  font-size: 1.25em;
+
+
+  @include breakpoint(medium) {
+    display: flex;
+    flex: 1;
+    padding: 3.125rem;
+    font-size: 1.25em;
+  }
+
+  @include breakpoint(large) {
+    display: flex;
+    flex: 1;
+    padding: 3.125rem;
+    font-size: 1.25em;
+  }
+
+  @include breakpoint(wide) {
+    display: flex;
+    flex: 1;
+    padding: 3.125rem;
+    font-size: 1.25em;
+  }
+
+
+  .resume_content {
+    min-width: 500px;
+    flex: 1;
+    box-shadow: -9px -9px 16px $color_white, 9px 9px 16px $color_box_shadow;
+
+    h1 {
+      margin-left: 50px;
+      font-weight: bolder;
+    }
+
+    h3 {
+      margin: 0;
+      margin-left: 50px;
+    }
+
+    h4 {
+      margin: 0;
+      margin-left: 50px;
+      color: $color_menu;
+    }
+
+    h5 {
+      margin: 0;
+      margin-left: 50px;
+      color: $color_menu;
+    }
+
+    h6 {
+      margin: 0;
+      color: $color_menu;
+    }
+
+    ul {
+      margin-right: 50px;
+      margin-left: 50px;
+    }
+
+    p {
+      margin-right: 50px;
+      margin-left: 50px;
+    }
+  }
+}
+
+.mobile_view_content_container {
+  display: flex;
+  min-height: 100vh;
+  background-color: $color_background;
+
+  .mobile_view_content {
+    text-align: center;
+
+    p {
+      padding: 100px;
+      margin: 0;
+    }
+  }
+}

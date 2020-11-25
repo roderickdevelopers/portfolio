@@ -7,6 +7,7 @@
   min-height: 100vh;
   flex: 1;
   flex-direction: column;
+  padding-top: 50px;
   background-color: $color_background;
 
   .projects_content_container {
@@ -52,7 +53,7 @@
         }
 
         button {
-          min-width: 115px;
+          min-width: 145px;
           padding: 15px 30px;
           font-size: $font_size_medium;
           white-space: nowrap;
