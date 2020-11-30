@@ -34,7 +34,7 @@
           width: 22ch;
           margin: 0 auto;
           overflow: hidden;
-          font-family: monospace;
+          font-family: vollkorn;
           font-size: 2.5em;
           font-weight: bolder;
           white-space: nowrap;
@@ -42,7 +42,7 @@
           animation: type 2s steps(22), blink 0.5s step-end infinite alternate;
 
           &:nth-child(1) {
-            width: 4em;
+            width: 3em;
             -webkit-animation: type 2s steps(40, end);
             animation: type 2s steps(40, end);
             -webkit-animation-fill-mode: forwards;
@@ -50,7 +50,7 @@
           }
 
           &:nth-child(2) {
-            width: 17em;
+            width: 14em;
             opacity: 0;
             -webkit-animation: type2 2s steps(40, end);
             animation: type2 2s steps(40, end);
@@ -61,7 +61,7 @@
           }
 
           &:nth-child(3) {
-            width: 12.5em;
+            width: 9em;
             opacity: 0;
             -webkit-animation: type3 3s steps(40, end), blink 0.5s step-end infinite alternate;
             animation: type3 3s steps(40, end), blink 0.5s step-end infinite alternate;
@@ -78,7 +78,7 @@
           }
 
           99.9% {
-            border-right: 0.15em solid $color_black;
+            border-right: 3px solid;
           }
 
           100% {
@@ -92,7 +92,7 @@
           }
 
           99.9% {
-            border-right: 0.15em solid $color_black;
+            border-right: 3px solid;
           }
 
           100% {
@@ -110,7 +110,7 @@
           }
 
           99.9% {
-            border-right: 0.15em solid $color_black;
+            border-right: 3px solid;
           }
 
           100% {
@@ -129,7 +129,7 @@
           }
 
           99.9% {
-            border-right: 0.15em solid $color_black;
+            border-right: 3px solid;
           }
 
           100% {
@@ -195,7 +195,7 @@
         -moz-animation-name: bounce 2s infinite;
         justify-content: center;
         align-items: center;
-
+        
         @keyframes bounce {
 
           0%,
@@ -248,7 +248,6 @@
 
       .skills_header_content {
         flex: 1;
-        margin: $margin_extra_large 0 0;
         font-size: 30px;
         font-weight: bolder;
         text-align: center;

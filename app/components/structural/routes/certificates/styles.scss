@@ -16,6 +16,11 @@
     align-items: center;
 
     .certificates_content {
+      
+      h1 {
+        margin: 0;
+        text-align: center;
+      }
       @include text_style();
     }
   }
@@ -43,7 +48,7 @@
 
   .image {
       flex: 1;
-      font-weight: $font_weight_medium;
+      font-weight: $font_weight_small;
 
       img {
         width: 100%;

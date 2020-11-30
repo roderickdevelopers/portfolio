@@ -31,6 +31,10 @@
         display: flex;
         flex: 1;
         justify-content: center;
+
+        h1 {
+          margin: 0;
+        }
       }
 
       @include text_style();
@@ -55,6 +59,7 @@
         button {
           min-width: 145px;
           padding: 15px 30px;
+          font-family: vollkorn;
           font-size: $font_size_medium;
           white-space: nowrap;
           cursor: pointer;
