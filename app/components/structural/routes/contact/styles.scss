@@ -2,183 +2,88 @@
 @import 'global/breakpoints';
 @import 'global/text_style';
 
-.contact_form {
+.contact_component_container {
   display: flex;
   min-height: 100vh;
   flex: 1;
-  color: $color_white;
-  text-align: center;
+  flex-direction: column;
+  padding-top: 50px;
   background-color: $color_background;
-  justify-content: center;
-  align-items: center;
 
-  .contact_content {
+  .contact_content_container {
     display: flex;
-    width: 350px;
-    height: 650px;
     flex: 1;
     flex-direction: column;
-    background-color: $color_menu;
-    border-radius: 2em;
-    box-shadow: $shadow_contact;
-    align-items: center;
+    background-color: $color_background;
     justify-content: center;
+    align-items: center;
 
-    @include breakpoint(large) {
+    .contact_content_container_row {
       display: flex;
-      width: 700px;
-      height: 700px;
       flex: 1;
-      flex-direction: column;
-      background-color: $color_menu;
-      border-radius: 2em;
       justify-content: center;
       align-items: center;
+      flex-wrap: wrap;
+
+
+      &.top {
+        display: flex;
+        flex: 1;
+        justify-content: center;
+
+        h1 {
+          margin: 0;
+          text-decoration: underline;
+        }
+
+        p {
+          margin-bottom: 50px;
+        }
+      }
+
+      @include text_style();
     }
 
-    @include breakpoint(wide) {
+    .contact_card {
       display: flex;
-      width: 700px;
-      height: 700px;
-      flex: 1;
+      width: 275px;
+      max-width: 400px;
+      height: 400px;
+      max-height: 400px;
       flex-direction: column;
-      background-color: $color_menu;
+      margin: auto;
+      margin-bottom: 100px;
+      font-family: vollkorn;
+      text-align: center;
       border-radius: 2em;
-      justify-content: center;
-      align-items: center;
-    }
+      box-shadow: -9px -9px 16px $color_white, 9px 9px 16px $color_box_shadow;
 
-    textarea {
-      text-indent: 1em;
-      background-color: $color_background;
-      border: 0;
-      border-radius: 2em;
-      outline: none;
-    }
-
-    .contact_header {
-      display: flex;
-      font-size: larger;
-      justify-content: center;
-      align-items: center;
-      
+      @include breakpoint(medium) {
+        min-width: 400px;
+        max-width: 400px;
+      }
 
       @include breakpoint(large) {
-        display: flex;
-        font-size: larger;
-        justify-content: center;
-        align-items: center;
+        min-width: 400px;
+        max-width: 400px;
       }
 
       @include breakpoint(wide) {
-        display: flex;
-        font-size: larger;
-        justify-content: center;
-        align-items: center;
-      }
-    }
-
-    .contact_p {
-      display: flex;
-      margin: $margin_extra_large $margin_medium;
-      font-family: 'Roboto Mono', monospace;
-      font-size: $font_size_large;
-      text-align: left;
-      align-items: center;
-      justify-content: center;
-    }
-
-    .contact {
-      display: flex;
-      font-family: 'Roboto Mono', monospace;
-      font-size: large;
-      justify-content: center;
-      align-items: center;
-
-      @include breakpoint(large) {
-        display: flex;
-        font-size: larger;
-        justify-content: center;
-        align-items: center;
+        min-width: 400px;
+        max-width: 400px;
       }
 
-      @include breakpoint(wide) {
-        display: flex;
-        font-size: larger;
-        justify-content: center;
-        align-items: center;
+      img {
+        width: 241px;
+        height: 144px;
+        margin-top: 20px;
+        align-self: center;
+      }
+
+      .contact_title {
+        font-size: 1.125rem;
+        color: $color_menu;
       }
     }
-
-    // .contact_name {
-    //   display: flex;
-    //   margin-bottom: 20px;
-    //   justify-content: center;
-    //   align-items: center;
-
-    //   input {
-    //     min-height: 62px;
-    //     padding: 0 20px 0 23px;
-    //     background-color: $color_background;
-    //     border: 0;
-    //     border-radius: 0.9375rem;
-    //     outline: none;
-    //     box-shadow: $shadow_contact;
-    //   }
-    // }
-
-    // .contact_email {
-    //   display: flex;
-    //   margin-bottom: 20px;
-    //   justify-content: center;
-    //   align-items: center;
-
-    //   input {
-    //     min-height: 62px;
-    //     padding: 0 20px 0 23px;
-    //     background-color: $color_background;
-    //     border: 0;
-    //     border-radius: 0.9375rem;
-    //     outline: none;
-    //     box-shadow: $shadow_contact;
-    //   }
-    // }
-
-    // .text_area {
-    //   display: flex;
-    //   margin-bottom: 20px;
-    //   justify-content: center;
-    //   align-items: center;
-
-    //   textarea {
-    //     background-color: $color_background;
-    //     outline: none;
-    //     border: 0;
-    //     border-radius: 0.9375rem;
-    //     min-height: 199px;
-    //     padding: 19px 20px 0 23px;
-    //     box-shadow: $shadow_contact;
-    //   }
-    // }
-
-    // .contact_send {
-    //   display: flex;
-    //   justify-content: center;
-    //   align-items: center;
-    //   margin-top: 5px;
-
-    //   button {
-    //     padding: 7px 15px;
-    //     font-size: $font_size_medium;
-    //     color: $color_black;
-    //     white-space: nowrap;
-    //     cursor: pointer;
-    //     background-color: $color_background;
-    //     border: 0;
-    //     border-radius: 2em;
-    //     outline: 0;
-    //     box-shadow: $shadow_contact;
-    //   }
-    // }
   }
 }

@@ -1,74 +1,54 @@
+
 @import 'global/variables';
 @import 'global/breakpoints';
-@import 'global/text_style';
 
-.projects_component_container {
-  display: flex;
-  min-height: 100vh;
-  flex: 1;
-  flex-direction: column;
+.portfolio_page_header {
   padding-top: 50px;
+  font-size: $font_size_extra_large;
+  text-align: center;
   background-color: $color_background;
 
-  .projects_content_container {
+  h1 {
+    padding-bottom: 50px;
+    margin: 0;
+    text-decoration: underline;
+  }
+}
+
+.portfolio_page_container {
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+
+  @include breakpoint(large) {
+    flex-direction: row;
+  }
+
+  @include breakpoint(wide) {
+    flex-direction: row;
+  }
+
+  .portfolio_page_side_bar_container {
     display: flex;
+    min-width: 17.1875rem;
+    max-width: 17.1875rem;
+    flex-direction: column;
+    overflow-y: scroll;
+    justify-content: center;
+  }
+
+  .portfolio_page_body_container {
+    display: flex;
+    height: 100vh;
     flex: 1;
     flex-direction: column;
-    background-color: $color_background;
-    justify-content: center;
-    align-items: center;
+    overflow-y: scroll;
 
+    .portfolio_page_dashboard_row_container {
+      margin: 0 0 $margin_large;
 
-    .projects_content_container_row {
-      display: flex;
-      flex: 1;
-      justify-content: center;
-      align-items: center;
-      flex-wrap: wrap;
-
-
-      &.top {
-        display: flex;
-        flex: 1;
-        justify-content: center;
-
-        h1 {
-          margin: 0;
-        }
-      }
-
-      @include text_style();
-      
-    }
-
-    .projects_flipcard_container {
-      margin: 50px;
-
-      .button_container {
-        display: flex;
-        margin-top: 25px;
-        justify-content: center;
-        align-items: center;
-
-        :hover {
-          border-radius: 2em;
-          outline: 0;
-          box-shadow: inset 9px 9px 16px $color_box_shadow, inset -9px -9px 16px $color_white;
-        }
-
-        button {
-          min-width: 145px;
-          padding: 15px 30px;
-          font-family: vollkorn;
-          font-size: $font_size_medium;
-          white-space: nowrap;
-          cursor: pointer;
-          background-color: $color_background;
-          border: 0;
-          border-radius: 2em;
-          outline: 0;
-          box-shadow: -9px -9px 16px $color_white, 9px 9px 16px $color_box_shadow;
-        }
+      &.first {
+        margin: $margin_large 0;
       }
     }
   }

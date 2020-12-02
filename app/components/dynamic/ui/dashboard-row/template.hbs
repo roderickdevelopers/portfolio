@@ -1,0 +1,90 @@
+<div local-class="dashboard_row_header">
+  <div local-class="dashboard_row_header_title">
+    {{@projectTitle}}
+  </div>
+  <div local-class="dashboard_row_header_description">
+    {{@projectDescription}}
+  </div>
+</div>
+<div local-class="dashboard_row_container">
+  <div local-class="dashboard_row">
+    <div local-class="dashboard_block">
+      <div local-class="dashboard_block_image">
+        <img src="{{@blockOneImage}}" alt="Project Cover" />
+      </div>
+    </div>
+    <div local-class="dashboard_block">
+      <div local-class="dashboard_block_icon_container">
+        {{#if @iconOne}}
+          <div local-class="dashboard_block_icon">
+            <img src="{{@iconOne}}" alt="icon">
+          </div>
+        {{/if}}
+        {{#if @iconTwo}}
+        <div local-class="dashboard_block_icon">
+          <img src="{{@iconTwo}}" alt="icon">
+        </div>
+        {{/if}}
+        {{#if @iconThree}}
+        <div local-class="dashboard_block_icon">
+          <img src="{{@iconThree}}" alt="icon">
+        </div>
+        {{/if}}
+      </div>
+      <div local-class="dashboard_block_label">
+        {{@blockTwoLabel}}
+      </div>
+    </div>
+    <div local-class="dashboard_block">
+      <div local-class="dashboard_block_text">
+        {{@blockThreeTextOne}} <br />
+        {{@blockThreeTextTwo}} <br />
+        {{@blockThreeTextThree}} <br />
+        {{@blockThreeTextFour}} <br />
+        {{@blockThreeTextFive}} <br />
+      </div>
+      <div local-class="dashboard_block_label">
+        {{@blockThreeLabel}}
+      </div>
+    </div>
+    <div local-class="dashboard_block">
+      <div local-class="dashboard_block_text">
+        {{@blockFourTextOne}} <br />
+        {{@blockFourTextTwo}} <br />
+        {{@blockFourTextThree}} <br />
+        {{@blockFourTextFour}} <br />
+        {{@blockFourTextFive}} <br />
+      </div>
+      <div local-class="dashboard_block_label">
+        {{@blockFourLabel}}
+      </div>
+    </div>
+    <a href="{{@projectGithubUrl}}" target="_blank" rel="noopener noreferrer" local-class="nav_link first">
+      <div local-class="dashboard_block">
+        <div local-class="dashboard_block_icon_container">
+          <div local-class="dashboard_block_icon">
+            <img src="/assets/images/gitlogo.png" alt="GitHub">
+          </div>
+        </div>
+        <div local-class="dashboard_block_label">
+          {{@blockFiveLabel}}
+        </div>
+      </div>
+    </a>
+    <a href="{{@projectLiveUrl}}" target="_blank" rel="noopener noreferrer">       
+      <div local-class="dashboard_block">
+        <div local-class="dashboard_block_icon_container">
+        <div local-class="dashboard_block_text">
+          <img src="/assets/images/livesite.png" alt="GitHub">
+        </div>
+        </div>
+        <div local-class="dashboard_block_label">
+          {{@blockSixLabel}}
+        </div>
+      </div>
+      </a>
+  </div>
+  {{!-- <div local-class="arrow">
+    >
+  </div> --}}
+</div>

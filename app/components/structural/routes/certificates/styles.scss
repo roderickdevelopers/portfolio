@@ -20,6 +20,7 @@
       h1 {
         margin: 0;
         text-align: center;
+        text-decoration: underline;
       }
       @include text_style();
     }

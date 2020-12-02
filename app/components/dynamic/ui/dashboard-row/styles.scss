@@ -1,0 +1,110 @@
+@import 'global/variables';
+@import 'global/breakpoints';
+@import 'global/text_style';
+
+.dashboard_row_header {
+  padding: $margin_large;
+  font-size: $font_size_extra_large;
+  font-weight: bolder;
+  background-color: $color_background;
+
+  .dashboard_row_header_title {
+    font-size: $font_size_large;
+    text-align: center;
+  }
+
+  .dashboard_row_header_description {
+    max-width: 75vw;
+    margin: $margin_large auto;
+  }  
+}
+
+.dashboard_row_container {
+  display: flex;
+  background-color: $color_background;
+
+  .dashboard_row {
+    display: flex;
+    margin: $margin_small;
+    overflow-x: scroll;
+    align-items: center;
+
+    a {
+      text-decoration: none;
+
+      &:visited {
+        color: $color_black;
+      }
+    }
+
+    .dashboard_block {
+      display: flex;
+      min-width: 300px;
+      max-width: 300px;
+      min-height: 300px;
+      max-height: 300px;
+      flex-direction: column;
+      margin: $margin_extra_small $margin_medium $margin_extra_small $margin_large;
+      background-color: $color_background;
+      border-radius: 15px;
+      box-shadow: -9px -9px 16px $color_white, 9px 9px 16px $color_box_shadow;
+      justify-content: center;
+      align-items: center;
+
+      .dashboard_block_icon_container {
+        display: flex;
+        flex: 1;
+        margin: $margin_extra_small;
+        align-items: center;
+
+        .dashboard_block_icon {
+          display: flex;
+          width: 100%;
+          height: auto;
+          max-height: 300px;
+
+          img {
+            width: 100%;
+            height: auto;
+          }
+        }
+      }
+
+      .dashboard_block_text {
+        display: flex;
+        flex: 1;
+        margin: 1.5625rem .78125rem .78125rem;
+        overflow-y: auto;
+      }
+
+      .dashboard_block_image {
+        display: flex;
+        flex: 1;
+        justify-content: center;
+        align-items: center;
+
+        img {
+          width: 100%;
+          height: auto;
+          max-height: 300px;
+        }
+      }
+
+      .dashboard_block_label {
+        margin: $margin_extra_small;
+        font-size: $font_size_extra_large;
+        font-weight: 600;
+        color: $color_menu;
+      }
+    }
+  }
+
+  // .arrow {
+  //   width: 50px;
+  //   max-height: 305px;
+  //   text-align: center;
+  //   vertical-align: middle;
+  //   line-height: 305px;
+  //   border: $border_two;
+  // }
+}
