@@ -1,88 +1,140 @@
-<div local-class="projects_component_container">
-  <div local-class="projects_content_container">
-    <div local-class="projects_content_container_row top">
-      <h1>Projects</h1>
-      <p>{{this.paragraphOne}}</p>
-    </div>
-    <div local-class="projects_content_container_row">
-      <div local-class="projects_flipcard_container">
-        <Dynamic::Ui::Card @imageFront={{this.imageFrontCardOne}} />
-        <div local-class="button_container">
-          <a href="https://roderickdevelopers.github.io/React_Markdown_Previewer/#/">
-            <Dynamic::Ui::Button::CardButton @labelText={{this.siteLabel}} />
-          </a>
-        </div>
-        <div local-class="button_container">
-          <a href="https://github.com/roderickdevelopers/React_Markdown_Previewer">
-            <Dynamic::Ui::Button::CardButton @labelText={{this.codeLabel}} />
-          </a>
-        </div>
-      </div>
-      <div local-class="projects_flipcard_container">
-        <Dynamic::Ui::Card @imageFront={{this.imageFrontCardTwo}} />
-        <div local-class="button_container">
-          <a href="https://github.com/Design-Monster/Sleepy-Forest-Maple">
-            <Dynamic::Ui::Button::CardButton @labelText={{this.siteLabel}} />
-          </a>
-        </div>
-        <div local-class="button_container">
-          <a href="https://github.com/Design-Monster/Sleepy-Forest-Maple">
-            <Dynamic::Ui::Button::CardButton @labelText={{this.codeLabel}} />
-          </a>
-        </div>
-      </div>
-      <div local-class="projects_flipcard_container">
-        <Dynamic::Ui::Card @imageFront={{this.imageFrontCardThree}} />
-        <div local-class="button_container">
-          <a href="https://roderickdevelopers.github.io/React_Markdown_Previewer/#/">
-            <Dynamic::Ui::Button::CardButton @labelText={{this.siteLabel}} />
-          </a>
-        </div>
-        <div local-class="button_container">
-          <a href="https://github.com/Design-Monster/ember-octane-boilerplate">
-            <Dynamic::Ui::Button::CardButton @labelText={{this.codeLabel}} />
-          </a>
-        </div>
-      </div>
-      <div local-class="projects_flipcard_container">
-        <Dynamic::Ui::Card @imageFront={{this.imageFrontCardFour}} />
-        <div local-class="button_container">
-          <a href="https://roderickdevelopers.github.io/React_Markdown_Previewer/#/">
-            <Dynamic::Ui::Button::CardButton @labelText={{this.siteLabel}} />
-          </a>
-        </div>
-        <div local-class="button_container">
-          <a href="https://github.com/Design-Monster/react-boilerplate">
-            <Dynamic::Ui::Button::CardButton @labelText={{this.codeLabel}} />
-          </a>
-        </div>
-      </div>
-      {{!-- <div local-class="projects_flipcard_container">
-        <Dynamic::Ui::Card @imageFront={{this.imageFrontCardOne}} />
-        <div local-class="button_container">
-          <a href="https://roderickdevelopers.github.io/React_Markdown_Previewer/#/">
-            <Dynamic::Ui::Button::CardButton @labelText={{this.siteLabel}} />
-          </a>
-        </div>
-        <div local-class="button_container">
-          <a href="https://github.com/roderickdevelopers/React_Markdown_Previewer">
-            <Dynamic::Ui::Button::CardButton @labelText={{this.codeLabel}} />
-          </a>
-        </div>
-      </div> --}}
-      {{!-- <div local-class="projects_flipcard_container">
-        <Dynamic::Ui::Card @imageFront={{this.imageFrontCardOne}} />
-        <div local-class="button_container">
-          <a href="https://roderickdevelopers.github.io/React_Markdown_Previewer/#/">
-            <Dynamic::Ui::Button::CardButton @labelText={{this.siteLabel}} />
-          </a>
-        </div>
-        <div local-class="button_container">
-          <a href="https://github.com/roderickdevelopers/React_Markdown_Previewer">
-            <Dynamic::Ui::Button::CardButton @labelText={{this.codeLabel}} />
-          </a>
-        </div>
-      </div> --}}
-    </div>
-  </div>
+<div local-class="portfolio_page_header">
+  <h1>Projects</h1>
 </div>
+
+<div local-class="portfolio_page_dashboard_row_container first">
+      <Dynamic::Ui::DashboardRow
+        @projectTitle={{this.projectOneProjectTitle}}
+        @projectDescription={{this.projectOneProjectDescription}}
+        @blockOneImage={{this.projectOneBlockOneImage}}
+        @iconOne={{this.projectOneIconOne}}
+        @iconTwo={{this.projectOneIconTwo}}
+        @iconThree={{this.projectOneIconThree}}
+        @iconFour={{this.projectOneIconFour}}
+        @blockTwoLabel={{this.projectOneBlockTwoLabel}}
+        @blockThreeTextOne={{this.projectOneBlockThreeTextOne}}
+        @blockThreeTextTwo={{this.projectOneBlockThreeTextTwo}}
+        @blockThreeTextThree={{this.projectOneBlockThreeTextThree}}
+        @blockThreeTextFour={{this.projectOneBlockThreeTextFour}}
+        @blockThreeLabel={{this.projectOneBlockThreeLabel}}  
+        @blockFourTextOne={{this.projectOneBlockFourTextOne}}
+        @blockFourTextTwo={{this.projectOneBlockFourTextTwo}}
+        @blockFourTextThree={{this.projectOneBlockFourTextThree}}
+        @blockFourTextFour={{this.projectOneBlockFourTextFour}}
+        @blockFourTextFive={{this.projectOneBlockFourTextFive}}
+        @blockFourLabel={{this.projectOneBlockFourLabel}}
+        @projectGithubUrl={{this.projectOneGithubUrl}}
+        @projectLiveUrl={{this.projectOneLiveUrl}}
+        @blockFiveText={{this.projectOneBlockFiveText}}
+        @blockFiveLabel={{this.projectOneBlockFiveLabel}}
+        @blockSixText={{this.projectOneBlockSixText}}
+        @blockSixLabel={{this.projectOneBlockSixLabel}}
+      />
+    </div>
+    <div local-class="portfolio_page_dashboard_row_container">
+      <Dynamic::Ui::DashboardRow
+        @projectTitle={{this.projectTwoProjectTitle}}
+        @projectDescription={{this.projectTwoProjectDescription}}
+        @blockOneImage={{this.projectTwoBlockOneImage}}
+        @iconOne={{this.projectTwoIconOne}}
+        @iconTwo={{this.projectTwoIconTwo}}
+        @iconThree={{this.projectTwoIconThree}}
+        @blockTwoLabel={{this.projectTwoBlockTwoLabel}}
+        @blockThreeTextOne={{this.projectTwoBlockThreeTextOne}}
+        @blockThreeTextTwo={{this.projectTwoBlockThreeTextTwo}}
+        @blockThreeTextThree={{this.projectTwoBlockThreeTextThree}}
+        @blockThreeLabel={{this.projectTwoBlockThreeLabel}}  
+        @blockFourTextOne={{this.projectTwoBlockFourTextOne}}
+        @blockFourTextTwo={{this.projectTwoBlockFourTextTwo}}
+        @blockFourTextThree={{this.projectTwoBlockFourTextThree}}
+        @blockFourTextFour={{this.projectTwoBlockFourTextFour}}
+        @blockFourTextFive={{this.projectTwoBlockFourTextFive}}
+        @blockFourLabel={{this.projectTwoBlockFourLabel}}
+        @projectGithubUrl={{this.projectTwoGithubUrl}}
+        @projectLiveUrl={{this.projectTwoLiveUrl}}
+        @blockFiveText={{this.projectTwoBlockFiveText}}
+        @blockFiveLabel={{this.projectTwoBlockFiveLabel}}
+        @blockSixText={{this.projectTwoBlockSixText}}
+        @blockSixLabel={{this.projectTwoBlockSixLabel}}
+      />
+    </div>
+    <div local-class="portfolio_page_dashboard_row_container">
+      <Dynamic::Ui::DashboardRow
+        @projectTitle={{this.projectThreeProjectTitle}}
+        @projectDescription={{this.projectThreeProjectDescription}}
+        @blockOneImage={{this.projectThreeBlockOneImage}}
+        @iconOne={{this.projectThreeIconOne}}
+        @iconTwo={{this.projectThreeIconTwo}}
+        @iconThree={{this.projectThreeIconThree}}
+        @blockTwoLabel={{this.projectThreeBlockTwoLabel}}
+        @blockThreeTextOne={{this.projectThreeBlockThreeTextOne}}
+        @blockThreeTextTwo={{this.projectThreeBlockThreeTextTwo}}
+        @blockThreeTextThree={{this.projectThreeBlockThreeTextThree}}
+        @blockThreeLabel={{this.projectThreeBlockThreeLabel}}  
+        @blockFourTextOne={{this.projectThreeBlockFourTextOne}}
+        @blockFourTextTwo={{this.projectThreeBlockFourTextTwo}}
+        @blockFourTextThree={{this.projectThreeBlockFourTextThree}}
+        @blockFourTextFour={{this.projectThreeBlockFourTextFour}}
+        @blockFourTextFive={{this.projectThreeBlockFourTextFive}}
+        @blockFourLabel={{this.projectThreeBlockFourLabel}}
+        @projectGithubUrl={{this.projectThreeGithubUrl}}
+        @projectLiveUrl={{this.projectThreeLiveUrl}}
+        @blockFiveText={{this.projectThreeBlockFiveText}}
+        @blockFiveLabel={{this.projectThreeBlockFiveLabel}}
+        @blockSixText={{this.projectThreeBlockSixText}}
+        @blockSixLabel={{this.projectThreeBlockSixLabel}}
+      />
+    </div>
+    <div local-class="portfolio_page_dashboard_row_container">
+      <Dynamic::Ui::DashboardRow
+        @projectTitle={{this.projectFourProjectTitle}}
+        @projectDescription={{this.projectFourProjectDescription}}
+        @blockOneImage={{this.projectFourBlockOneImage}}
+        @iconOne={{this.projectFourIconOne}}
+        @iconTwo={{this.projectFourIconTwo}}
+        @iconThree={{this.projectFourIconThree}}
+        @blockTwoLabel={{this.projectFourBlockTwoLabel}}
+        @blockThreeTextOne={{this.projectFourBlockThreeTextOne}}
+        @blockThreeTextTwo={{this.projectFourBlockThreeTextTwo}}
+        @blockThreeTextThree={{this.projectFourBlockThreeTextThree}}
+        @blockThreeLabel={{this.projectFourBlockThreeLabel}}  
+        @blockFourTextOne={{this.projectFourBlockFourTextOne}}
+        @blockFourTextTwo={{this.projectFourBlockFourTextTwo}}
+        @blockFourTextThree={{this.projectFourBlockFourTextThree}}
+        @blockFourTextFour={{this.projectFourBlockFourTextFour}}
+        @blockFourTextFive={{this.projectFourBlockFourTextFive}}
+        @blockFourLabel={{this.projectFourBlockFourLabel}}
+        @projectGithubUrl={{this.projectFourGithubUrl}}
+        @projectLiveUrl={{this.projectFourLiveUrl}}
+        @blockFiveText={{this.projectFourBlockFiveText}}
+        @blockFiveLabel={{this.projectFourBlockFiveLabel}}
+        @blockSixText={{this.projectFourBlockSixText}}
+        @blockSixLabel={{this.projectFourBlockSixLabel}}
+      />
+    </div>
+    {{!-- <div local-class="portfolio_page_dashboard_row_container">
+      <Dynamic::Ui::DashboardRow
+        @projectTitle={{this.projectFiveProjectTitle}}
+        @projectDescription={{this.projectFiveProjectDescription}}
+        @blockOneImage={{this.projectFiveBlockOneImage}}
+        @iconOne={{this.projectFiveIconOne}}
+        @iconTwo={{this.projectFiveIconTwo}}
+        @iconThree={{this.projectFiveIconThree}}
+        @blockTwoLabel={{this.projectFiveBlockTwoLabel}}
+        @blockThreeTextOne={{this.projectFiveBlockThreeTextOne}}
+        @blockThreeTextTwo={{this.projectFiveBlockThreeTextTwo}}
+        @blockThreeTextThree={{this.projectFiveBlockThreeTextThree}}
+        @blockThreeLabel={{this.projectFiveBlockThreeLabel}}  
+        @blockFourTextOne={{this.projectFiveBlockFourTextOne}}
+        @blockFourTextTwo={{this.projectFiveBlockFourTextTwo}}
+        @blockFourTextThree={{this.projectFiveBlockFourTextThree}}
+        @blockFourTextFour={{this.projectFiveBlockFourTextFour}}
+        @blockFourTextFive={{this.projectFiveBlockFourTextFive}}
+        @blockFourLabel={{this.projectFiveBlockFourLabel}}
+        @projectGithubUrl={{this.projectFiveGithubUrl}}
+        @blockFiveText={{this.projectFiveBlockFiveText}}
+        @blockFiveLabel={{this.projectFiveBlockFiveLabel}}
+        @blockSixText={{this.projectFiveBlockSixText}}
+        @blockSixLabel={{this.projectFiveBlockSixLabel}}
+      />
+    </div> --}}

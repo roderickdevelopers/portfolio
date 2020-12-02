@@ -1,29 +1,17 @@
-<div local-class="contact_form">
-  <form name="contact_us" method="POST" action="https://formspree.io/f/mbjpogjv">
-    <div local-class="contact_content">
-      <div local-class="contact_header">
-        <h1>Get in touch with me!</h1>
-      </div>
-      <div local-class="contact_p">
-        <p>👋 Hello and welcome. I am looking for freelance work and am excited to start on a new project for you!</p>
-      </div>
-      <div local-class="contact">
-        RoderickDevelopers@gmail.com
-      </div>
-      {{!-- <div local-class="contact_name">
-        <input type="text" placeholder="Full Name" />
-      </div>
-      <div local-class="contact_email">
-        <input type="text" name="_replyto" placeholder="Email" />
-      </div>
-      <div local-class="text_area">
-        <textarea name="message" placeholder="Your Message"></textarea>
-      </div>
-      <div local-class="contact_send">
-        <button type="submit"> Send
-          <FaIcon @icon="paper-plane" @prefix="far" />
-        </button>
-      </div> --}}
+<div local-class="contact_component_container">
+  <div local-class="contact_content_container">
+    <div local-class="contact_content_container_row top">
+      <h1>Contact Me</h1>
+      <p>{{this.paragraphOne}}</p>
     </div>
-  </form>
+    <div local-class="contact_card">
+      <img src="/assets/images/contact.png" alt="Matthew">
+      <h1>Matthew Roderick</h1>
+        <div local-class="contact_title">
+          Roderick Developers
+        </div>
+      <p>Jr. Developer</p>
+      <h3>roderickdevelopers@gmail.com</h3>
+    </div>
+  </div>
 </div>
