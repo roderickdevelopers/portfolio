@@ -15,6 +15,7 @@ Router.map(function() {
   this.route('certificates');
   this.route('contact');
   this.route('resume');
+  this.route('thank-you');
   this.route('projects', function() {
     this.route('markdown-previewer');
   });
