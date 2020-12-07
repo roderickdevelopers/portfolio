@@ -23,10 +23,6 @@
       &:visited {
         color: $color_background;
       }
-
-      &:hover {
-        text-decoration: underline;
-      }
     }
   }
 
@@ -49,8 +45,17 @@
           color: $color_background;
         }
 
-        &:hover {
-          text-decoration: underline;
+        &:global(.active) {
+          display: flex;
+          width: 80%;
+          height: 40px;
+          font-weight: bolder;
+          color: $color_menu;
+          text-align: center;
+          background-color: $color_background; 
+          border-radius: 2em;    
+          justify-content: center;
+          align-items: center;
         }
       }
     }

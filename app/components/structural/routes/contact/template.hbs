@@ -6,12 +6,27 @@
     </div>
     <div local-class="contact_card">
       <img src="/assets/images/contact.png" alt="Matthew">
-      <h1>Matthew Roderick</h1>
-        <div local-class="contact_title">
-          Roderick Developers
-        </div>
-      <p>Jr. Developer</p>
-      <h3>roderickdevelopers@gmail.com</h3>
+      <div local-class="contact_title">
+        <form action="https://formsubmit.co/roderickdevelopers@gmail.com" method="POST">
+          <div local-class="contact_form">
+            <input type="text" placeholder="Full Name" />
+          </div>
+          <div local-class="contact_email">
+            <input type="text" name="_replyto" placeholder="Email" />
+          </div>
+          <div local-class="text_area">
+            <textarea name="message" placeholder="Your Message"></textarea>
+          </div>
+          <div local-class="contact_send">
+            <button type="submit"> Send
+              <FaIcon @icon="paper-plane" @prefix="far" />
+              <input type="hidden" name="_captcha" value="false">
+              <input type="text" name="_honey" style="display:none">
+              <input type="hidden" name="_next" value="http://localhost:4200/thank-you">
+            </button>
+          </div>
+        </form>
+      </div>
     </div>
   </div>
 </div>

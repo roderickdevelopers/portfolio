@@ -81,7 +81,9 @@ rules:
   no-mergeable-selectors: 2
   no-misspelled-properties:
     - 2
-    - extra-properties: []
+    - extra-properties: 
+      - 'scrollbar-color'
+      - 'scrollbar-width'
   no-qualifying-elements:
     - 2
     - allow-element-with-attribute: false

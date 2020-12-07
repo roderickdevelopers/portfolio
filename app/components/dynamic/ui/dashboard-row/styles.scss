@@ -1,15 +1,16 @@
 @import 'global/variables';
 @import 'global/breakpoints';
 @import 'global/text_style';
+// sass-lint:disable no-vendor-prefixes
 
 .dashboard_row_header {
   padding: $margin_large;
   font-size: $font_size_extra_large;
-  font-weight: bolder;
   background-color: $color_background;
 
   .dashboard_row_header_title {
     font-size: $font_size_large;
+    font-weight: bolder;
     text-align: center;
   }
 
@@ -17,6 +18,7 @@
     max-width: 75vw;
     margin: $margin_large auto;
   }  
+  @include text_style();
 }
 
 .dashboard_row_container {
@@ -27,7 +29,34 @@
     display: flex;
     margin: $margin_small;
     overflow-x: scroll;
+    -webkit-overflow-scrolling: touch;
     align-items: center;
+    scrollbar-color: $scroll_bar $color_background;
+    scrollbar-width: thin;
+
+    ::-webkit-scrollbar {
+      width: 12px;
+    }
+
+    ::-webkit-scrollbar-track {
+      background: $color_background;
+
+      :horizontal {
+        background-color: $color_background;
+      }
+    }
+
+    ::-webkit-scrollbar-thumb {
+      background-color: $scroll_bar;
+      border: 3px solid $color_background;
+      border-radius: 2em;
+
+      :horizontal {
+        background-color: $scroll_bar;
+        border: 3px solid $color_background;
+        border-radius: 2em; 
+      }
+    }
 
     a {
       text-decoration: none;
@@ -73,7 +102,7 @@
       .dashboard_block_text {
         display: flex;
         flex: 1;
-        margin: 1.5625rem .78125rem .78125rem;
+        margin: 1.5625rem 0.78125rem 0.78125rem;
         overflow-y: auto;
       }
 
