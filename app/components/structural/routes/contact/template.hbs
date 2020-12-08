@@ -9,13 +9,13 @@
       <div local-class="contact_title">
         <form action="https://formsubmit.co/roderickdevelopers@gmail.com" method="POST">
           <div local-class="contact_form">
-            <input type="text" placeholder="Full Name" />
+            <input type="text" placeholder="Full Name" required>
           </div>
           <div local-class="contact_email">
-            <input type="text" name="_replyto" placeholder="Email" />
+            <input type="email" name="email" placeholder="Email Address" required>
           </div>
           <div local-class="text_area">
-            <textarea name="message" placeholder="Your Message"></textarea>
+            <textarea name="message" placeholder="Your Message" required></textarea>
           </div>
           <div local-class="contact_send">
             <button type="submit"> Send
