@@ -91,6 +91,7 @@
 
           ::placeholder {
             text-indent: 1em;
+            color: $color_menu;
           }
 
           input {
@@ -110,6 +111,7 @@
 
           ::placeholder {
             text-indent: 1em;
+            color: $color_menu;
           }
 
           input {
@@ -128,7 +130,7 @@
 
           ::placeholder {
             text-indent: 1em;
-            padding-top: 5px;
+            color: $color_menu;
           }
 
           textarea {
@@ -140,7 +142,7 @@
             box-shadow: inset 9px 9px 16px $color_box_shadow, inset -9px -9px 16px $color_white;
             text-indent: 1em;
             border-radius: 15px;
-            padding-top: 5px;
+            padding-top: 1em;
           }
         }
       }

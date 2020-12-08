@@ -53,7 +53,7 @@
         align-items: center;
         
 
-        :hover {
+        :active {
           border-radius: 2em;
           outline: 0;
           box-shadow: inset 9px 9px 16px $color_box_shadow, inset -9px -9px 16px $color_white;
