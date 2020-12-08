@@ -47,7 +47,6 @@
       }
 
       img {
-
         margin-top: 20px;
         margin-bottom: 20px;
         align-self: center;
@@ -59,20 +58,29 @@
         align-items: center;
       }
 
-      button {
-        min-width: 145px;
-        padding: 15px;
-        margin-top: 20px;
-        font-size: $font_size_medium;
-        color: $color_background;
-        white-space: nowrap;
-        cursor: pointer;
-        background-color: $color_menu;
-        border: 0;
-        border-radius: 2em;
-        outline: 0;
-        box-shadow: $shadow_contact;
-        
+      .button_container {
+
+        :hover {
+          border-radius: 2em;
+          outline: 0;
+          box-shadow: inset 9px 9px 16px $color_box_shadow, inset -9px -9px 16px $color_white;
+        }
+
+        button {
+          min-width: 145px;
+          padding: 15px;
+          margin-top: 20px;
+          font-size: $font_size_medium;
+          color: $color_menu;
+          white-space: nowrap;
+          cursor: pointer;
+          background-color: $color_background;
+          border: 0;
+          border-radius: 2em;
+          outline: 0;
+          box-shadow: -9px -9px 16px $color_white, 9px 9px 16px $color_box_shadow;
+
+        }
       }
     }
   }

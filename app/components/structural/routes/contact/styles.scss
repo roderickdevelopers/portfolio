@@ -46,7 +46,7 @@
 
     .contact_card {
       display: flex;
-      width: 275px;
+      width: 300px;
       max-width: 400px;
       height: 500px;
       max-height: 500px;
@@ -90,17 +90,18 @@
           margin-bottom: 20px;
 
           ::placeholder {
-            text-align: center;
+            text-indent: 1em;
           }
 
           input {
             width: 240px;
             height: 30px;
-            text-align: center;
             background-color: $color_background;
             border: 0;
             outline: none;
-            box-shadow: -9px -9px 16px $color_white, 9px 9px 16px $color_box_shadow;
+            box-shadow: inset 9px 9px 16px $color_box_shadow, inset -9px -9px 16px $color_white;
+            text-indent: 1em;
+            border-radius: 15px;
           }
         }
 
@@ -108,52 +109,65 @@
           margin-bottom: 20px;
 
           ::placeholder {
-            text-align: center;
+            text-indent: 1em;
           }
 
           input {
             width: 240px;
             height: 30px;
-            text-align: center;
             background-color: $color_background;
             border: 0;
             outline: none;
-            box-shadow: -9px -9px 16px $color_white, 9px 9px 16px $color_box_shadow;
+            box-shadow: inset 9px 9px 16px $color_box_shadow, inset -9px -9px 16px $color_white;
+            text-indent: 1em;
+            border-radius: 15px;
           }
         }
 
         .text_area {
 
           ::placeholder {
-            text-align: center;
+            text-indent: 1em;
+            padding-top: 5px;
           }
 
           textarea {
             width: 240px;
             height: 90px;
-            text-align: center;
             background-color: $color_background;
             border: 0;
             outline: none;
-            box-shadow: -9px -9px 16px $color_white, 9px 9px 16px $color_box_shadow;
+            box-shadow: inset 9px 9px 16px $color_box_shadow, inset -9px -9px 16px $color_white;
+            text-indent: 1em;
+            border-radius: 15px;
+            padding-top: 5px;
           }
         }
       }
+
+        .contact_send {
+
+          :active {
+            border-radius: 2em;
+            outline: 0;
+            box-shadow: inset 9px 9px 16px $color_box_shadow, inset -9px -9px 16px $color_white;
+          }
 
       button {
         min-width: 145px;
         padding: 15px;
         margin-top: 20px;
         font-size: $font_size_medium;
-        color: $color_background;
+        color: $color_menu;
         white-space: nowrap;
         cursor: pointer;
-        background-color: $color_menu;
+        background-color: $color_background;
         border: 0;
         border-radius: 2em;
         outline: 0;
-        box-shadow: $shadow_contact; 
+        box-shadow: -9px -9px 16px $color_white, 9px 9px 16px $color_box_shadow; 
       }
+    }
     }
   }
 }

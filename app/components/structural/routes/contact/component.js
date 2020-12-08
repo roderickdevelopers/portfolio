@@ -1,7 +1,7 @@
 import Component from '@glimmer/component';
 
 export default class StructuralRoutesContactComponent extends Component {
-  paragraphOne = '👋 Hello and welcome. I am looking for freelance work and am excited to start on a new project for you! ';
+  paragraphOne = 'Email with any questions or inquiries. I would be happy to answer any questions and set up a meeting with you!  ';
 }
 
 
