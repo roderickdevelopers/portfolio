@@ -1,6 +1,7 @@
 @import 'global/variables';
 @import 'global/breakpoints';
 @import 'global/text_style';
+// sass-lint:disable no-vendor-prefixes
 
 .contact_component_container {
   display: flex;
@@ -48,8 +49,8 @@
       display: flex;
       width: 300px;
       max-width: 400px;
-      height: 500px;
-      max-height: 500px;
+      height: 650px;
+      max-height: 650px;
       flex-direction: column;
       margin: auto;
       margin-bottom: 100px;
@@ -89,60 +90,76 @@
         .contact_form {
           margin-bottom: 20px;
 
+          p {
+            text-align: left;
+          }
+
           ::placeholder {
-            text-indent: 1em;
             color: $color_menu;
+            text-indent: 1em; 
           }
 
           input {
             width: 240px;
             height: 30px;
+            text-indent: 1em;
             background-color: $color_background;
             border: 0;
-            outline: none;
-            box-shadow: inset 9px 9px 16px $color_box_shadow, inset -9px -9px 16px $color_white;
-            text-indent: 1em;
             border-radius: 15px;
+            outline: none;
+            -webkit-box-shadow: inset 9px 9px 16px $color_box_shadow, inset -9px -9px 16px $color_white;
+            box-shadow: inset 9px 9px 16px $color_box_shadow, inset -9px -9px 16px $color_white; 
           }
         }
 
         .contact_email {
           margin-bottom: 20px;
 
+          p {
+            text-align: left;
+          }
+
           ::placeholder {
-            text-indent: 1em;
             color: $color_menu;
+            text-indent: 1em;
           }
 
           input {
             width: 240px;
             height: 30px;
+            text-indent: 1em;
             background-color: $color_background;
             border: 0;
-            outline: none;
-            box-shadow: inset 9px 9px 16px $color_box_shadow, inset -9px -9px 16px $color_white;
-            text-indent: 1em;
             border-radius: 15px;
+            outline: none;
+            -webkit-box-shadow: inset 9px 9px 16px $color_box_shadow, inset -9px -9px 16px $color_white;
+            box-shadow: inset 9px 9px 16px $color_box_shadow, inset -9px -9px 16px $color_white; 
           }
         }
 
         .text_area {
 
+          p {
+            text-align: left;
+          }
+
           ::placeholder {
-            text-indent: 1em;
             color: $color_menu;
+            text-indent: 1em;
           }
 
           textarea {
             width: 240px;
             height: 90px;
+            padding-top: 1em;
+            text-indent: 1em;
+            resize: none;
             background-color: $color_background;
             border: 0;
-            outline: none;
-            box-shadow: inset 9px 9px 16px $color_box_shadow, inset -9px -9px 16px $color_white;
-            text-indent: 1em;
             border-radius: 15px;
-            padding-top: 1em;
+            outline: none;
+            -webkit-box-shadow: inset 9px 9px 16px $color_box_shadow, inset -9px -9px 16px $color_white;
+            box-shadow: inset 9px 9px 16px $color_box_shadow, inset -9px -9px 16px $color_white;  
           }
         }
       }
