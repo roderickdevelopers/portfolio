@@ -9,12 +9,15 @@
       <div local-class="contact_title">
         <form action="https://formsubmit.co/roderickdevelopers@gmail.com" method="POST">
           <div local-class="contact_form">
-            <input type="text" placeholder="Full Name" required>
+            <p>Full Name</p>
+            <input type="text" name="name" placeholder="Your Name" required>
           </div>
           <div local-class="contact_email">
-            <input type="email" name="email" placeholder="Email Address" required>
+            <p>Email</p>
+            <input type="email" pattern="^([a-zA-Z0-9_\-\.]+)@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.)|(([a-zA-Z0-9\-]+\.)+))([a-zA-Z]{2,4}|[0-9]{1,3})(\]?)$" name="email" placeholder="your@email.com" required>
           </div>
           <div local-class="text_area">
+            <p>Message</p>
             <textarea name="message" placeholder="Your Message" required></textarea>
           </div>
           <div local-class="contact_send">
@@ -23,6 +26,7 @@
               <input type="hidden" name="_captcha" value="false">
               <input type="text" name="_honey" style="display:none">
               <input type="hidden" name="_next" value="https://roderickdevelopers.netlify.app/thank-you">
+              <input type="hidden" name="_template" value="table">
             </button>
           </div>
         </form>
