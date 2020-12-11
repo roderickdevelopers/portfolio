@@ -30,6 +30,7 @@
     margin: $margin_small;
     overflow-x: scroll;
     -webkit-overflow-scrolling: touch;
+    scroll-snap-type: x mandatory;
     align-items: center;
     scrollbar-color: $scroll_bar $color_background;
     scrollbar-width: thin;
@@ -79,6 +80,7 @@
       box-shadow: -9px -9px 16px $color_white, 9px 9px 16px $color_box_shadow;
       justify-content: center;
       align-items: center;
+      scroll-snap-align: start;
 
       .dashboard_block_icon_container {
         display: flex;

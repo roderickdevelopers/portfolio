@@ -90,8 +90,8 @@
 
 .header {
   display: flex;
-  height: 3.125rem;
-  min-height: 1.5625rem;
+  height: 3.75rem;
+  min-height: 3.75rem;
   background-color: $color_background;
   align-items: center;
 
@@ -101,13 +101,13 @@
       color: $color_menu;
       background-color: $color_background;
       border: 0;
-      outline: none;
+      
     }
   }
 
   .contact_container {
     flex: 1;
-    margin: 0 $margin_extra_small 0 0;
+    margin: 5px $margin_extra_small 0 0;
     font-size: $font_size_medium;
     font-weight: $font_weight_medium;
     color: $color_black;
@@ -137,17 +137,17 @@
 
     @include breakpoint(wide) {
       flex: 1;
-      margin: 0 $margin_extra_small 0 0;
+      margin: 5px $margin_extra_small 0 0;
       font-size: $font_size_extra_large;
       font-weight: $font_weight_medium;
       color: $color_black;
-      text-align: right;
+      text-align: right; 
     }
 
     button {
-      min-width: 145px;
+      min-width: 130px;
+      max-width: 130px;
       padding: 15px 30px;
-      margin-top: 20px;
       font-size: $font_size_medium;
       color: $color_white;
       white-space: nowrap;
@@ -156,6 +156,32 @@
       border: 0;
       border-radius: 2em;
       outline: 0; 
+
+      @include breakpoint(large) {
+        min-width: 145px;
+        padding: 15px 30px;
+        font-size: $font_size_medium;
+        color: $color_white;
+        white-space: nowrap;
+        cursor: pointer;
+        background-color: $color_menu;
+        border: 0;
+        border-radius: 2em;
+        outline: 0; 
+      }
+  
+      @include breakpoint(wide) {
+        min-width: 145px;
+        padding: 15px 30px;
+        font-size: $font_size_medium;
+        color: $color_white;
+        white-space: nowrap;
+        cursor: pointer;
+        background-color: $color_menu;
+        border: 0;
+        border-radius: 2em;
+        outline: 0; 
+      }
     }
   }
 }

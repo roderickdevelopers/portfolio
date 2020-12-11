@@ -15,13 +15,15 @@
           <div local-class="nav_item_container">
             <mm.LinkTo @route="blog">Blog</mm.LinkTo>
           </div>
+          {{#if (or (media 'isLarge') (media 'isMedium') (media 'isWide'))}}
           <div local-class="nav_item_container">
             <mm.LinkTo @route="resume">Resume</mm.LinkTo>
           </div>
+          {{/if}}
         </div>
 
         <div local-class="profile_pic_section">
-          <img src="/assets/images/profilepicsmall.png" alt="profile pic">
+          <img src="https://roderickdevelopers.s3.us-east-2.amazonaws.com/profilepicsmall.png" alt="profile pic">
         </div>
         <div local-class="some_other_section">
           <a href="https://www.linkedin.com/in/roderickdevelopers/">
@@ -43,7 +45,6 @@
         <div local-class="contact_container">
           <LinkTo @route="contact">
             <button id="contact_me" class="button">Contact Me
-            <FaIcon @icon="envelope" @prefix="far" />
             </button>
           </LinkTo>
         </div>
