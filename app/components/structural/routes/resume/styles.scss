@@ -14,7 +14,6 @@
 
   .resume_header_container {
     display: flex;
-    margin-bottom: 100px;
 
     .resume_header {
       flex: 1;
@@ -81,28 +80,25 @@
 .resume_content_container {
   display: flex;
   flex: 1;
-  padding: 3.125rem;
+  margin: 3.125rem;
   font-size: 1.25em;
 
 
   @include breakpoint(medium) {
     display: flex;
     flex: 1;
-    padding: 3.125rem;
     font-size: 1.25em;
   }
 
   @include breakpoint(large) {
     display: flex;
     flex: 1;
-    padding: 3.125rem;
     font-size: 1.25em;
   }
 
   @include breakpoint(wide) {
     display: flex;
     flex: 1;
-    padding: 3.125rem;
     font-size: 1.25em;
   }
 

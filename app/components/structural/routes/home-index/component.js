@@ -6,6 +6,6 @@ export default class StructuralRoutesHomeIndex extends Component {
   paragraphThree = 'I am currently looking for work. I make fast, responsive websites and have used ember.js and react.';
   paragraphFour = 'Enough about me! Go ahead and check out my site and my';
   typingLineOne = 'Hello,';
-  typingLineTwo = 'My Name is Matthew Roderick.';
+  typingLineTwo = 'My Name is Matthew Roderick';
   typingLineThree = 'I am a Jr. Developer!';
 }
