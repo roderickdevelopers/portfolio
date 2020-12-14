@@ -22,21 +22,48 @@
       </ScrollTo>
     </div>
   </div>
-  <div local-class="skills_component_container">
-    <div local-class="skills_header_container" id="about_me">
-      <div local-class="skills_header_content" >
+  
+  <div local-class="skills_component_container_one">
+    <div local-class="skills_header_container_one" id="about_me">
+      <div local-class="skills_header_content_one" >
         <h1>About Me</h1>
       </div>
-      <div local-class="skills_body_content">
+      <div local-class="skills_body_content_one">
         <p>{{this.paragraphOne}} </p>
         <p>{{this.paragraphTwo}}</p>
         <p>{{this.paragraphThree}}</p>
         <p>{{this.paragraphFour}} <LinkTo @route="projects">projects</LinkTo>! </p>
       </div>
     </div>
-    <div local-class="skills_content_container_row">
+    <div local-class="skills_content_container_row_one">
       <div local-class="profile_pic">
         <img src="https://roderickdevelopers.s3.us-east-2.amazonaws.com/profilepic.png" alt="profile pic">
+      </div>
+    </div>
+  </div>
+  
+
+
+   <div local-class="skills_component_container_two">
+    <div local-class="skills_content_container_row_two">
+      <div local-class="profile_pic">
+        <img src="/assets/images/sketch.png" alt="profile pic">
+        <img src="/assets/images/sketch.png" alt="profile pic">
+        <img src="/assets/images/sketch.png" alt="profile pic">
+        <img src="/assets/images/sketch.png" alt="profile pic">
+        <img src="/assets/images/sketch.png" alt="profile pic">
+        <img src="/assets/images/sketch.png" alt="profile pic">
+      </div>
+    </div>
+    <div local-class="skills_header_container_two" id="about_me">
+      <div local-class="skills_header_content_two" >
+        <h1>My Skills</h1>
+      </div>
+      <div local-class="skills_body_content_two">
+        <p>{{this.paragraphOne}} </p>
+        <p>{{this.paragraphTwo}}</p>
+        <p>{{this.paragraphThree}}</p>
+        <p>{{this.paragraphFour}} <LinkTo @route="projects">projects</LinkTo>! </p>
       </div>
     </div>
   </div>
