@@ -1,6 +1,7 @@
 @import 'global/variables';
 @import 'global/breakpoints';
 @import 'global/text_style';
+// sass-lint:disable no-vendor-prefixes
 
 .menu_container {
   display: flex;
@@ -52,8 +53,8 @@
           font-weight: bolder;
           color: $color_menu;
           text-align: center;
-          background-color: $color_background; 
-          border-radius: 2em;    
+          background-color: $color_background;
+          border-radius: 2em;
           justify-content: center;
           align-items: center;
         }
@@ -96,6 +97,36 @@
   align-items: center;
 
   .toggle_container {
+    -webkit-animation: slide-in-left 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+    animation: slide-in-left 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+
+    @-webkit-keyframes slide-in-left {
+      0% {
+        opacity: 0;
+        -webkit-transform: translateX(-1000px);
+        transform: translateX(-1000px);
+      }
+
+      100% {
+        opacity: 1;
+        -webkit-transform: translateX(0);
+        transform: translateX(0);
+      }
+    }
+
+    @keyframes slide-in-left {
+      0% {
+        opacity: 0;
+        -webkit-transform: translateX(-1000px);
+        transform: translateX(-1000px);
+      }
+
+      100% {
+        opacity: 1;
+        -webkit-transform: translateX(0);
+        transform: translateX(0);
+      }
+    }
 
     button {
       color: $color_menu;
@@ -111,6 +142,36 @@
     font-weight: $font_weight_medium;
     color: $color_black;
     text-align: right;
+    -webkit-animation: slide-in-right 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+    animation: slide-in-right 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+
+    @-webkit-keyframes slide-in-right {
+      0% {
+        opacity: 0;
+        -webkit-transform: translateX(1000px);
+        transform: translateX(1000px);
+      }
+
+      100% {
+        opacity: 1;
+        -webkit-transform: translateX(0);
+        transform: translateX(0);
+      }
+    }
+
+    @keyframes slide-in-right {
+      0% {
+        opacity: 0;
+        -webkit-transform: translateX(1000px);
+        transform: translateX(1000px);
+      }
+
+      100% {
+        opacity: 1;
+        -webkit-transform: translateX(0);
+        transform: translateX(0);
+      }
+    }
 
     a {
       color: $color_black;
@@ -140,7 +201,7 @@
       font-size: $font_size_extra_large;
       font-weight: $font_weight_medium;
       color: $color_black;
-      text-align: right; 
+      text-align: right;
     }
 
     button {
@@ -154,7 +215,7 @@
       background-color: $color_menu;
       border: 0;
       border-radius: 2em;
-      outline: 0; 
+      outline: 0;
 
       @include breakpoint(large) {
         min-width: 145px;
@@ -166,9 +227,9 @@
         background-color: $color_menu;
         border: 0;
         border-radius: 2em;
-        outline: 0; 
+        outline: 0;
       }
-  
+
       @include breakpoint(wide) {
         min-width: 145px;
         padding: 15px 30px;
@@ -179,7 +240,7 @@
         background-color: $color_menu;
         border: 0;
         border-radius: 2em;
-        outline: 0; 
+        outline: 0;
       }
     }
   }
