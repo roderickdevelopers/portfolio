@@ -1,8 +1,11 @@
 <div local-class="card_container">
   <div local-class="card">
     <div local-class="card_front">
-      <img src={{@imageFront}} alt="Info Card"> 
+      <picture>
+          <source srcset={{@imageFront}} alt="Info Card" type="image/webp">
+          <img src={{@imageFrontFallBack}} alt="Info Card"> 
+        </picture> 
     </div>
   </div>
 </div>
-  
+        
