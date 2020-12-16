@@ -4,7 +4,9 @@ export default class StructuralRoutesProjectsIndexComponent extends Component {
   projectOneProjectTitle = 'Markdown Previewer';
   projectOneProjectDescription = 'This was a project for FreeCodeCamp, but I wanted to move it from a CodePen over to a real app, so I could understand the process of creating a React app from scratch. I learned a lot from building it.';
   projectOneBlockOneImage = 'https://roderickdevelopers.s3.us-east-2.amazonaws.com/markdownpreview.webp';
+  projectOneBlockOneImageFallBack = 'https://roderickdevelopers.s3.us-east-2.amazonaws.com/markdownpreview.png';
   projectOneIconOne = 'https://roderickdevelopers.s3.us-east-2.amazonaws.com/reactstack.webp';
+  projectOneIconOneFallBack = 'https://roderickdevelopers.s3.us-east-2.amazonaws.com/reactstack.png';
   projectOneIconTwo = '';
   projectOneIconThree = '';
   projectOneIconFour = 'https://roderickdevelopers.s3.us-east-2.amazonaws.com/gitlogo.webp';
@@ -30,7 +32,9 @@ export default class StructuralRoutesProjectsIndexComponent extends Component {
   projectTwoProjectTitle = 'Sleepy Forest Maple';
   projectTwoProjectDescription = 'This was a nice, basic website that was needed for a small company to showcase their products. They wanted to start with a simple layout and have the ability to scale it up easily as they grew.';
   projectTwoBlockOneImage = 'https://roderickdevelopers.s3.us-east-2.amazonaws.com/sleepyforestmaple.webp';
+  projectTwoBlockOneImageFallBack = 'https://roderickdevelopers.s3.us-east-2.amazonaws.com/sleepyforestmaple.png'
   projectTwoIconOne = 'https://roderickdevelopers.s3.us-east-2.amazonaws.com/emberstack.webp';
+  projectTwoIconOneFallBack = 'https://roderickdevelopers.s3.us-east-2.amazonaws.com/emberstack.png';
   projectTwoIconTwo = '';
   projectTwoIconThree = '';
   projectTwoBlockTwoLabel = 'Stack';
@@ -54,7 +58,9 @@ export default class StructuralRoutesProjectsIndexComponent extends Component {
   projectThreeProjectTitle = 'Ember Octane Boilerplate';
   projectThreeProjectDescription = 'I\'ve set up a very nice boilerplate with all the needed add-ons, and a folder structure that splits components into reusable, layout, or utility types.  It uses css-modules with scss, and includes all relevant bases files, such as a variables sheet with some presets and some basic components, such as  skip-link and a button. Updated to the latest Ember Octane!';
   projectThreeBlockOneImage = 'https://roderickdevelopers.s3.us-east-2.amazonaws.com/emberboilerplatelogo.webp';
+  projectThreeBlockOneImageFallBack = 'https://roderickdevelopers.s3.us-east-2.amazonaws.com/emberboilerplatelogo.png';
   projectThreeIconOne = 'https://roderickdevelopers.s3.us-east-2.amazonaws.com/emberstack.webp';
+  projectThreeIconOneFallBack = 'https://roderickdevelopers.s3.us-east-2.amazonaws.com/emberstack.png';
   projectThreeIconTwo = '';
   projectThreeIconThree = '';
   projectThreeBlockTwoLabel = 'Stack';
@@ -78,7 +84,9 @@ export default class StructuralRoutesProjectsIndexComponent extends Component {
   projectFourProjectTitle = 'React Boilerplate';
   projectFourProjectDescription = 'When starting my first React project, I realized that setting up a new project each time could be frustrating.  I have been using my Ember Boilerplate for all my other projects and I\'m used to the file structure, so I set up a React Boilerplate the exact same way!  Now, whether I\'m using React Or Ember I can easily start right up because I am already familiar with the file structure and components.';
   projectFourBlockOneImage = 'https://roderickdevelopers.s3.us-east-2.amazonaws.com/reactboilerplate.webp';
+  projectFourBlockOneImageFallBack = 'https://roderickdevelopers.s3.us-east-2.amazonaws.com/reactboilerplate.png';
   projectFourIconOne = 'https://roderickdevelopers.s3.us-east-2.amazonaws.com/reactstack.webp';
+  projectFourIconOneFallBack = 'https://roderickdevelopers.s3.us-east-2.amazonaws.com/reactstack.png';
   projectFourIconTwo = '';
   projectFourIconThree = '';
   projectFourBlockTwoLabel = 'Stack';

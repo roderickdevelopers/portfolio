@@ -10,15 +10,21 @@
   <div local-class="dashboard_row">
     <div local-class="dashboard_block">
       <div local-class="dashboard_block_image">
-        <img src="{{@blockOneImage}}" alt="Project Cover" />
+        <picture>
+          <source srcset={{@blockOneImage}} alt="Project" type="image/webp">
+          <img src={{@blockOneImageFallBack}} alt="Project"> 
+        </picture> 
       </div>
     </div>
     <div local-class="dashboard_block">
       <div local-class="dashboard_block_icon_container">
         {{#if @iconOne}}
-          <div local-class="dashboard_block_icon">
-            <img src="{{@iconOne}}" alt="icon">
-          </div>
+        <div local-class="dashboard_block_icon">
+          <picture>
+          <source srcset={{@iconOne}} alt="Project" type="image/webp">
+          <img src={{@iconOneFallBack}} alt="Project"> 
+        </picture>
+        </div>
         {{/if}}
         {{#if @iconTwo}}
         <div local-class="dashboard_block_icon">
@@ -63,7 +69,10 @@
       <div local-class="dashboard_block">
         <div local-class="dashboard_block_icon_container">
           <div local-class="dashboard_block_icon">
-            <img src="https://roderickdevelopers.s3.us-east-2.amazonaws.com/gitlogo.webp" alt="GitHub">
+            <picture>
+              <source srcset="https://roderickdevelopers.s3.us-east-2.amazonaws.com/gitlogo.webp" type="image/webp">
+              <img src="https://roderickdevelopers.s3.us-east-2.amazonaws.com/gitlogo.png" alt="Code">
+            </picture>
           </div>
         </div>
         <div local-class="dashboard_block_label">
@@ -71,18 +80,21 @@
         </div>
       </div>
     </a>
-    <a href="{{@projectLiveUrl}}" target="_blank" rel="noopener noreferrer">       
+    <a href="{{@projectLiveUrl}}" target="_blank" rel="noopener noreferrer">
       <div local-class="dashboard_block">
         <div local-class="dashboard_block_icon_container">
-        <div local-class="dashboard_block_text">
-          <img src="https://roderickdevelopers.s3.us-east-2.amazonaws.com/livesite.webp" alt="GitHub">
-        </div>
+          <div local-class="dashboard_block_text">
+            <picture>
+              <source srcset="https://roderickdevelopers.s3.us-east-2.amazonaws.com/livesite.webp" type="image/webp">
+              <img src="https://roderickdevelopers.s3.us-east-2.amazonaws.com/livesite.png" alt="Live Site">
+            </picture>
+          </div>
         </div>
         <div local-class="dashboard_block_label">
           {{@blockSixLabel}}
         </div>
       </div>
-      </a>
+    </a>
   </div>
   {{!-- <div local-class="arrow">
     >

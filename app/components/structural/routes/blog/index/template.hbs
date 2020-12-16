@@ -6,7 +6,9 @@
     </div>
     <div local-class="blog_content_container_row">
       <div local-class="blog_flipcard_container">
-        <Dynamic::Ui::Card @imageFront={{this.imageFrontCardOne}} />
+        <picture>
+          <Dynamic::Ui::Card @imageFront={{this.imageFrontCardOne}} @imageFrontFallBack={{this.imageFrontFallBack}}/>
+        </picture>
         <div local-class="button_container">
           <LinkTo @route="blog.ember-mobile-menu">
             <button type="button" aria-label="Blog Post">Blog Post</button>
@@ -14,7 +16,8 @@
         </div>
       </div>
       <div local-class="blog_flipcard_container">
-        <Dynamic::Ui::Card @imageFront={{this.imageFrontCardTwo}} />
+        <Dynamic::Ui::Card @imageFront={{this.imageFrontCardTwo}}
+        @imageFrontFallBack={{this.imageFrontFallBackTwo}} />
         <div local-class="button_container">
           <LinkTo @route="blog.git-for-beginners">
             <button type="button" aria-label="Blog Post">Blog Post</button>
