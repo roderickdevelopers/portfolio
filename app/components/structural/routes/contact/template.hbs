@@ -6,22 +6,30 @@
     </div>
     <div local-class="contact_card">
       <picture>
-          <source srcset="https://roderickdevelopers.s3.us-east-2.amazonaws.com/contact.webp" type="image/webp">
-          <img src="https://roderickdevelopers.s3.us-east-2.amazonaws.com/contact.png">
-        </picture>
+        <source srcset="https://roderickdevelopers.s3.us-east-2.amazonaws.com/contact.webp" type="image/webp">
+        <img src="https://roderickdevelopers.s3.us-east-2.amazonaws.com/contact.png" alt="Contact Icon">
+      </picture>
       <div local-class="contact_title">
         <form action="https://formsubmit.co/roderickdevelopers@gmail.com" method="POST">
           <div local-class="contact_form">
-            <p>Full Name</p>
-            <input type="text" name="name" placeholder="Your Name" required>
+            <label>
+              <p>Full Name</p>
+              <input type="text" name="name" placeholder="Your Name" required>
+            </label>
           </div>
           <div local-class="contact_email">
-            <p>Email</p>
-            <input type="email" pattern="^([a-zA-Z0-9_\-\.]+)@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.)|(([a-zA-Z0-9\-]+\.)+))([a-zA-Z]{2,4}|[0-9]{1,3})(\]?)$" name="email" placeholder="your@email.com" required>
+            <label>
+              <p>Email</p>
+              <input type="email"
+                pattern="^([a-zA-Z0-9_\-\.]+)@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.)|(([a-zA-Z0-9\-]+\.)+))([a-zA-Z]{2,4}|[0-9]{1,3})(\]?)$"
+                name="email" placeholder="your@email.com" required>
+            </label>
           </div>
           <div local-class="text_area">
-            <p>Message</p>
-            <textarea name="message" placeholder="Your Message" required></textarea>
+            <label>
+              <p>Message</p>
+              <textarea name="message" placeholder="Your Message" required></textarea>
+            </label>
           </div>
           <div local-class="contact_send">
             <button type="submit"> Send
