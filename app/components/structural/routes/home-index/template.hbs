@@ -44,6 +44,7 @@
       </div>
     </div>
   </div>
+  {{#if (or (media 'isLarge') (media 'isWide'))}}
    <div local-class="skills_component_container_two">
     <div local-class="skills_content_container_row_two">
       <div local-class="profile_pic">
@@ -56,25 +57,129 @@
           <img src="https://roderickdevelopers.s3.us-east-2.amazonaws.com/reactsmall.png" alt="Small React Card">
         </picture>
         <picture>
-          <source srcset="https://roderickdevelopers.s3.us-east-2.amazonaws.com/sketch.webp" type="image/webp">
-          <img src="https://roderickdevelopers.s3.us-east-2.amazonaws.com/sketch.png" alt="Small Sketch Card">
+          <source srcset="https://roderickdevelopers.s3.us-east-2.amazonaws.com/htmlsmallcard.webp" type="image/webp">
+          <img src="https://roderickdevelopers.s3.us-east-2.amazonaws.com/htmlsmallcard..png" alt="Small HTML Card">
+        </picture>
+        <picture>
+          <source srcset="https://roderickdevelopers.s3.us-east-2.amazonaws.com/csssmallcard.webp" type="image/webp">
+          <img src="https://roderickdevelopers.s3.us-east-2.amazonaws.com/csssmallcard.png" alt="Small CSS Card">
+        </picture>
+        <picture>
+          <source srcset="https://roderickdevelopers.s3.us-east-2.amazonaws.com/javascriptsmallcard.webp" type="image/webp">
+          <img src="https://roderickdevelopers.s3.us-east-2.amazonaws.com/javascriptsmallcard.png" alt="Small javascript Card">
         </picture>
         <picture>
           <source srcset="https://roderickdevelopers.s3.us-east-2.amazonaws.com/gitsmall.webp" type="image/webp">
           <img src="https://roderickdevelopers.s3.us-east-2.amazonaws.com/gitsmall.png" alt="Small GitHub Card">
         </picture>
+        <picture>
+          <source srcset="https://roderickdevelopers.s3.us-east-2.amazonaws.com/sketch.webp" type="image/webp">
+          <img src="https://roderickdevelopers.s3.us-east-2.amazonaws.com/sketch.png" alt="Small Sketch Card">
+        </picture>
       </div>
     </div>
     <div local-class="skills_header_container_two" id="about_me">
       <div local-class="skills_header_content_two" >
-        <h1>My Skills</h1>
+        <h1>What can I do?</h1>
       </div>
       <div local-class="skills_body_content_two">
         <p>{{this.paragraphFive}} </p>
         <p>{{this.paragraphSix}}</p>
         <p>{{this.paragraphSeven}}</p>
         <p>{{this.paragraphEight}}</p>
+        <p>
+          <h2>Frameworks</h2>
+          <ul>
+            <li>Ember.js</li>
+            <li>React</li>
+            <li>Vue.js (coming soon)</li>
+          </ul>
+        </p>
+        <p>
+          <h2>Essential Skills</h2>
+          <ul>
+            <li>HTML</li>
+            <li>CSS</li>
+            <li>Scss</li>
+            <li>JavaScript</li>
+            <li>GitHub</li>
+            <li>Command line Interface</li>
+            <li>Responsive Design</li>
+            <li>React</li>
+            <li>Ember.js</li>
+          </ul>
+        </p>
       </div>
     </div>
   </div>
+  {{/if}}
+  {{#if (or (media 'isSmall') (media 'isMedium'))}}
+  <div local-class="skills_component_container_two">
+    <div local-class="skills_header_container_two" id="about_me">
+      <div local-class="skills_header_content_two" >
+        <h1>What can I do?</h1>
+      </div>
+      <div local-class="skills_body_content_two">
+        <p>{{this.paragraphFive}} </p>
+        <p>{{this.paragraphSix}}</p>
+        <p>{{this.paragraphSeven}}</p>
+        <p>{{this.paragraphEight}}</p>
+        <p>
+          <h2>Frameworks</h2>
+          <ul>
+            <li>Ember.js</li>
+            <li>React</li>
+            <li>Vue.js (coming soon)</li>
+          </ul>
+        </p>
+        <p>
+          <h2>Essential Skills</h2>
+          <ul>
+            <li>HTML</li>
+            <li>CSS</li>
+            <li>Scss</li>
+            <li>JavaScript</li>
+            <li>GitHub</li>
+            <li>Command line Interface</li>
+            <li>Responsive Design</li>
+            <li>React</li>
+            <li>Ember.js</li>
+          </ul>
+        </p>
+      </div>
+    </div>
+    <div local-class="skills_content_container_row_two">
+      <div local-class="profile_pic">
+       <picture>
+          <source srcset="https://roderickdevelopers.s3.us-east-2.amazonaws.com/embersmall.webp" type="image/webp">
+          <img src="https://roderickdevelopers.s3.us-east-2.amazonaws.com/embersmall.png" alt="Small Ember Card">
+        </picture>
+        <picture>
+          <source srcset="https://roderickdevelopers.s3.us-east-2.amazonaws.com/reactsmall.webp" type="image/webp">
+          <img src="https://roderickdevelopers.s3.us-east-2.amazonaws.com/reactsmall.png" alt="Small React Card">
+        </picture>
+        <picture>
+          <source srcset="https://roderickdevelopers.s3.us-east-2.amazonaws.com/htmlsmallcard.webp" type="image/webp">
+          <img src="https://roderickdevelopers.s3.us-east-2.amazonaws.com/htmlsmallcard..png" alt="Small HTML Card">
+        </picture>
+        <picture>
+          <source srcset="https://roderickdevelopers.s3.us-east-2.amazonaws.com/csssmallcard.webp" type="image/webp">
+          <img src="https://roderickdevelopers.s3.us-east-2.amazonaws.com/csssmallcard.png" alt="Small CSS Card">
+        </picture>
+        <picture>
+          <source srcset="https://roderickdevelopers.s3.us-east-2.amazonaws.com/javascriptsmallcard.webp" type="image/webp">
+          <img src="https://roderickdevelopers.s3.us-east-2.amazonaws.com/javascriptsmallcard.png" alt="Small javascript Card">
+        </picture>
+        <picture>
+          <source srcset="https://roderickdevelopers.s3.us-east-2.amazonaws.com/gitsmall.webp" type="image/webp">
+          <img src="https://roderickdevelopers.s3.us-east-2.amazonaws.com/gitsmall.png" alt="Small GitHub Card">
+        </picture>
+        <picture>
+          <source srcset="https://roderickdevelopers.s3.us-east-2.amazonaws.com/sketch.webp" type="image/webp">
+          <img src="https://roderickdevelopers.s3.us-east-2.amazonaws.com/sketch.png" alt="Small Sketch Card">
+        </picture>
+      </div>
+    </div>
+  </div>
+  {{/if}}
 </div>

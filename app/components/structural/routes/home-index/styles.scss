@@ -178,7 +178,7 @@
       }
 
       .skills_body_content_one {
-        margin: $margin_extra_large $margin_medium;
+        margin: $margin_medium;
         font-size: $font_size_large;
         text-align: left;
 
@@ -276,7 +276,7 @@
       }
 
       .skills_body_content_two {
-        margin: $margin_extra_large $margin_medium;
+        margin: $margin_medium;
         font-size: $font_size_large;
         text-align: left;
 
@@ -312,8 +312,7 @@
       margin-bottom: 50px;
       justify-content: center;
       align-items: center;
-
-
+      
       @include breakpoint(large) {
         display: flex;
         flex: 1;
