@@ -47,7 +47,8 @@
       margin: 10px 0;
       color: $color_white;
       word-break: break-all;
-      background-color: $color_black; 
+      background-color: $code_block; 
+      border-radius: 0.25rem;
       align-self: center;
 
       @include breakpoint(medium) {
@@ -61,13 +62,13 @@
       }
   
       @include breakpoint(wide) {
-        min-width: 1000px;
+        min-width: 750px;
         max-width: 1000px;
       }
 
       p {
-       margin-right: 10px;
-       margin-left: 10px;
+        margin-right: 10px;
+        margin-left: 20px;
       }
 
       span {

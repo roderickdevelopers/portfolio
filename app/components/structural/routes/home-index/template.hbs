@@ -30,16 +30,16 @@
       </div>
       <div local-class="skills_body_content_one">
         <p>{{this.paragraphOne}} </p>
-        <p>{{this.paragraphTwo}}</p>
-        <p>{{this.paragraphThree}}</p>
-        <p>{{this.paragraphFour}} <LinkTo @route="projects">projects</LinkTo>! </p>
+        <p>{{this.paragraphTwo}} <a
+          href="https://github.com/orgs/Design-Monster/projects/2">Design Monster.</a>{{this.paragraphThree}}</p>
+        <p>{{this.paragraphFour}}</p>
       </div>
     </div>
     <div local-class="skills_content_container_row_one">
       <div local-class="profile_pic">
         <picture>
-          <source srcset="https://roderickdevelopers.s3.us-east-2.amazonaws.com/profilepic.webp" type="image/webp">
-          <img src="https://roderickdevelopers.s3.us-east-2.amazonaws.com/profilepic.png" alt="Profile Picture">
+          <source srcset="https://roderickdevelopers.s3.us-east-2.amazonaws.com/profilepic.webp" loading="lazy" type="image/webp">
+          <img src="https://roderickdevelopers.s3.us-east-2.amazonaws.com/profilepic.png" loading="lazy" alt="Profile Picture">
         </picture>
       </div>
     </div>
@@ -49,32 +49,46 @@
     <div local-class="skills_content_container_row_two">
       <div local-class="profile_pic">
         <picture>
-          <source srcset="https://roderickdevelopers.s3.us-east-2.amazonaws.com/embersmall.webp" type="image/webp">
-          <img src="https://roderickdevelopers.s3.us-east-2.amazonaws.com/embersmall.png" alt="Small Ember Card">
+          <a href="https://emberjs.com/">
+          <source srcset="https://roderickdevelopers.s3.us-east-2.amazonaws.com/embersmall.webp" loading="lazy" type="image/webp">
+          <img src="https://roderickdevelopers.s3.us-east-2.amazonaws.com/embersmall.png" loading="lazy" alt="Small Ember Card">
+          </a>
         </picture>
         <picture>
-          <source srcset="https://roderickdevelopers.s3.us-east-2.amazonaws.com/reactsmall.webp" type="image/webp">
-          <img src="https://roderickdevelopers.s3.us-east-2.amazonaws.com/reactsmall.png" alt="Small React Card">
+          <a href="https://reactjs.org/">
+          <source srcset="https://roderickdevelopers.s3.us-east-2.amazonaws.com/reactsmall.webp" loading="lazy" type="image/webp">
+          <img src="https://roderickdevelopers.s3.us-east-2.amazonaws.com/reactsmall.png" loading="lazy" alt="Small React Card">
+          </a>
         </picture>
         <picture>
-          <source srcset="https://roderickdevelopers.s3.us-east-2.amazonaws.com/htmlsmallcard.webp" type="image/webp">
-          <img src="https://roderickdevelopers.s3.us-east-2.amazonaws.com/htmlsmallcard..png" alt="Small HTML Card">
+          <a href="https://developer.mozilla.org/en-US/docs/Web/Guide/HTML/HTML5">
+          <source srcset="https://roderickdevelopers.s3.us-east-2.amazonaws.com/htmlsmallcard.webp" loading="lazy" type="image/webp">
+          <img src="https://roderickdevelopers.s3.us-east-2.amazonaws.com/htmlsmallcard..png" loading="lazy" alt="Small HTML Card">
+          </a>
         </picture>
         <picture>
-          <source srcset="https://roderickdevelopers.s3.us-east-2.amazonaws.com/csssmallcard.webp" type="image/webp">
-          <img src="https://roderickdevelopers.s3.us-east-2.amazonaws.com/csssmallcard.png" alt="Small CSS Card">
+          <a href="https://developer.mozilla.org/en-US/docs/Web/CSS">
+          <source srcset="https://roderickdevelopers.s3.us-east-2.amazonaws.com/csssmallcard.webp" loading="lazy" type="image/webp">
+          <img src="https://roderickdevelopers.s3.us-east-2.amazonaws.com/csssmallcard.png" loading="lazy" alt="Small CSS Card">
+          </a>
         </picture>
         <picture>
-          <source srcset="https://roderickdevelopers.s3.us-east-2.amazonaws.com/javascriptsmallcard.webp" type="image/webp">
-          <img src="https://roderickdevelopers.s3.us-east-2.amazonaws.com/javascriptsmallcard.png" alt="Small javascript Card">
+          <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript">
+          <source srcset="https://roderickdevelopers.s3.us-east-2.amazonaws.com/javascriptsmallcard.webp" loading="lazy" type="image/webp">
+          <img src="https://roderickdevelopers.s3.us-east-2.amazonaws.com/javascriptsmallcard.png" loading="lazy" alt="Small javascript Card">
+          </a>
         </picture>
         <picture>
-          <source srcset="https://roderickdevelopers.s3.us-east-2.amazonaws.com/gitsmall.webp" type="image/webp">
-          <img src="https://roderickdevelopers.s3.us-east-2.amazonaws.com/gitsmall.png" alt="Small GitHub Card">
+          <a href="https://github.com/">
+          <source srcset="https://roderickdevelopers.s3.us-east-2.amazonaws.com/gitsmall.webp" loading="lazy" type="image/webp">
+          <img src="https://roderickdevelopers.s3.us-east-2.amazonaws.com/gitsmall.png" loading="lazy" alt="Small GitHub Card">
+          </a>
         </picture>
         <picture>
-          <source srcset="https://roderickdevelopers.s3.us-east-2.amazonaws.com/sketch.webp" type="image/webp">
-          <img src="https://roderickdevelopers.s3.us-east-2.amazonaws.com/sketch.png" alt="Small Sketch Card">
+          <a href="https://www.sketch.com/">
+          <source srcset="https://roderickdevelopers.s3.us-east-2.amazonaws.com/sketch.webp" loading="lazy" type="image/webp">
+          <img src="https://roderickdevelopers.s3.us-east-2.amazonaws.com/sketch.png" loading="lazy" alt="Small Sketch Card">
+          </a>
         </picture>
       </div>
     </div>
@@ -85,8 +99,7 @@
       <div local-class="skills_body_content_two">
         <p>{{this.paragraphFive}} </p>
         <p>{{this.paragraphSix}}</p>
-        <p>{{this.paragraphSeven}}</p>
-        <p>{{this.paragraphEight}}</p>
+        <p>{{this.paragraphSeven}}<LinkTo @route="projects">projects</LinkTo>!</p>
         <p>
           <h2>Frameworks</h2>
           <ul>
@@ -98,9 +111,8 @@
         <p>
           <h2>Essential Skills</h2>
           <ul>
-            <li>HTML</li>
-            <li>CSS</li>
-            <li>Scss</li>
+            <li>HTML/HTMLBars</li>
+            <li>CSS/SCSS</li>
             <li>JavaScript</li>
             <li>GitHub</li>
             <li>Command line Interface</li>
@@ -122,8 +134,7 @@
       <div local-class="skills_body_content_two">
         <p>{{this.paragraphFive}} </p>
         <p>{{this.paragraphSix}}</p>
-        <p>{{this.paragraphSeven}}</p>
-        <p>{{this.paragraphEight}}</p>
+        <p>{{this.paragraphSeven}}<LinkTo @route="projects">projects</LinkTo>!</p>
         <p>
           <h2>Frameworks</h2>
           <ul>
@@ -135,9 +146,8 @@
         <p>
           <h2>Essential Skills</h2>
           <ul>
-            <li>HTML</li>
-            <li>CSS</li>
-            <li>Scss</li>
+            <li>HTML/HTMLBars</li>
+            <li>CSS/SCSS</li>
             <li>JavaScript</li>
             <li>GitHub</li>
             <li>Command line Interface</li>
@@ -151,32 +161,46 @@
     <div local-class="skills_content_container_row_two">
       <div local-class="profile_pic">
        <picture>
-          <source srcset="https://roderickdevelopers.s3.us-east-2.amazonaws.com/embersmall.webp" type="image/webp">
-          <img src="https://roderickdevelopers.s3.us-east-2.amazonaws.com/embersmall.png" alt="Small Ember Card">
+          <a href="https://emberjs.com/">
+          <source srcset="https://roderickdevelopers.s3.us-east-2.amazonaws.com/embersmall.webp" loading="lazy" type="image/webp">
+          <img src="https://roderickdevelopers.s3.us-east-2.amazonaws.com/embersmall.png" loading="lazy" alt="Small Ember Card">
+          </a>
         </picture>
         <picture>
-          <source srcset="https://roderickdevelopers.s3.us-east-2.amazonaws.com/reactsmall.webp" type="image/webp">
-          <img src="https://roderickdevelopers.s3.us-east-2.amazonaws.com/reactsmall.png" alt="Small React Card">
+          <a href="https://reactjs.org/">
+          <source srcset="https://roderickdevelopers.s3.us-east-2.amazonaws.com/reactsmall.webp" loading="lazy" type="image/webp">
+          <img src="https://roderickdevelopers.s3.us-east-2.amazonaws.com/reactsmall.png" loading="lazy" alt="Small React Card">
+          </a>
         </picture>
         <picture>
-          <source srcset="https://roderickdevelopers.s3.us-east-2.amazonaws.com/htmlsmallcard.webp" type="image/webp">
-          <img src="https://roderickdevelopers.s3.us-east-2.amazonaws.com/htmlsmallcard..png" alt="Small HTML Card">
+          <a href="https://developer.mozilla.org/en-US/docs/Web/Guide/HTML/HTML5">
+          <source srcset="https://roderickdevelopers.s3.us-east-2.amazonaws.com/htmlsmallcard.webp" loading="lazy" type="image/webp">
+          <img src="https://roderickdevelopers.s3.us-east-2.amazonaws.com/htmlsmallcard..png" loading="lazy" alt="Small HTML Card">
+          </a>
         </picture>
         <picture>
-          <source srcset="https://roderickdevelopers.s3.us-east-2.amazonaws.com/csssmallcard.webp" type="image/webp">
-          <img src="https://roderickdevelopers.s3.us-east-2.amazonaws.com/csssmallcard.png" alt="Small CSS Card">
+          <a href="https://developer.mozilla.org/en-US/docs/Web/CSS">
+          <source srcset="https://roderickdevelopers.s3.us-east-2.amazonaws.com/csssmallcard.webp" loading="lazy" type="image/webp">
+          <img src="https://roderickdevelopers.s3.us-east-2.amazonaws.com/csssmallcard.png" loading="lazy" alt="Small CSS Card">
+          </a>
         </picture>
         <picture>
-          <source srcset="https://roderickdevelopers.s3.us-east-2.amazonaws.com/javascriptsmallcard.webp" type="image/webp">
-          <img src="https://roderickdevelopers.s3.us-east-2.amazonaws.com/javascriptsmallcard.png" alt="Small javascript Card">
+          <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript">
+          <source srcset="https://roderickdevelopers.s3.us-east-2.amazonaws.com/javascriptsmallcard.webp" loading="lazy" type="image/webp">
+          <img src="https://roderickdevelopers.s3.us-east-2.amazonaws.com/javascriptsmallcard.png" loading="lazy" alt="Small javascript Card">
+          </a>
         </picture>
         <picture>
-          <source srcset="https://roderickdevelopers.s3.us-east-2.amazonaws.com/gitsmall.webp" type="image/webp">
-          <img src="https://roderickdevelopers.s3.us-east-2.amazonaws.com/gitsmall.png" alt="Small GitHub Card">
+          <a href="https://github.com/">
+          <source srcset="https://roderickdevelopers.s3.us-east-2.amazonaws.com/gitsmall.webp" loading="lazy" type="image/webp">
+          <img src="https://roderickdevelopers.s3.us-east-2.amazonaws.com/gitsmall.png" loading="lazy" alt="Small GitHub Card">
+          </a>
         </picture>
         <picture>
-          <source srcset="https://roderickdevelopers.s3.us-east-2.amazonaws.com/sketch.webp" type="image/webp">
-          <img src="https://roderickdevelopers.s3.us-east-2.amazonaws.com/sketch.png" alt="Small Sketch Card">
+          <a href="https://www.sketch.com/">
+          <source srcset="https://roderickdevelopers.s3.us-east-2.amazonaws.com/sketch.webp" loading="lazy" type="image/webp">
+          <img src="https://roderickdevelopers.s3.us-east-2.amazonaws.com/sketch.png" loading="lazy" alt="Small Sketch Card">
+          </a>
         </picture>
       </div>
     </div>
