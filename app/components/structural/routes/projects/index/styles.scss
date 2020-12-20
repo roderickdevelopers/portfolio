@@ -4,9 +4,21 @@
 
 .portfolio_page_header {
   padding-top: 50px;
-  font-size: $font_size_extra_large;
+  font-size: $font_size_large;
   text-align: center;
   background-color: $color_background;
+
+  @include breakpoint(medium) {
+    font-size: $font_size_large;
+  }
+
+  @include breakpoint(large) {
+    font-size: $font_size_large;
+  }
+
+  @include breakpoint(wide) {
+    font-size: $font_size_extra_large;
+  }
 
   h1 {
     margin: 0;

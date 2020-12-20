@@ -29,7 +29,7 @@ export default class StructuralRoutesProjectsIndexComponent extends Component {
   projectOneBlockSixText = 'Live Site';
   projectOneBlockSixLabel = 'See it in Action';
 
-  projectTwoProjectTitle = 'Sleepy Forest Maple';
+  projectTwoProjectTitle = 'Sleepy Forest Maple (Coming Soon)';
   projectTwoProjectDescription = 'This was a nice, basic website that was needed for a small company to showcase their products. They wanted to start with a simple layout and have the ability to scale it up easily as they grew.';
   projectTwoBlockOneImage = 'https://roderickdevelopers.s3.us-east-2.amazonaws.com/sleepyforestmaple.webp';
   projectTwoBlockOneImageFallBack = 'https://roderickdevelopers.s3.us-east-2.amazonaws.com/sleepyforestmaple.png'
