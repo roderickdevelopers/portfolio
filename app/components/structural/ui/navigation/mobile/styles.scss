@@ -209,6 +209,8 @@
     button {
       min-width: 145px;
       max-width: 145px;
+      min-height: 50px;
+      max-height: 50px;
       padding: 15px 30px;
       font-family: vollkorn;
       font-size: $font_size_medium;
@@ -225,6 +227,8 @@
       @include breakpoint(large) {
         min-width: 145px;
         max-width: 145px;
+        min-height: 50px;
+        max-height: 50px;
         padding: 15px 30px;
         font-family: vollkorn;
         font-size: $font_size_medium;
@@ -250,6 +254,8 @@
       @include breakpoint(wide) {
         min-width: 145px;
         max-width: 145px;
+        min-height: 50px;
+        max-height: 50px;
         padding: 15px 30px;
         font-family: vollkorn;
         font-size: $font_size_medium;

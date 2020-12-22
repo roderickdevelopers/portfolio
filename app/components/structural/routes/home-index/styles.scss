@@ -339,25 +339,26 @@
           margin: 20px;
           border-radius: 2em;
           box-shadow: -9px -9px 16px $color_white, 9px 9px 16px $color_box_shadow;
+          transform: scale(0.9);
 
           @include breakpoint(medium) {
            
             &:hover {
-              transform: scale(1.2);
+              transform: scale(1);
             }
           }
 
           @include breakpoint(large) {
             
             &:hover {
-              transform: scale(1.2);
+              transform: scale(1);
             }
           }
     
           @include breakpoint(wide) {
             
             &:hover {
-              transform: scale(1.2);
+              transform: scale(1);
             }
           }
         }
