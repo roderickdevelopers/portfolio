@@ -15,7 +15,7 @@ export default class StructuralRoutesBlogEmberMobileMenuComponent extends Compon
   codeEightOutlet = '{{yield}}';
   codePathNine = '</mmw.Content>';
   codePathTen = '</MobileMenuWrapper>';
-  codePathEleven = '{{#if (or (media \'is small \' )  (media \'isMedium \' ))}}';
+  codePathEleven = '{{#if (or (media \'is small \' )  (media \'isMedium \' ))}';
   codePathTwelve = '<Dynamic::Ui::Navigation::Mobile>';
   codePathThirteen = '</Dynamic::Ui::Navigation::Mobile>';
   codePathFourteen = '{{else}}';
