@@ -1,35 +1,51 @@
 <!DOCTYPE html>
 <html lang="en-US">
-  <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="keywords" content="roderickdevelopers, roderick, matthew, matt, portfolio, jr.developer">
-    <title>Roderick Developers</title>
-    <meta name="description" content="This is my portfolio site for Roderick Developers">
-    <meta name="author" content="Roderick Developers">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    {{content-for "head"}}
+<head>
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-176568673-1"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
 
-    <link rel="dns-prefetch" href="https://s3.us-east-2.amazonaws.com/roderickdevelopers">
-    <link rel="preconnect" href="https://s3.us-east-2.amazonaws.com/roderickdevelopers">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
-    <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Vollkorn&display=swap">
-    <link rel="stylesheet" media="print" onload="this.onload=null;this.removeAttribute('media');" href="https://fonts.googleapis.com/css2?family=Vollkorn&display=swap">
-    <noscript>
-      <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Vollkorn&display=swap">
-    </noscript>
-    <link integrity="" rel="stylesheet" href="{{rootURL}}assets/vendor.css">
-    <link integrity="" rel="stylesheet" href="{{rootURL}}assets/portfolio.css">
+    function gtag() {
+      dataLayer.push(arguments);
+    }
+    gtag('js', new Date());
 
-    {{content-for "head-footer"}}
-  </head>
-  <body>
-    {{content-for "body"}}
+    gtag('config', 'UA-176568673-1');
+  </script>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="keywords" content="roderickdevelopers, roderick, matthew, matt, portfolio, jr.developer">
+  <title>Roderick Developers</title>
+  <meta name="description" content="This is my portfolio site for Roderick Developers">
+  <meta name="author" content="Roderick Developers">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <script src="{{rootURL}}assets/vendor.js"></script>
-    <script src="{{rootURL}}assets/portfolio.js"></script>
+  {{content-for "head"}}
 
-    {{content-for "body-footer"}}
-  </body>
+  <link rel="dns-prefetch" href="https://s3.us-east-2.amazonaws.com/roderickdevelopers">
+  <link rel="preconnect" href="https://s3.us-east-2.amazonaws.com/roderickdevelopers">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Vollkorn&display=swap">
+  <link rel="stylesheet" media="print" onload="this.onload=null;this.removeAttribute('media');"
+    href="https://fonts.googleapis.com/css2?family=Vollkorn&display=swap">
+  <noscript>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Vollkorn&display=swap">
+  </noscript>
+  <link integrity="" rel="stylesheet" href="{{rootURL}}assets/vendor.css">
+  <link integrity="" rel="stylesheet" href="{{rootURL}}assets/portfolio.css">
+
+  {{content-for "head-footer"}}
+</head>
+
+<body>
+  {{content-for "body"}}
+
+  <script src="{{rootURL}}assets/vendor.js"></script>
+  <script src="{{rootURL}}assets/portfolio.js"></script>
+
+  {{content-for "body-footer"}}
+</body>
+
 </html>

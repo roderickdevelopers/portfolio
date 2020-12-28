@@ -15,11 +15,9 @@
           <div local-class="nav_item_container">
             <mm.LinkTo @route="blog">Blog</mm.LinkTo>
           </div>
-          {{#if (or (media 'isLarge') (media 'isMedium') (media 'isWide'))}}
           <div local-class="nav_item_container">
             <mm.LinkTo @route="resume">Resume</mm.LinkTo>
           </div>
-          {{/if}}
         </div>
         <div local-class="profile_pic_section">
           <picture>
