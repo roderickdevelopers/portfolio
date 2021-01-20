@@ -1,8 +1,8 @@
 import Component from '@glimmer/component';
 
 export default class StructuralRoutesProjectsIndexComponent extends Component {
-  projectOneProjectTitle = 'Markdown Previewer';
-  projectOneProjectDescription = 'This was a project for FreeCodeCamp, but I wanted to move it from a CodePen over to a real app, so I could understand the process of creating a React app from scratch. I learned a lot from building it.';
+  projectOneProjectTitleTop = 'Markdown Previewer';
+  projectOneProjectDescription = 'This was a project for FreeCodeCamp. I wanted to build an actual React Project, so I could understand JSX better and see the file structure they used, so after digging around a bit in react I built a boilerplate and set up a file structure I was used to and build this markdown previewer in the boilerplate I created.';
   projectOneBlockOneImage = 'https://roderickdevelopers.s3.us-east-2.amazonaws.com/markdownpreview.webp';
   projectOneBlockOneImageFallBack = 'https://roderickdevelopers.s3.us-east-2.amazonaws.com/markdownpreview.png';
   projectOneIconOne = 'https://roderickdevelopers.s3.us-east-2.amazonaws.com/reactstack.webp';
@@ -30,7 +30,7 @@ export default class StructuralRoutesProjectsIndexComponent extends Component {
   projectOneBlockSixLabel = 'See it in Action';
 
   projectTwoProjectTitle = 'Sleepy Forest Maple (Coming Soon)';
-  projectTwoProjectDescription = 'This was a nice, basic website that was needed for a small company to showcase their products. They wanted to start with a simple layout and have the ability to scale it up easily as they grew.';
+  projectTwoProjectDescription = 'This is a nice little Maple Syrup Website I built for a small company in Richmond, NH, called Sleepy Forest Maple. It is meant to be a simple layout with room to expand as their company grows.';
   projectTwoBlockOneImage = 'https://roderickdevelopers.s3.us-east-2.amazonaws.com/sleepyforestmaple.webp';
   projectTwoBlockOneImageFallBack = 'https://roderickdevelopers.s3.us-east-2.amazonaws.com/sleepyforestmaple.png'
   projectTwoIconOne = 'https://roderickdevelopers.s3.us-east-2.amazonaws.com/emberstack.webp';
@@ -56,7 +56,7 @@ export default class StructuralRoutesProjectsIndexComponent extends Component {
   projectTwoBlockSixLabel = 'See it in Action';
 
   projectThreeProjectTitle = 'Ember Octane Boilerplate';
-  projectThreeProjectDescription = 'I\'ve set up a very nice boilerplate with all the needed add-ons, and a folder structure that splits components into reusable, layout, or utility types.  It uses css-modules with scss, and includes all relevant bases files, such as a variables sheet with some presets and some basic components, such as  skip-link and a button. Updated to the latest Ember Octane!';
+  projectThreeProjectDescription = 'Since starting in web development I fell in love with Ember.js. I have helped set up a boilerplate with Design Monster with a simple file structure that makes sense to me and makes my workflow much faster. It has all the needed add-ons to get started and make a great site. It has breakpoints included as well as css-modules with scss, variables file with examples, and much more! Please check it out and use it if you\'re interested. Updated to the latest Ember Octane!';
   projectThreeBlockOneImage = 'https://roderickdevelopers.s3.us-east-2.amazonaws.com/emberboilerplatelogo.webp';
   projectThreeBlockOneImageFallBack = 'https://roderickdevelopers.s3.us-east-2.amazonaws.com/emberboilerplatelogo.png';
   projectThreeIconOne = 'https://roderickdevelopers.s3.us-east-2.amazonaws.com/emberstack.webp';
@@ -82,7 +82,7 @@ export default class StructuralRoutesProjectsIndexComponent extends Component {
   projectThreeBlockSixLabel = 'See it in Action';
 
   projectFourProjectTitle = 'React Boilerplate';
-  projectFourProjectDescription = 'When starting my first React project, I realized that setting up a new project each time could be frustrating.  I have been using my Ember Boilerplate for all my other projects and I\'m used to the file structure, so I set up a React Boilerplate the exact same way!  Now, whether I\'m using React Or Ember I can easily start right up because I am already familiar with the file structure and components.';
+  projectFourProjectDescription = 'When starting my first React project, I realized that setting up a new project each time could be frustrating and time consuming.  I have been using my Ember Boilerplate for all my other projects and I\'m used to the file structure, so I set up a React Boilerplate with the same file structure!  Now, when I\'m using React I can easily start right up because I am already familiar with the file structure and components.';
   projectFourBlockOneImage = 'https://roderickdevelopers.s3.us-east-2.amazonaws.com/reactboilerplate.webp';
   projectFourBlockOneImageFallBack = 'https://roderickdevelopers.s3.us-east-2.amazonaws.com/reactboilerplate.png';
   projectFourIconOne = 'https://roderickdevelopers.s3.us-east-2.amazonaws.com/reactstack.webp';
@@ -106,29 +106,30 @@ export default class StructuralRoutesProjectsIndexComponent extends Component {
   projectFourBlockFiveLabel = 'See the Code';
   projectFourBlockSixText = 'Live Site';
   projectFourBlockSixLabel = 'See it in Action';
+  
 
- 
-
-  // projectSixProjectTitle = 'Project 6 React';
-  // projectSixProjectDescription = 'Description Goes Here!!';
-  // projectSixBlockOneImage = '/assets/images/RyanHeadShot.png';
-  // projectSixIconOne = '/assets/images/reacticon.png';
-  // projectSixIconTwo = '';
-  // projectSixIconThree = '';
-  // projectSixBlockTwoLabel = 'Stack';
-  // projectSixBlockThreeTextOne = '1 - This is where a short description of Challenges will go';
-  // projectSixBlockThreeTextTwo = '2 - This is where a short description of Challenges will go';
-  // projectSixBlockThreeTextThree = '3 - This is where a short description of Challenges will go';
-  // projectSixBlockThreeLabel = 'Challenges';
-  // projectSixBlockFourTextOne = '1 - This is where a short description of solutions goes';
-  // projectSixBlockFourTextTwo = '2 - This is where a short description of solutions goes';
-  // projectSixBlockFourTextThree = '3 - This is where a short description of solutions goes';
-  // projectSixBlockFourTextFour = '4 - This is where a short description of solutions goes';
-  // projectSixBlockFourTextFive = '5 - This is where a short description of solutions goes';
-  // projectSixBlockFourLabel = 'Solutions';
-  // projectSixGithubUrl = '';
-  // projectSixBlockFiveText = 'Repo';
-  // projectSixBlockFiveLabel = 'See the Code';
-  // projectSixBlockSixText = 'Live Site';
-  // projectSixBlockSixLabel = 'See it in Action';
+  // projectFiveProjectTitle = 'Vue Boilerplate';
+  // projectFiveProjectDescription = 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Bibendum ut tristique et egestas quis ipsum suspendisse ultrices. Tempor id eu nisl nunc. Nam aliquam sem et tortor consequat id porta nibh. Tincidunt tortor aliquam nulla facilisi cras fermentum odio eu.';
+  // projectFiveBlockOneImage = 'https://roderickdevelopers.s3.us-east-2.amazonaws.com/vueboilerplate.webp';
+  // projectFourBlockOneImageFallBack = 'https://roderickdevelopers.s3.us-east-2.amazonaws.com/vueboilerplate.png';
+  // projectFiveIconOne = 'https://roderickdevelopers.s3.us-east-2.amazonaws.com/vuestack.png';
+  // projectFiveIconOneFallBack = 'https://roderickdevelopers.s3.us-east-2.amazonaws.com/vuestack.png';
+  // projectFiveIconTwo = '';
+  // projectFiveIconThree = '';
+  // projectFiveBlockTwoLabel = 'Stack';
+  // projectFiveBlockThreeTextOne = '1 - This is where a short description of Challenges will go';
+  // projectFiveBlockThreeTextTwo = '2 - This is where a short description of Challenges will go';
+  // projectFiveBlockThreeTextThree = '3 - This is where a short description of Challenges will go';
+  // projectFiveBlockThreeLabel = 'Challenges';
+  // projectFiveBlockFourTextOne = '1 - This is where a short description of solutions goes';
+  // projectFiveBlockFourTextTwo = '2 - This is where a short description of solutions goes';
+  // projectFiveBlockFourTextThree = '3 - This is where a short description of solutions goes';
+  // projectFiveBlockFourTextFour = '4 - This is where a short description of solutions goes';
+  // projectFiveBlockFourTextFive = '5 - This is where a short description of solutions goes';
+  // projectFiveBlockFourLabel = 'Solutions';
+  // projectFiveGithubUrl = '';
+  // projectFiveBlockFiveText = 'Repo';
+  // projectFiveBlockFiveLabel = 'See the Code';
+  // projectFiveBlockSixText = 'Live Site';
+  // projectFiveBlockSixLabel = 'See it in Action';  
 }

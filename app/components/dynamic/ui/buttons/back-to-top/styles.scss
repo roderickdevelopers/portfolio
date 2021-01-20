@@ -1,0 +1,13 @@
+@import 'global/variables';
+// sass-lint:disable no-vendor-prefixes
+
+  button {
+    display: flex;
+    width: 50px;
+    height: 50px;
+    background-color: $color_background;
+    border-radius: 50%;
+    align-items: center;
+    justify-content: center;
+  }
+

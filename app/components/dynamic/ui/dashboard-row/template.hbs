@@ -1,7 +1,15 @@
 <div local-class="dashboard_row_header">
+  <div local-class="dashboard_row_header_title_top">
+    {{@projectTitleTop}}
+  </div>
+  {{#if @projectTitle}}
   <div local-class="dashboard_row_header_title">
+    <br/>
+    <hr/>
+    <br/>
     {{@projectTitle}}
   </div>
+  {{/if}}
   <div local-class="dashboard_row_header_description">
     {{@projectDescription}}
   </div>

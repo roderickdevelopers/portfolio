@@ -8,10 +8,23 @@
   font-size: $font_size_extra_large;
   background-color: $color_background;
 
+  .dashboard_row_header_title_top {
+    font-size: $font_size_large;
+    font-weight: bolder;
+    text-align: center;
+  }
+
   .dashboard_row_header_title {
     font-size: $font_size_large;
     font-weight: bolder;
     text-align: center;
+
+    hr {
+      width: 85%;
+      height: 5px;
+      margin-bottom: 50px;
+      background-color: $color_menu;
+    }
   }
 
   .dashboard_row_header_description {
@@ -26,21 +39,6 @@
   background-color: $color_background;
   justify-content: center;
 
-  @include breakpoint(medium) {
-    display: flex;
-    background-color: $color_background;
-  }
-
-  @include breakpoint(large) {
-    display: flex;
-    background-color: $color_background;
-  }
-
-  @include breakpoint(wide) {
-    display: flex;
-    background-color: $color_background;
-  }
-
   .dashboard_row {
     display: flex;
     flex-direction: column;
@@ -53,24 +51,18 @@
       flex-direction: row;
       overflow-x: scroll;
       -webkit-overflow-scrolling: touch;
-      scrollbar-color: $scroll_bar $color_background;
-      scrollbar-width: thin;
     }
 
     @include breakpoint(large) {
       flex-direction: row;
       overflow-x: scroll;
       -webkit-overflow-scrolling: touch;
-      scrollbar-color: $scroll_bar $color_background;
-      scrollbar-width: thin;
     }
 
     @include breakpoint(wide) {
       flex-direction: row;
       overflow-x: scroll;
-      -webkit-overflow-scrolling: touch;
-      scrollbar-color: $scroll_bar $color_background;
-      scrollbar-width: thin; 
+      -webkit-overflow-scrolling: touch; 
     }
 
     ::-webkit-scrollbar {

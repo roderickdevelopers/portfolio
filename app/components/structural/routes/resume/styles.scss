@@ -2,9 +2,6 @@
 @import 'global/breakpoints';
 @import 'global/text_style';
 
-@import 'global/variables';
-@import 'global/breakpoints';
-
 .resume_component_container {
   display: flex;
   flex: 1;
@@ -56,6 +53,10 @@
     display: flex;
     margin: 50px 0 0 $margin_large;
 
+    a {
+      text-decoration: none;
+    }
+
 
     :active {
       border-radius: 2em;
@@ -64,8 +65,16 @@
     }
 
     button {
+      display: flex;
       min-width: 145px;
+      max-width: 145px;
+      min-height: 50px;
+      max-height: 50px;
       padding: 15px 30px;
+      font-family: vollkorn;
+      font-size: 17px;
+      color: $color_menu;
+      text-transform: uppercase;
       white-space: nowrap;
       cursor: pointer;
       background-color: $color_background;
@@ -73,6 +82,7 @@
       border-radius: 2em;
       outline: 0;
       box-shadow: -9px -9px 16px $color_white, 9px 9px 16px $color_box_shadow;
+      justify-content: center;
     }
   }
 }

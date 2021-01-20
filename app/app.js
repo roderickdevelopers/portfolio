@@ -32,3 +32,4 @@ export default class App extends Application {
 }
 
 loadInitializers(App, config.modulePrefix);
+
