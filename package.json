@@ -55,7 +55,7 @@
     "ember-qunit": "^4.6.0",
     "ember-resolver": "^8.0.2",
     "ember-responsive": "^4.0.0",
-    "ember-router-scroll": "^3.3.2",
+    "ember-router-scroll": "^4.0.0",
     "ember-scroll-to-target": "^1.0.1",
     "ember-source": "~3.21.1",
     "ember-template-lint": "^2.11.0",

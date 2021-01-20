@@ -33,13 +33,20 @@
           </div>
           <div local-class="contact_send">
             <button type="submit"> Send
-              <FaIcon @icon="paper-plane" @prefix="far" />
               <input type="hidden" name="_captcha" value="false">
               <input type="text" name="_honey" style="display:none">
               <input type="hidden" name="_next" value="https://roderickdevelopers.netlify.app/thank-you">
               <input type="hidden" name="_template" value="table">
             </button>
           </div>
+          <div local-class="some_other_section">
+          <a href="https://www.linkedin.com/in/roderickdevelopers/">
+            <FaIcon @icon="linkedin" @prefix="fab" @size=2x /></a>
+          <a href="https://github.com/roderickdevelopers/">
+            <FaIcon @icon="github-square" @prefix="fab" @size=2x /></a>
+          <a href="https://twitter.com/Roderickdev">
+            <FaIcon @icon="twitter-square" @prefix="fab" @size=2x /></a>
+        </div>
         </form>
       </div>
     </div>

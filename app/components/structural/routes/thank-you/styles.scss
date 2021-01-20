@@ -59,6 +59,14 @@
       }
 
       .button_container {
+        display: flex;
+        margin-top: 50px;
+        justify-content: center;
+        align-items: center;
+
+        a {
+          text-decoration: none;
+        }
 
         :active {
           border-radius: 2em;
@@ -67,11 +75,13 @@
         }
 
         button {
+          display: flex;
           min-width: 145px;
           padding: 15px;
-          margin-top: 20px;
-          font-size: $font_size_medium;
+          font-family: vollkorn;
+          font-size: 17px;
           color: $color_menu;
+          text-transform: uppercase;
           white-space: nowrap;
           cursor: pointer;
           background-color: $color_background;

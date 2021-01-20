@@ -4,7 +4,7 @@
 
 <div local-class="portfolio_page_dashboard_row_container first">
       <Dynamic::Ui::DashboardRow
-        @projectTitle={{this.projectOneProjectTitle}}
+        @projectTitleTop={{this.projectOneProjectTitleTop}}
         @projectDescription={{this.projectOneProjectDescription}}
         @blockOneImage={{this.projectOneBlockOneImage}}
         @blockOneImageFallBack={{this.projectOneBlockOneImageFallBack}}
@@ -120,4 +120,33 @@
         @blockSixLabel={{this.projectFourBlockSixLabel}}
       />
     </div>
-    
+
+    {{!-- <div local-class="portfolio_page_dashboard_row_container">
+      <Dynamic::Ui::DashboardRow
+        @projectTitle={{this.projectFiveProjectTitle}}
+        @projectDescription={{this.projectFiveProjectDescription}}
+        @blockOneImage={{this.projectFiveBlockOneImage}}
+        @blockOneImageFallBack={{this.projectFiveBlockOneImageFallBack}}
+        @iconOne={{this.projectFiveIconOne}}
+        @iconOneFallBack={{this.projectFiveIconOneFallBack}}
+        @iconTwo={{this.projectFiveIconTwo}}
+        @iconThree={{this.projectFiveIconThree}}
+        @blockTwoLabel={{this.projectFiveBlockTwoLabel}}
+        @blockThreeTextOne={{this.projectFiveBlockThreeTextOne}}
+        @blockThreeTextTwo={{this.projectFiveBlockThreeTextTwo}}
+        @blockThreeTextThree={{this.projectFiveBlockThreeTextThree}}
+        @blockThreeLabel={{this.projectFiveBlockThreeLabel}}  
+        @blockFourTextOne={{this.projectFiveBlockFourTextOne}}
+        @blockFourTextTwo={{this.projectFiveBlockFourTextTwo}}
+        @blockFourTextThree={{this.projectFiveBlockFourTextThree}}
+        @blockFourTextFour={{this.projectFiveBlockFourTextFour}}
+        @blockFourTextFive={{this.projectFiveBlockFourTextFive}}
+        @blockFourLabel={{this.projectFiveBlockFourLabel}}
+        @projectGithubUrl={{this.projectFiveGithubUrl}}
+        {{!-- @projectLiveUrl={{this.projectFourLiveUrl}} --}}
+        {{!-- @blockFiveText={{this.projectFiveBlockFiveText}}
+        @blockFiveLabel={{this.projectFiveBlockFiveLabel}}
+        @blockSixText={{this.projectFiveBlockSixText}}
+        @blockSixLabel={{this.projectFiveBlockSixLabel}}
+      /> --}}
+    {{!-- </div> --}} 

@@ -51,9 +51,9 @@
           width: 80%;
           height: 40px;
           font-weight: bolder;
-          color: $color_menu;
+          color: $color_background;
           text-align: center;
-          background-color: $color_background;
+          background-color: $mobile_menu_active;
           border-radius: 2em;
           justify-content: center;
           align-items: center;
@@ -80,7 +80,7 @@
 
   .profile_pic_section {
     display: flex;
-    margin-top: $margin_extra_large;
+    margin-top: $margin_large;
     justify-content: center;
 
     img {
@@ -97,10 +97,12 @@
   min-height: 3.75rem;
   background-color: $color_background;
   align-items: center;
+  justify-content: space-between;
 
   .toggle_container {
     -webkit-animation: slide-in-left 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
     animation: slide-in-left 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+    
 
     @-webkit-keyframes slide-in-left {
       0% {
@@ -131,21 +133,48 @@
     }
 
     button {
+      display: flex;
+      min-width: 100px;
+      max-width: 100px;
+      min-height: 50px;
+      max-height: 50px;
+      margin: 15px 0 0 $margin_extra_small;
+      font-family: vollkorn;
+      font-size: $font_size_medium;
       color: $color_menu;
-      background-color: $color_background;
-      border: 0;
+      text-transform: uppercase;
+      border: 3px solid $color_menu;
+      border-radius: 2em;
+      outline: 0;
+      justify-content: center;
+      align-items: center;
+
+      @include breakpoint(large) {
+        min-width: 145px;
+        max-width: 145px;
+        min-height: 50px;
+        max-height: 50px;
+      }
+      
+      @include breakpoint(wide) {
+        min-width: 145px;
+        max-width: 145px;
+        min-height: 50px;
+        max-height: 50px;
+        font-size: 1.0625rem;
+      }
     }
   }
 
   .contact_container {
-    flex: 1;
-    margin: 5px $margin_extra_small 0 0;
+    display: flex;
+    margin: 15px $margin_extra_small 0 0;
     font-size: $font_size_medium;
     font-weight: $font_weight_medium;
     color: $color_black;
-    text-align: right;
     -webkit-animation: slide-in-right 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
     animation: slide-in-right 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+    justify-content: flex-end;
 
     @-webkit-keyframes slide-in-right {
       0% {
@@ -178,35 +207,18 @@
     a {
       color: $color_black;
       text-decoration: none;
-
-      &:visited {
-        color: $color_black;
-      }
-
-      &:hover {
-        text-decoration: underline;
-      }
     }
 
     @include breakpoint(large) {
-      flex: 1;
-      margin: 0 $margin_extra_small 0 0;
       font-size: $font_size_extra_large;
-      font-weight: $font_weight_medium;
-      color: $color_black;
-      text-align: right;
     }
 
     @include breakpoint(wide) {
-      flex: 1;
-      margin: 5px $margin_extra_small 0 0;
       font-size: $font_size_extra_large;
-      font-weight: $font_weight_medium;
-      color: $color_black;
-      text-align: right;
     }
 
     button {
+      display: flex;
       min-width: 145px;
       max-width: 145px;
       min-height: 50px;
@@ -223,25 +235,10 @@
       border-radius: 2em;
       outline: 0;
       transition: all 0.4s ease 0s;
+      justify-content: center;
 
       @include breakpoint(large) {
-        min-width: 145px;
-        max-width: 145px;
-        min-height: 50px;
-        max-height: 50px;
-        padding: 15px 30px;
-        font-family: vollkorn;
-        font-size: $font_size_medium;
-        color: $color_white;
-        text-transform: uppercase;
-        white-space: nowrap;
-        cursor: pointer;
-        background-color: $color_menu;
-        border: 0;
-        border-radius: 2em;
-        outline: 0;
-        transition: all 0.4s ease 0s;
-
+       
         &:hover {
           text-shadow: $text_shadow;
           -webkit-box-shadow: $shadow_contact;
@@ -252,22 +249,7 @@
       }
 
       @include breakpoint(wide) {
-        min-width: 145px;
-        max-width: 145px;
-        min-height: 50px;
-        max-height: 50px;
-        padding: 15px 30px;
-        font-family: vollkorn;
-        font-size: $font_size_medium;
-        color: $color_white;
-        text-transform: uppercase;
-        white-space: nowrap;
-        cursor: pointer;
-        background-color: $color_menu;
-        border: 0;
-        border-radius: 2em;
-        outline: 0;
-        transition: all 0.4s ease 0s;
+        font-size: 1.0625rem;
 
         &:hover {
           text-shadow: $text_shadow;

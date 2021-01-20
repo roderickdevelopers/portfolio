@@ -31,13 +31,12 @@
     display: flex;
     flex: 1;
     flex-direction: column;
-    font-size: $font_size_extra_large;
     text-align: center;
     justify-content: center;
     align-items: center;
     
     @include breakpoint(medium) {
-      flex-direction: row;
+      font-size: 30px;
     }
 
     @include breakpoint(large) {
@@ -51,6 +50,23 @@
   .image {
       flex: 1;
       font-weight: $font_weight_small;
+
+      p {
+        margin-bottom: 0;
+        font-size: 28px;
+
+        @include breakpoint(medium) {
+          font-size: 40px;
+        }
+    
+        @include breakpoint(large) {
+          font-size: 25px;
+        }
+    
+        @include breakpoint(wide) {
+          font-size: 40px;
+        }
+      }
 
       img {
         width: 100%;
