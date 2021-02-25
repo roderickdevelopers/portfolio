@@ -15,14 +15,14 @@ export default class StructuralRoutesHomeIndex extends Component {
   typingLineTwo = 'My name is Matthew Roderick';
   typingLineThree = 'I\'m a Front End Developer!';
 
-    @action
+  @action 
     backToTop() {
       // console.log("You just fired the back to top action when you clicked back to top button");
       window.scrollTo({
-        top: 0,
+        top: 0, 
         left: 0,
-        behavior: "smooth"
+        behavior: "smooth" 
       });
-    }
   }
+}
 

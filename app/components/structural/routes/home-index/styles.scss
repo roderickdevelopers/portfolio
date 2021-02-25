@@ -7,6 +7,15 @@
   flex-direction: column;
   background-color: $color_background;
 
+  @include breakpoint(large) {
+    padding-top: 100px;
+
+  }
+
+  @include breakpoint(wide) {
+    padding-top: 100px;
+  }
+
   .hero_image_content_container {
     display: flex;
     height: calc(100vh - 3.125rem);
@@ -156,10 +165,12 @@
 
       @include breakpoint(large) {
         flex-direction: row;
+        margin-top: 50px;
       }
 
       @include breakpoint(wide) {
         flex-direction: row;
+        margin-top: 50px;
       }
 
       .about_me_description_container {
@@ -343,6 +354,14 @@
     .skills_title_container {
       flex: 1;
 
+      @include breakpoint(large) {
+        margin-top: 50px;
+      }
+  
+      @include breakpoint(wide) {
+        margin-top: 50px;
+      }
+
       .skills_title {
         flex: 1;
         font-size: 30px;
@@ -378,31 +397,41 @@
     }
   }
 
-  // .back_to_top_button_container {
-  //   display: flex;
-  //   margin: 0 30px 30px 0;
-  //   -webkit-animation: bounce 2s infinite;
-  //   animation: bounce 2s infinite;
-  //   -moz-animation-name: bounce 2s infinite;
-  //   justify-content: flex-end;
+  .back_to_top_button_container {
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    display: inline-flex;
+    margin: 0 10px 20px 0;
+    -webkit-animation: slide-in-bottom 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+      animation: slide-in-bottom 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+    
+    @-webkit-keyframes slide-in-bottom {
+      0% {
+        opacity: 0;
+        -webkit-transform: translateY(1000px);
+        transform: translateY(1000px);
+      }
 
-  //   @keyframes bounce {
+      100% {
+        opacity: 1;
+        -webkit-transform: translateY(0);
+        transform: translateY(0);
+      }
+    }
 
-  //     0%,
-  //     20%,
-  //     50%,
-  //     80%,
-  //     100% {
-  //       transform: translateY(0);
-  //     }
+    @keyframes slide-in-bottom {
+      0% {
+        opacity: 0;
+        -webkit-transform: translateY(1000px);
+        transform: translateY(1000px);
+      }
 
-  //     40% {
-  //       transform: translateY(-10px);
-  //     }
-
-  //     60% {
-  //       transform: translateY(-15px);
-  //     }
-  //   }
-  // }
+      100% {
+        opacity: 1;
+        -webkit-transform: translateY(0);
+        transform: translateY(0);
+      }
+    }
+  }
 }

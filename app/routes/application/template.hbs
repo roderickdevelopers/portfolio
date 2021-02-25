@@ -1,3 +1,10 @@
+{{#if (or (media 'isSmall') (media 'isMedium'))}}
 <Structural::Ui::Navigation::Mobile>
 {{outlet}}
 </Structural::Ui::Navigation::Mobile>
+{{/if}}
+{{#if (or (media 'isLarge') (media 'isWide'))}} 
+<Structural::Ui::Navigation::Desktop>
+{{outlet}}
+</Structural::Ui::Navigation::Desktop>
+{{/if}}

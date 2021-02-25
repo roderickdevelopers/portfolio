@@ -1,4 +1,6 @@
 import Component from '@glimmer/component';
+import { action } from '@ember/object';
+
 
 export default class StructuralRoutesBlogEmberMobileMenuComponent extends Component {
   codePathOne = '<Structural::Ui::Navigation::Mobile>';
@@ -21,4 +23,14 @@ export default class StructuralRoutesBlogEmberMobileMenuComponent extends Compon
   codePathFourteen = '{{else}}';
   codePathFifteen = '{{/if}}';
   codeThree = '* master';
+
+  @action
+  backToTop() {
+    // console.log("You just fired the back to top action when you clicked back to top button");
+    window.scrollTo({
+      top: 0,
+      left: 0,
+      behavior: "smooth"
+    });
+  }
 }

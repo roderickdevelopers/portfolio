@@ -1,4 +1,5 @@
 import Component from '@glimmer/component';
+import { action } from '@ember/object';
 
 export default class StructuralRoutesProjectsIndexComponent extends Component {
   projectOneProjectTitleTop = 'Markdown Previewer';
@@ -132,4 +133,14 @@ export default class StructuralRoutesProjectsIndexComponent extends Component {
   // projectFiveBlockFiveLabel = 'See the Code';
   // projectFiveBlockSixText = 'Live Site';
   // projectFiveBlockSixLabel = 'See it in Action';  
+
+  @action
+  backToTop() {
+    // console.log("You just fired the back to top action when you clicked back to top button");
+    window.scrollTo({
+      top: 0,
+      left: 0,
+      behavior: "smooth"
+    });
+  }
 }

@@ -1,5 +1,7 @@
 @import 'global/variables';
 @import 'global/breakpoints';
+// sass-lint:disable no-vendor-prefixes
+
 
 .portfolio_page_header {
   padding-top: 50px;
@@ -7,7 +9,16 @@
   text-align: center;
   background-color: $color_background;
 
+  @include breakpoint(medium) {
+    padding-top: 150px;
+  }
+
+  @include breakpoint(large) {
+    padding-top: 150px;
+  }
+
   @include breakpoint(wide) {
+    padding-top: 150px;
     font-size: $font_size_extra_large;
   }
 
@@ -54,4 +65,12 @@
       }
     }
   }
+}
+
+.back_to_top_button_container {
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  margin: 0 10px 20px 0;
+  color: $color_background;
 }

@@ -42,27 +42,42 @@
   .dashboard_row {
     display: flex;
     flex-direction: column;
-    margin: $margin_small;
+    margin: $margin_small 0 $margin_large; 
     align-items: center;
     scrollbar-color: $scroll_bar $color_background;
     scrollbar-width: thin;
 
     @include breakpoint(medium) {
-      flex-direction: row;
-      overflow-x: scroll;
-      -webkit-overflow-scrolling: touch;
+      display: grid;
+      flex-direction: unset;
+      align-items: unset;
+      justify-content: center;
+      grid-template-columns: 350px 350px;
+      grid-auto-rows: 350px;
+      column-gap: $margin_small;
+      grid-row-gap: $margin_small;
     }
 
     @include breakpoint(large) {
-      flex-direction: row;
-      overflow-x: scroll;
-      -webkit-overflow-scrolling: touch;
+      display: grid;
+      flex-direction: unset;
+      align-items: unset;
+      justify-content: center;
+      grid-template-columns: 350px 350px;
+      grid-auto-rows: 350px;
+      column-gap: $margin_small;
+      grid-row-gap: $margin_small;
     }
 
     @include breakpoint(wide) {
-      flex-direction: row;
-      overflow-x: scroll;
-      -webkit-overflow-scrolling: touch; 
+      display: grid;
+      flex-direction: unset;
+      align-items: unset;
+      justify-content: center;
+      grid-template-columns: 350px 350px;
+      grid-auto-rows: 350px;
+      column-gap: $margin_small;
+      grid-row-gap: $margin_small; 
     }
 
     ::-webkit-scrollbar {
