@@ -1,0 +1,32 @@
+<nav>
+  <div local-class="main_navigation_container">
+    <div local-class="main_navigation">
+      <div local-class="company_name">
+        <LinkTo @route="index">
+          <h1>Roderick Developers</h1>
+        </LinkTo>
+      </div>
+      <div local-class="button_navigation_container">
+        <div local-class="button_navigation">
+          <LinkTo @route="projects">Projects</LinkTo>
+        </div>
+        <div local-class="button_navigation">
+          <LinkTo @route="certificates">Certificates</LinkTo>
+        </div>
+        <div local-class="button_navigation">
+          <LinkTo @route="blog">Blog</LinkTo>
+        </div>
+        <div local-class="button_navigation">
+          <LinkTo @route="resume">Resume</LinkTo>
+        </div>
+      </div>
+      <div local-class="contact_button_container">
+        <LinkTo @route="contact">
+          <button id="contact_me" class="button">Contact Me
+          </button>
+        </LinkTo>
+      </div>
+    </div>
+  </div>
+  {{yield}}
+</nav>

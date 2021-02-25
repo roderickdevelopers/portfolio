@@ -1,5 +1,7 @@
 @import 'global/variables';
 @import 'global/breakpoints';
+// sass-lint:disable no-vendor-prefixes
+
 
 .git_article_component_container {
   display: flex;
@@ -11,6 +13,19 @@
   background-color: $color_background;
   justify-content: center;
   align-items: center;
+
+  @include breakpoint(medium) {
+    padding-top: 150px;
+  }
+
+  @include breakpoint(large) {
+    padding-top: 150px;
+  }
+
+  @include breakpoint(wide) {
+    padding-top: 150px;
+  }
+
 
   .git_article_header_container {
     display: flex;
@@ -88,5 +103,12 @@
         }
       }
     }
+  }
+
+  .back_to_top_button_container {
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    margin: 0 10px 20px 0;
   }
 }

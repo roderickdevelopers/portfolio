@@ -91,7 +91,7 @@
   }
 }
 
-.header {
+.header_container {
   display: flex;
   height: 3.75rem;
   min-height: 3.75rem;
@@ -99,7 +99,7 @@
   align-items: center;
   justify-content: space-between;
 
-  .toggle_container {
+  .toggle {
     -webkit-animation: slide-in-left 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
     animation: slide-in-left 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
     
@@ -140,15 +140,16 @@
       max-height: 50px;
       margin: 15px 0 0 $margin_extra_small;
       font-family: vollkorn;
-      font-size: $font_size_medium;
+      font-size: 20px;
       color: $color_menu;
-      text-transform: uppercase;
+      text-transform: capitalize;
+      background-color: $color_background;
       border: 3px solid $color_menu;
       border-radius: 2em;
       outline: 0;
       justify-content: center;
       align-items: center;
-
+      
       @include breakpoint(large) {
         min-width: 145px;
         max-width: 145px;
@@ -225,9 +226,9 @@
       max-height: 50px;
       padding: 15px 30px;
       font-family: vollkorn;
-      font-size: $font_size_medium;
+      font-size: 20px;
       color: $color_white;
-      text-transform: uppercase;
+      text-transform: capitalize;
       white-space: nowrap;
       cursor: pointer;
       background-color: $color_menu;
@@ -236,6 +237,7 @@
       outline: 0;
       transition: all 0.4s ease 0s;
       justify-content: center;
+      align-items: center;
 
       @include breakpoint(large) {
        
