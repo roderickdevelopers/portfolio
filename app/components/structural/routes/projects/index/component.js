@@ -26,9 +26,9 @@ export default class StructuralRoutesProjectsIndexComponent extends Component {
   projectOneGithubUrl = 'https://github.com/roderickdevelopers/React_Markdown_Previewer';
   projectOneLiveUrl = 'https://roderickdevelopers.github.io/React_Markdown_Previewer/#/';
   projectOneBlockFiveText = 'Repo';
-  projectOneBlockFiveLabel = 'See the Code';
+  projectOneBlockFiveLabel = 'See The Code';
   projectOneBlockSixText = 'Live Site';
-  projectOneBlockSixLabel = 'See it in Action';
+  projectOneBlockSixLabel = 'See It In Action';
 
   projectTwoProjectTitle = 'Sleepy Forest Maple (Coming Soon)';
   projectTwoProjectDescription = 'This is a nice little Maple Syrup Website I built for a small company in Richmond, NH, called Sleepy Forest Maple. It is meant to be a simple layout with room to expand as their company grows.';
@@ -52,9 +52,9 @@ export default class StructuralRoutesProjectsIndexComponent extends Component {
   projectTwoGithubUrl = 'https://github.com/Design-Monster/Sleepy-Forest-Maple';
   projectTwoLiveUrl = 'https://www.google.com/';
   projectTwoBlockFiveText = 'Repo';
-  projectTwoBlockFiveLabel = 'See the Code';
+  projectTwoBlockFiveLabel = 'See The Code';
   projectTwoBlockSixText = 'Live Site';
-  projectTwoBlockSixLabel = 'See it in Action';
+  projectTwoBlockSixLabel = 'See It In Action';
 
   projectThreeProjectTitle = 'Ember Octane Boilerplate';
   projectThreeProjectDescription = 'Since starting in web development I fell in love with Ember.js. I have helped set up a boilerplate with Design Monster with a simple file structure that makes sense to me and makes my workflow much faster. It has all the needed add-ons to get started and make a great site. It has breakpoints included as well as css-modules with scss, variables file with examples, and much more! Please check it out and use it if you\'re interested. Updated to the latest Ember Octane!';
@@ -78,9 +78,9 @@ export default class StructuralRoutesProjectsIndexComponent extends Component {
   projectThreeGithubUrl = 'https://github.com/Design-Monster/ember-octane-boilerplate';
   projectThreeLiveUrl = 'https://www.google.com/';
   projectThreeBlockFiveText = 'Repo';
-  projectThreeBlockFiveLabel = 'See the Code';
+  projectThreeBlockFiveLabel = 'See The Code';
   projectThreeBlockSixText = 'Live Site';
-  projectThreeBlockSixLabel = 'See it in Action';
+  projectThreeBlockSixLabel = 'See It In Action';
 
   projectFourProjectTitle = 'React Boilerplate';
   projectFourProjectDescription = 'When starting my first React project, I realized that setting up a new project each time could be frustrating and time consuming.  I have been using my Ember Boilerplate for all my other projects and I\'m used to the file structure, so I set up a React Boilerplate with the same file structure!  Now, when I\'m using React I can easily start right up because I am already familiar with the file structure and components.';
@@ -104,9 +104,9 @@ export default class StructuralRoutesProjectsIndexComponent extends Component {
   projectFourGithubUrl = 'https://github.com/Design-Monster/react-boilerplate';
   projectFourLiveUrl = 'https://www.google.com/';
   projectFourBlockFiveText = 'Repo';
-  projectFourBlockFiveLabel = 'See the Code';
+  projectFourBlockFiveLabel = 'See The Code';
   projectFourBlockSixText = 'Live Site';
-  projectFourBlockSixLabel = 'See it in Action';
+  projectFourBlockSixLabel = 'See It In Action';
   
 
   // projectFiveProjectTitle = 'Vue Boilerplate';
