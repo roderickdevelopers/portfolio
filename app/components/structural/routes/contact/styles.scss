@@ -111,8 +111,8 @@
       }
 
       img {
-        width: 241px;
-        height: 144px;
+        max-width: 100%;
+        height: auto;
         margin-top: 20px;
         margin-bottom: 20px;
         align-self: center;
