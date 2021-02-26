@@ -2,7 +2,6 @@
 <html lang="en-US">
 
 <head>
-  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 
   <script async defer data-domain="roderickdevelopers.com" src="https://plausible.io/js/plausible.js"></script>
   <meta charset="utf-8">
@@ -14,12 +13,12 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
   {{content-for "head"}}
-
+  <link rel="stylesheet dns-prefetch" href="https://unpkg.com/aos@next/dist/aos.css" />
   <link rel="dns-prefetch" href="https://s3.us-east-2.amazonaws.com/roderickdevelopers">
   <link rel="preconnect" href="https://s3.us-east-2.amazonaws.com/roderickdevelopers">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Vollkorn&display=swap">
-  <link rel="stylesheet" media="print" onload="this.onload=null;this.removeAttribute('media');"
+  <link rel="stylesheet preconnect" media="print" onload="this.onload=null;this.removeAttribute('media');"
     href="https://fonts.googleapis.com/css2?family=Vollkorn&display=swap">
   <noscript>
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Vollkorn&display=swap">
@@ -32,16 +31,16 @@
 
 <body>
   {{content-for "body"}}
-
+  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
   <script src="{{rootURL}}assets/vendor.js"></script>
   <script src="{{rootURL}}assets/portfolio.js"></script>
 
   {{content-for "body-footer"}}
 
-  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
-  <script>
-    AOS.init();
-  </script>
+  
 </body>
 
 </html>
