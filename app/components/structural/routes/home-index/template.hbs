@@ -6,7 +6,15 @@
         <p>{{this.typingLineTwo}}</p>
         <p>{{this.typingLineThree}}</p>
       </div>
+      </div>
+      {{#if (or (media 'isSmall') (media 'isMedium'))}}
+      <div local-class="contact_button_container">
+        <LinkTo @route="contact">
+          <button id="contact_me" class="button">Contact Me
+          </button>
+        </LinkTo>
     </div>
+    {{/if}}
     <div local-class="down_arrow_animation_container">
       <ScrollTo @target='#about_me' @duration="1000">
         {{#if (or (media 'isLarge') (media 'isWide'))}}

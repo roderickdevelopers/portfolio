@@ -9,10 +9,6 @@
   text-align: center;
   background-color: $color_background;
 
-  @include breakpoint(medium) {
-    padding-top: 150px;
-  }
-
   @include breakpoint(large) {
     padding-top: 150px;
   }
@@ -24,7 +20,7 @@
 
   h1 {
     margin: 0;
-    text-decoration: underline;
+    font-size: 2.8125rem;
   }
 }
 
@@ -70,7 +66,22 @@
 .back_to_top_button_container {
   position: fixed;
   right: 0;
-  bottom: 0;
+  bottom: 60px;
+  display: inline-flex;
   margin: 0 10px 20px 0;
-  color: $color_background;
-}
+  -webkit-animation: slide-in-bottom 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+    animation: slide-in-bottom 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+
+    @include breakpoint(medium) {
+      bottom: 3.75rem;
+    }
+
+    @include breakpoint(large) {
+      bottom: 0;
+    }
+
+    @include breakpoint(wide) {
+      bottom: 0;
+    }
+  }
+  

@@ -119,14 +119,14 @@
       min-height: 300px;
       max-height: 300px;
       flex-direction: column;
-      margin-bottom: 1.875rem;
+      margin-bottom: 3.125rem;
       background-color: $color_background;
       border-radius: 15px;
       box-shadow: -9px -9px 16px $color_white, 9px 9px 16px $color_box_shadow;
       justify-content: center;
       align-items: center;
       scroll-snap-align: start;
-      
+
       @include breakpoint(medium) {
         margin: $margin_extra_small $margin_medium $margin_extra_small $margin_small;
       }
