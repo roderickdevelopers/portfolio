@@ -10,10 +10,6 @@
   padding-top: 50px;
   background-color: $color_background;
 
-  @include breakpoint(medium) {
-    padding-top: 150px;
-  }
-
   @include breakpoint(large) {
     padding-top: 150px;
   }
@@ -32,8 +28,8 @@
 
       h1 {
         margin: 0;
+        font-size: 2.8125rem;
         text-align: center;
-        text-decoration: underline;
       }
       @include text_style();
     }
@@ -43,20 +39,24 @@
     display: flex;
     flex: 1;
     flex-direction: column;
+    margin-bottom: 3.75rem;
     text-align: center;
     justify-content: center;
     align-items: center;
     
     @include breakpoint(medium) {
+      margin-bottom: 3.125rem;
       font-size: 30px;
     }
 
     @include breakpoint(large) {
       flex-direction: row;
+      margin-bottom: 0;
     }
 
     @include breakpoint(wide) {
       flex-direction: row;
+      margin-bottom: 0;
     }
 
   .image {

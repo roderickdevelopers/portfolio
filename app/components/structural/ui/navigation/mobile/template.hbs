@@ -1,47 +1,40 @@
 <nav>
-  <MobileMenuWrapper as |mmw|>
-    <mmw.MobileMenu as |mm|>
-      <div local-class="menu_container">
-        <div local-class="title">
-          <mm.LinkTo @route="index"><h1>Roderick Developers</h1></mm.LinkTo>
+  <div local-class="main_navigation_container">
+    <div local-class="main_navigation">
+      <div local-class="button_navigation_container">
+        <div local-class="button_navigation">
+          <LinkTo @route="index">
+          <FaIcon @icon="home" title="Home" @prefix="fas" @size=2x />
+          <figcaption>Home</figcaption>
+        </LinkTo>
         </div>
-        <div local-class="navigation">
-          <div local-class="nav_item_container">
-            <mm.LinkTo @route="projects">Projects</mm.LinkTo>
-          </div>
-          <div local-class="nav_item_container">
-            <mm.LinkTo @route="certificates">Certificates</mm.LinkTo>
-          </div>
-          <div local-class="nav_item_container">
-            <mm.LinkTo @route="blog">Blog</mm.LinkTo>
-          </div>
-          <div local-class="nav_item_container">
-            <mm.LinkTo @route="resume">Resume</mm.LinkTo>
-          </div>
+        <div local-class="button_navigation">
+          <LinkTo @route="projects">
+            <FaIcon @icon="code" @prefix="fas" @size=2x />
+            <figcaption>Projects</figcaption>
+          </LinkTo>
         </div>
-        <div local-class="profile_pic_section">
-          <picture>
-          <source srcset="https://roderickdevelopers.s3.us-east-2.amazonaws.com/profilepicsmall.webp" loading="lazy" type="image/webp">
-          <img src="https://roderickdevelopers.s3.us-east-2.amazonaws.com/profilepicsmall.png" loading="lazy">
-        </picture>
+        <div local-class="button_navigation">
+          <LinkTo @route="certificates">
+            <FaIcon @icon="award" @prefix="fas" @size=2x />
+            <figcaption>Certs</figcaption>
+          </LinkTo>
         </div>
-      </div>
-    </mmw.MobileMenu>
-    <mmw.Content>
-      <div local-class="header_container">
-        <div local-class="toggle">
-          <mmw.Toggle>
-            Menu
-          </mmw.Toggle>
+        <div local-class="button_navigation">
+          <LinkTo @route="blog">
+            <FaIcon @icon="newspaper" @prefix="fas" @size=2x />
+            <figcaption>Blog</figcaption>
+          </LinkTo>
         </div>
-        <div local-class="contact_container">
-          <LinkTo @route="contact">
-            <button id="contact_me" class="button">Contact Me 
-            </button>
+        <div local-class="button_navigation">
+          <LinkTo @route="resume">
+            <FaIcon @icon="id-badge" @prefix="fas" @size=2x />
+            <figcaption>Resume</figcaption>
           </LinkTo>
         </div>
       </div>
-      {{yield}}
-    </mmw.Content>
-  </MobileMenuWrapper>
+    </div>
+  </div>
+  {{yield}}
 </nav>
+

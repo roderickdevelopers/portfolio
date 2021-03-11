@@ -8,10 +8,6 @@
   flex-direction: column;
   background-color: $color_background;
 
-  @include breakpoint(medium) {
-    padding-top: 150px;
-  }
-
   @include breakpoint(large) {
     padding-top: 150px;
   }
@@ -127,6 +123,7 @@
   .resume_content {
     min-width: 500px;
     flex: 1;
+    margin-bottom: 3.125rem;
     box-shadow: -9px -9px 16px $color_white, 9px 9px 16px $color_box_shadow;
 
     h1 {

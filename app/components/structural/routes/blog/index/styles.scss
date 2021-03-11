@@ -9,16 +9,12 @@
   flex-direction: column;
   background-color: $color_background;
 
-  @include breakpoint(medium) {
-    padding-top: 150px;
-  }
-
   @include breakpoint(large) {
-    padding-top: 150px;
+    padding-top: 100px;
   }
 
   @include breakpoint(wide) {
-    padding-top: 150px;
+    padding-top: 100px;
   }
 
   .blog_content_container {
@@ -46,7 +42,7 @@
 
         h1 {
           margin: 0;
-          text-decoration: underline;
+          font-size: 2.8125rem;
         }
       }
 
@@ -65,8 +61,21 @@
       .button_container {
         display: flex;
         margin-top: 30px;
+        margin-bottom: 3.125rem;
         justify-content: center;
         align-items: center;
+
+        @include breakpoint(medium) {
+          margin-bottom: 3.125rem;
+        }
+      
+        @include breakpoint(large) {
+          margin-bottom: 0;
+        }
+      
+        @include breakpoint(wide) {
+          margin-bottom: 0;
+        }
 
         a {
           text-decoration: none;
