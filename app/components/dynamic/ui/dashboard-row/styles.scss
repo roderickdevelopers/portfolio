@@ -114,10 +114,10 @@
 
     .dashboard_block {
       display: flex;
-      min-width: 300px;
-      max-width: 300px;
-      min-height: 300px;
-      max-height: 300px;
+      min-width: 275px;
+      max-width: 275px;
+      min-height: 275px;
+      max-height: 275px;
       flex-direction: column;
       margin-bottom: 3.125rem;
       background-color: $color_background;
@@ -128,15 +128,21 @@
       scroll-snap-align: start;
 
       @include breakpoint(medium) {
+        width: 300px;
+        height: 300px;
         margin: $margin_extra_small $margin_medium $margin_extra_small $margin_small;
       }
   
       @include breakpoint(large) {
+        width: 300px;
+        height: 300px;
         margin: $margin_extra_small $margin_medium $margin_extra_small $margin_small;
       }
   
       @include breakpoint(wide) {
-      margin: $margin_extra_small $margin_medium $margin_extra_small $margin_small;
+        width: 300px;
+        height: 300px;
+        margin: $margin_extra_small $margin_medium $margin_extra_small $margin_small;
       }
 
       .dashboard_block_icon_container {
@@ -174,7 +180,7 @@
         img {
           width: 100%;
           height: auto;
-          max-height: 300px;
+          max-height: 270px;
         }
       }
 

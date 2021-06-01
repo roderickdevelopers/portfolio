@@ -1,7 +1,22 @@
 .card_container {
-  width: 300px;
-  height: 300px;
+  width: 275px;
+  height: 275px;
   perspective: 75rem;
+
+  @include breakpoint(medium) {
+    width: 300px;
+    height: 300px;
+  }
+
+  @include breakpoint(large) {
+    width: 300px;
+    height: 300px;
+  }
+
+  @include breakpoint(wide) {
+    width: 300px;
+    height: 300px;
+  }
 
   .card {
     position: relative;
