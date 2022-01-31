@@ -16,7 +16,7 @@
     </div>
     {{/if}}
     <div local-class="down_arrow_animation_container">
-      <ScrollTo @target='#about_me' @duration="1000">
+      {{!-- <ScrollTo @target='#about_me' @duration="1000"> --}}
         {{#if (or (media 'isLarge') (media 'isWide'))}}
         <div local-class="down_arrow">
           <FaIcon type="button" @icon="chevron-down" @prefix="fa" @size=3x />
@@ -27,7 +27,7 @@
           <FaIcon type="button" @icon="chevron-down" @prefix="fa" @size=1x />
         </div>
         {{/if}}
-      </ScrollTo>
+      {{!-- </ScrollTo> --}}
     </div>
   </div>
   <div local-class="about_me_container" id="about_me">
@@ -53,7 +53,7 @@
       </div>
     </div>
     <div local-class="down_arrow_animation_container">
-      <ScrollTo @target='#skills' @duration="1000">
+      {{!-- <ScrollTo @target='#skills' @duration="1000"> --}}
         {{#if (or (media 'isLarge') (media 'isWide'))}}
         <div local-class="down_arrow">
           <FaIcon type="button" @icon="chevron-down" @prefix="fa" @size=3x />
@@ -64,7 +64,7 @@
           <FaIcon type="button" @icon="chevron-down" @prefix="fa" @size=1x />
         </div>
         {{/if}}
-      </ScrollTo>
+      {{!-- </ScrollTo> --}}
     </div>
   </div>
   <div local-class="skills_container" id="skills">
